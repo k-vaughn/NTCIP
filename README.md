@@ -6,10 +6,12 @@ This site consists of the following files
 
 1. This Readme file
 2. A page for each relavent NTCIP standard being produced, this currently includes:
-   a. [https://k-vaughn.github.io/NTCIP/NTCIP_1201.html](NTCIP 1201 v04)
-4. A page for [https://k-vaughn.github.io/NTCIP/20684_1.html](ISO 20684-1), which is a normative reference for NTCIP 1200 series standards; this page only shows section headings since the text of the document is under an ISO copyright.
-5. A [https://k-vaughn.github.io/NTCIP/Conditionals.html](Conditionals) page, which is a traceability table that is used to show when support for a requirement is predicated on the support for another requirement
-6. An [https://k-vaughn.github.io/NTCIP/OptionGroups.html](OptionsGroup) page, which is a traceability table that is used to show when multiple requirements are part of an option group to fulfil a user need.
+
+   a. [NTCIP 1201 v04](https://k-vaughn.github.io/NTCIP/NTCIP_1201.html)
+
+4. A page for [ISO 20684-1](https://k-vaughn.github.io/NTCIP/20684_1.html), which is a normative reference for NTCIP 1200 series standards; this page only shows section headings since the text of the document is under an ISO copyright.
+5. A [Conditionals](https://k-vaughn.github.io/NTCIP/Conditionals.html) page, which is a traceability table that is used to show when support for a requirement is predicated on the support for another requirement
+6. An [OptionsGroup](https://k-vaughn.github.io/NTCIP/OptionGroups.html) page, which is a traceability table that is used to show when multiple requirements are part of an option group to fulfil a user need.
 
 The draft standards are presented in a table format generated from a requirements management tool (ReqView). Each row of this table has a unique ID. This id is used to maintain traceability, even when rows are reordered, deleted, etc. As such, the ID is not always sequential.
 
