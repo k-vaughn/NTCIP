@@ -1,0 +1,1044 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>Clock</h1><p><em>Last modified on 2023-06-23 09:35</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-6">1 UTC time</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-7">2 UTC date</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-8">3 Clock resolution</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-9">4 Supported time sources for clock</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-10">5 Requested time source for clock</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-11">6 Current time source for clock</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-12">7 Status of requested time source</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-13">8 Status of current time source</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-14">9 Synchronization cycle for clock</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-15">10 Last synchronization time for clock</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-16">11 Last synchronization date for clock</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-17">12 Supported time keeping sources</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-18">13 Requested time keeping source</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-19">14 Current time keeping source</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-20">15 Source of last discontinuity of clock</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-21">16 Change implemented in last discontinuity</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-22">17 Indication of when last discontinuity was made</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-23">18 Definition of a discontinuity</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-26">19 Standard time zone</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-27">20 Local time</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-28">21 Local date</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-29">22 Current DST adjustment</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-30">23 Maximum entries in DST table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-32">24 DST table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-35">25 DST index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-36">26 Start month for DST entry</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-37">27 Algorithm used to select start date</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-38">28 Day of week on which DST begins</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-39">29 Date on which DST begins</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-40">30 Time at which DST adjustment begins</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-41">31 End month for DST entry</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-42">32 Algorithm used to select end date</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-43">33 Day of week on which DST ends</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-44">34 Date on which DST ends</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-45">35 Time at which DST adjustment ends</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-46">36 Adjustment made by DST entry</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-47">37 Indication whether this DST entry is active</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-48">38 DST storage type</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Clock-MIB-49">39 DST row status</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col" style="color: white;"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Type</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Name</th>
+          <th class="description-col" style="color: white;"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col" style="color: white;"><i class="fas fa-link"></i> Links</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Access</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col">Clock-MIB-1</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Clock Header </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-2</td>
+          <td class="custom-col htmlContent">mib</td>
+                      <td class="custom-col htmlContent">ISO26048-1-Clock</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><pre>  <br>MODULE-IDENTITY, OBJECT-TYPE, OBJECT-IDENTITY, Integer32, TimeTicks,<br>Unsigned32<br>                                                    FROM SNMPv2-SMI<br>                                                      -- RFC 2578<br>TruthValue, StorageType, RowStatus<br>                                                    FROM SNMPv2-TC<br>                                                      -- RFC 2579<br>MODULE-COMPLIANCE, OBJECT-GROUP<br>                                                    FROM SNMPv2-CONF<br>                                                      -- RFC 2580<br>ITSDailyTimeStamp, ITSDateStamp, ITSDayOfWeek, ITSDayOfMonth, ITSInteger16, <br>ITSMonth, ITSPositive8, ITSUnsigned16<br>                                                    FROM ISO26048-1-FieldDevice<br>fdGlobalMIB, fdGlobalConformance<br>                                                    FROM ISO26048-1-Global<br></pre></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-3</td>
+          <td class="custom-col htmlContent">module-identity</td>
+                      <td class="custom-col htmlContent">fdClockMIB</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>This MIB defines a generalized clock that can be used within a field device to track time, including an optional local time with a time zone and daylight saving time (a.k.a., 'summer time') offsets. Copyright (C) International Organization for Standardization (ISO). This MIB module is part of ISO 26048-1; see ISO 26048-1 for full legal notices.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-4</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Object Definitions </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-5</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdClockUtc</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for managing the local clock parameters.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Clock-MIB-6">
+          <td class="id-col">Clock-MIB-6</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockUtcTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>1&nbsp;UTC time</h1>
+            <div class="htmlContent"><p>The number of milliseconds that have elapsed since 00:00:00.000 (midnight) Coordinated Universal Time (UTC). Exactly one second past midnight UTC would be represented as 1000.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-827">26048_1-827</a></span>  Set UTC time</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-829">26048_1-829</a></span>  Retrieve UTC time</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                    </tr>
+        <tr id="Clock-MIB-7">
+          <td class="id-col">Clock-MIB-7</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockUtcDate</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>2&nbsp;UTC date</h1>
+            <div class="htmlContent"><p>The Gregorian calendar date represented as the OER-encoded structure of: SEQUENCE { year INTEGER (0..65535), month INTEGER (1..12), date INTEGER (1..31) } An attempt to SET this object to a value of a non-existent date (e.g., 29 February 2019), shall cause the the field device to respond with a 'wrongValue' error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-827">26048_1-827</a></span>  Set UTC time</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-829">26048_1-829</a></span>  Retrieve UTC time</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                    </tr>
+        <tr id="Clock-MIB-8">
+          <td class="id-col">Clock-MIB-8</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockResolution</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>3&nbsp;Clock resolution</h1>
+            <div class="htmlContent"><p>The resolution of the internal clock as reported by fdClockUtcTime. A clock with a resolution of 1 second would report a value of 1000; a clock with a resolution of 1 millisecond would report a value of 1.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-822">26048_1-822</a></span>  Discover UTC clock capabilities</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Clock-MIB-9">
+          <td class="id-col">Clock-MIB-9</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockSupportedSources</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>4&nbsp;Supported time sources for clock</h1>
+            <div class="htmlContent"><p>The clock synchronization sources supported by the device. other - one or more sources not defined by this standard snmp - allows setting fdClockUtcTime via SNMP or other mechanism that may be subject to network delays network - network time protocol (NTP) or similar mechanism that includes logic to compensate for network delays to provide accuracies better than 100 ms radio - terrestrial radio-based time broadcast, such as WWV satellite - satellite-based signal such as provided by global navigation system satellites</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-822">26048_1-822</a></span>  Discover UTC clock capabilities</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Clock-MIB-10">
+          <td class="id-col">Clock-MIB-10</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockRequestedSource</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>5&nbsp;Requested time source for clock</h1>
+            <div class="htmlContent"><p>The requested clock synchronization source. The value of this object may default to 'local' to indicate that the device does not automatically attempt to synchronize with any external source. The value of this object shall automatically transition to 'snmp' whenever fdClockUtcTime or fdClockUtcDate is successfully set via an 'snmp' interface. If a request is received to set the value to 'other', 'snmp', or 'local', the field device shall return a 'wrongValue' error. If the value of this object is 'network', 'radio', or 'satellite', the device shall attempt to synchronize to the requested source at least once every fdClockSyncCycle. If the field device fails to synchronize with the requested source, or fails to be set via 'snmp' when in the 'snmp' mode, for a period exceeding the fdClockSyncCycle duration, the device may attempt to synchronize with an alternate source. However, the field device shall continue to attempt to synchronize with the requested source at least once every fdClockSyncCycle. The device shall not synchronize with another source if synchronization with the requested source is successful.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-823">26048_1-823</a></span>  Configure UTC clock</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-824">26048_1-824</a></span>  Confirm UTC clock configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                    </tr>
+        <tr id="Clock-MIB-11">
+          <td class="id-col">Clock-MIB-11</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockSource</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>6&nbsp;Current time source for clock</h1>
+            <div class="htmlContent"><p>The source used for the most recent clock synchronization. When operating as expected, this value should reflect the value of fdClockRequestedSource once the clock synchronizes. If the clock has not been able to successfully synchronize with the requested source within the last fdClockSyncCycle, this object shall reflect the current source; if the field device has not successfully synchronized with any external source, this object shall report a value of 'local'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-825">26048_1-825</a></span>  Determine UTC clock status</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Clock-MIB-12">
+          <td class="id-col">Clock-MIB-12</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockRequestedSourceStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>7&nbsp;Status of requested time source</h1>
+            <div class="htmlContent"><p>The status of the requested time source for the clock (fdClockRequestedSource). other: The status of the requested source is not represented by any of the other states. normal: The source is providing information as expected. dataError: The last update from the source contained an error in the supplied data. timeout: The source has failed to successfully provide an update within the fdClockSyncCycle plus the implementation defined grace period. pending: The field device has initiated a process to obtain an updated time or is otherwise expecting an update from the time source; while the field device has not yet successfully received an update the time since the last update is still within the fdClockSyncCycle plus any implementation-defined grace period. discontinuity: The source provided an update that resulted in a discontinuity in the time greater than fdClockDiscontinuityMaxAdjustment; when this occurs, the status will return to 'normal' after 10 seconds or when the status is read via SNMP, which ever comes first.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-826">26048_1-826</a></span>  Determine UTC time source status</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Clock-MIB-13">
+          <td class="id-col">Clock-MIB-13</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockSourceStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>8&nbsp;Status of current time source</h1>
+            <div class="htmlContent"><p>The status of the current time source for the clock (fdClockSource). other: The status of the requested source is not represented by any of the other states. normal: The source is providing information as expected. dataError: The last update from the source contained an error in the supplied data. timeout: The source has failed to successfully provide an update within the fdClockSyncCycle plus the implementation defined grace period. pending: The source has failed to successfully provide an update within the fdClockSyncCycle, but is still within the implementation defined grace period. discontinuity: The source provided an update that resulted in a discontinuity greater than fdClockDiscontinuityMaxAdjustment; when this occurs, the status will return to 'normal' after 10 seconds or until the status is read via SNMP, which ever comes first.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-826">26048_1-826</a></span>  Determine UTC time source status</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Clock-MIB-14">
+          <td class="id-col">Clock-MIB-14</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockSyncCycle</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>9&nbsp;Synchronization cycle for clock</h1>
+            <div class="htmlContent"><p>The amount of time between each synchronization with the time source. The device clock shall synchronize at least once every indicated cycle.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-823">26048_1-823</a></span>  Configure UTC clock</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-824">26048_1-824</a></span>  Confirm UTC clock configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                    </tr>
+        <tr id="Clock-MIB-15">
+          <td class="id-col">Clock-MIB-15</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockLastSyncTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>10&nbsp;Last synchronization time for clock</h1>
+            <div class="htmlContent"><p>The UTC time at which the last synchronization to an external reference clock was made.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-825">26048_1-825</a></span>  Determine UTC clock status</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Clock-MIB-16">
+          <td class="id-col">Clock-MIB-16</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockLastSyncDate</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>11&nbsp;Last synchronization date for clock</h1>
+            <div class="htmlContent"><p>The UTC date on which the last synchronization to an external reference clock was made.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-825">26048_1-825</a></span>  Determine UTC clock status</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Clock-MIB-17">
+          <td class="id-col">Clock-MIB-17</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockSupportedTimeKeeping</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>12&nbsp;Supported time keeping sources</h1>
+            <div class="htmlContent"><p>The mechanisms by which the fdClockUtcTime object is able to track the passage of time. other - a source not defined by this standard lineFrequency - tracking the AC power line frequency rtcSqareWave - tracking a real-time clock square wave crystal - using an internal time crystal external - the synchronizes with the fdClockSource at least once a minute</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-822">26048_1-822</a></span>  Discover UTC clock capabilities</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Clock-MIB-18">
+          <td class="id-col">Clock-MIB-18</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockRequestedTimeKeeping</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>13&nbsp;Requested time keeping source</h1>
+            <div class="htmlContent"><p>The requested mechanism to keep time within the fdClockUtcTime object between synchronization events. other - use a source not defined by this standard lineFrequency - track the AC power line frequency rtcSqareWave - track a real-time clock square wave crystal - use the internal time crystal external - synchronize with the fdClockSource at least once a minute</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-823">26048_1-823</a></span>  Configure UTC clock</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-824">26048_1-824</a></span>  Confirm UTC clock configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                    </tr>
+        <tr id="Clock-MIB-19">
+          <td class="id-col">Clock-MIB-19</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockTimeKeeping</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>14&nbsp;Current time keeping source</h1>
+            <div class="htmlContent"><p>The mechanism currently being used to keep time within the fdClockUtcTime object between synchronization events. unknown - the source is unknown or cannot be determined; this is considered an error state other - a source not defined by this standard lineFrequency - tracking the AC power line frequency rtcSqareWave - tracking a real-time clock square wave crystal - using an internal time crystal external - synchronizes with the fdClockSource at least once a minute</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-825">26048_1-825</a></span>  Determine UTC clock status</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Clock-MIB-20">
+          <td class="id-col">Clock-MIB-20</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDiscontinuitySource</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>15&nbsp;Source of last discontinuity of clock</h1>
+            <div class="htmlContent"><p>The source of the time that caused the discontinuity. unknown - The source of the discontinuity is unknown other - The discontinuity and previous source were both 'other' snmp - The discontinuity and previous source were both 'snmp' network - The discontinuity and previous source were both 'network' radio - The discontinuity and previous source were both 'radio' satellite - The discontinuity and previous source were both 'satellite' local - The discontinuity and previous source were both 'local' changedOther - The discontinuity source was 'other', but the previous source was not 'other' changedSnmp - The discontinuity source was 'snmp', but the previous source was not 'snmp' changedNetwork - The discontinuity source was 'network', but the previous source was not 'network' changedRadio - The discontinuity source was 'radio', but the previous source was not 'radio' changedSatellite - The discontinuity source was 'satellite', but the previous source was not 'satellite' changedLocal - The discontinuity source was 'local', but the previous source was not 'local'</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-831">26048_1-831</a></span>  Determine time discontinuity information</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Clock-MIB-21">
+          <td class="id-col">Clock-MIB-21</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDiscontinuityDelta</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>16&nbsp;Change implemented in last discontinuity</h1>
+            <div class="htmlContent"><p>The number of milliseconds that the discontinuity advanced the clock. A negative value indicates that the new time moved the clock backwards. A value of 0x80 00 00 00 indicates an unknown state (e.g., the clock has not been set since the last reboot). The range accounts for any delta within 24+ days; deltas outside of the range of this object shall indicate 0x80 00 00 01 for excessive roll-backs and 0x7F FF FF FF for excessive advances of the clock.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-831">26048_1-831</a></span>  Determine time discontinuity information</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Clock-MIB-22">
+          <td class="id-col">Clock-MIB-22</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDiscontinuityUpTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>17&nbsp;Indication of when last discontinuity was made</h1>
+            <div class="htmlContent"><p>The value of sysUpTime when the discontinuity value was implemented.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-831">26048_1-831</a></span>  Determine time discontinuity information</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Clock-MIB-23">
+          <td class="id-col">Clock-MIB-23</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDiscontinuityMaxAdjustment</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>18&nbsp;Definition of a discontinuity</h1>
+            <div class="htmlContent"><p>The minimum number of milliseconds that the clock must be adjusted by (forwards or backwards) in order for the field device to record a discontinuity. The field device shall not support values less than its fdClockResolution value.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-823">26048_1-823</a></span>  Configure UTC clock</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-824">26048_1-824</a></span>  Confirm UTC clock configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-24</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">ClockLocal </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-25</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdClockLocal</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for managing the local clock parameters.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Clock-MIB-26">
+          <td class="id-col">Clock-MIB-26</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockLocalStandardTimeZone</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>19&nbsp;Standard time zone</h1>
+            <div class="htmlContent"><p>The number of seconds between UTC time and the local standard time zone (not considering any daylight savings time adjustments). Positive values represent time zones in the eastern hemisphere; negative values represent time zones in the western hemisphere.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-846">26048_1-846</a></span>  Configure local clock</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-847">26048_1-847</a></span>  Confirm local clock configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                    </tr>
+        <tr id="Clock-MIB-27">
+          <td class="id-col">Clock-MIB-27</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockLocalTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>20&nbsp;Local time</h1>
+            <div class="htmlContent"><p>The local time of day measured in milliseconds from local midnight; the value shall reflect the sum of fdClockUtcTime + (fdClockLocalStandardTimeZone * 1000) + (fdClockLocalDstAdjustment * 1000).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-848">26048_1-848</a></span>  Determine local clock time</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Clock-MIB-28">
+          <td class="id-col">Clock-MIB-28</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockLocalDate</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>21&nbsp;Local date</h1>
+            <div class="htmlContent"><p>The local Gregorian Date per the values of fdClockUtcTime, fdClockLocalStandardTimeZone, and fdClockLocalDstAdjustment.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-848">26048_1-848</a></span>  Determine local clock time</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Clock-MIB-29">
+          <td class="id-col">Clock-MIB-29</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockLocalDstAdjustment</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>22&nbsp;Current DST adjustment</h1>
+            <div class="htmlContent"><p>The number of seconds of the current offset due to daylight savings time. The value of this object shall be sum of the fdClockLocalDstOffset values from all active rows of the fdClockLocalDstTable where fdClockLocalDstApplied is equal to 'true'; if no such rows exist, the value of this object shall be zero (0).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-857">26048_1-857</a></span>  Determine daylight savings time adjustme…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Clock-MIB-30">
+          <td class="id-col">Clock-MIB-30</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockLocalDstMaxEntries</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>23&nbsp;Maximum entries in DST table</h1>
+            <div class="htmlContent"><p>The maximum number of entries allowed within the fdClockDstTable.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-852">26048_1-852</a></span>  Determine daylight saving time capabilit…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-31</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">ClockDst </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Clock-MIB-32">
+          <td class="id-col">Clock-MIB-32</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>24&nbsp;DST table</h1>
+            <div class="htmlContent"><p>A dynamic table where each entry defines the characteristics of a daylight savings time rule (e.g., when it begins, when it ends, and how much of an offset is created).</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-33</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The definition of a daylight saving time event pair.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-34</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdClockDstEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Clock-MIB-35">
+          <td class="id-col">Clock-MIB-35</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>25&nbsp;DST index</h1>
+            <div class="htmlContent"><p>An index used to identify the row within the fdClockDstTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="Clock-MIB-36">
+          <td class="id-col">Clock-MIB-36</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstBeginMonth</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>26&nbsp;Start month for DST entry</h1>
+            <div class="htmlContent"><p>Indicates the month that is combined with fdClockLocalDstBeginDayOfMonth to determine the base date used to calculate the start of daylight savings time using other object values in this row. This is often the month in which daylight savings time begins, but may not be. For example, if the value of this object is December, beginDayOfMonth is 31, and beginOccurences is 'second'; daylight savings time will begin on the second week after 31 December, which would be in January of the following year.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-854">26048_1-854</a></span>  Configure daylight savings schedule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-855">26048_1-855</a></span>  Confirm daylight savings schedule config…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Clock-MIB-37">
+          <td class="id-col">Clock-MIB-37</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstBeginOccurrences</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>27&nbsp;Algorithm used to select start date</h1>
+            <div class="htmlContent"><p>If the value is 1-4, daylight savings time shall begin on the &lt;named value of this object&gt; &lt;beginDayOfWeek&gt; on or after &lt;beginDayOfMonth&gt;&lt;beginMonth&gt;. If the value is 5-8, daylight savings time shall begin on the &lt;named value of this object&gt; &lt;beginDayOfWeek&gt; on or before &lt;beginDayOfMonth&gt; &lt;beginMonth&gt;. If the value is 9, daylight savings time shall begin on the &lt;beginDayOfMonth&gt; &lt;beginMonth&gt;. For example, if the value of this object is 2, the value of fdClockDstBeginDayOfWeek is 7, fdClockDstBeginDayOfMonth is 8 and fdClockDstBeginMonth is 3; daylight savings time would begin on the &lt;second&gt; &lt;Sunday&gt; on or after &lt;8&gt; &lt;March&gt;.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-854">26048_1-854</a></span>  Configure daylight savings schedule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-855">26048_1-855</a></span>  Confirm daylight savings schedule config…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Clock-MIB-38">
+          <td class="id-col">Clock-MIB-38</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstBeginDayOfWeek</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>28&nbsp;Day of week on which DST begins</h1>
+            <div class="htmlContent"><p>Identifies the day of week on which daylight savings time begins.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-854">26048_1-854</a></span>  Configure daylight savings schedule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-855">26048_1-855</a></span>  Confirm daylight savings schedule config…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Clock-MIB-39">
+          <td class="id-col">Clock-MIB-39</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstBeginDayOfMonth</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>29&nbsp;Date on which DST begins</h1>
+            <div class="htmlContent"><p>Identifies the day of the fdClockDstBeginMonth from which to calculate the start date of daylight savings. See fdClockDstBeginOccurrences for more details.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-854">26048_1-854</a></span>  Configure daylight savings schedule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-855">26048_1-855</a></span>  Confirm daylight savings schedule config…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Clock-MIB-40">
+          <td class="id-col">Clock-MIB-40</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstBeginTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>30&nbsp;Time at which DST adjustment begins</h1>
+            <div class="htmlContent"><p>Indicates the nominal (local) time of day when the offset shall be applied in milliseconds past midnight. The nominal milliseconds past midnight may be different than actual milliseconds past midnight if the fdClockLocalTime was adjusted for any reason (e.g., another entry in this table).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-854">26048_1-854</a></span>  Configure daylight savings schedule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-855">26048_1-855</a></span>  Confirm daylight savings schedule config…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Clock-MIB-41">
+          <td class="id-col">Clock-MIB-41</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstEndMonth</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>31&nbsp;End month for DST entry</h1>
+            <div class="htmlContent"><p>The month that is combined with fdClockDstEndDayOfMonth to determine the base date used to calculate the end of daylight savings time using other object values in this row. This is often the month in which daylight savings time ends, but may not be. For example, if the value of this object is December, endDayOfMonth is 31, and endOccurences is 'second'; daylight savings time will end in January of the following year.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-854">26048_1-854</a></span>  Configure daylight savings schedule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-855">26048_1-855</a></span>  Confirm daylight savings schedule config…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Clock-MIB-42">
+          <td class="id-col">Clock-MIB-42</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstEndOccurrences</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>32&nbsp;Algorithm used to select end date</h1>
+            <div class="htmlContent"><p>If the value is 1-4, daylight savings time shall end on the &lt;named value of this object&gt; &lt;endDayOfWeek&gt; on or after &lt;endDayOfMonth&gt; &lt;endMonth&gt;. If the value is 5-8, daylight savings time shall end on the &lt;named value of this object&gt; &lt;endDayOfWeek&gt; on or before &lt;endDayOfMonth&gt; &lt;endMonth&gt;. If the value is 9, daylight savings time shall end on the &lt;endDayOfMonth&gt; of &lt;endMonth&gt;.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-854">26048_1-854</a></span>  Configure daylight savings schedule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-855">26048_1-855</a></span>  Confirm daylight savings schedule config…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Clock-MIB-43">
+          <td class="id-col">Clock-MIB-43</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstEndDayOfWeek</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>33&nbsp;Day of week on which DST ends</h1>
+            <div class="htmlContent"><p>Identifies the day of week on which daylight savings time ends.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-854">26048_1-854</a></span>  Configure daylight savings schedule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-855">26048_1-855</a></span>  Confirm daylight savings schedule config…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Clock-MIB-44">
+          <td class="id-col">Clock-MIB-44</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstEndDayOfMonth</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>34&nbsp;Date on which DST ends</h1>
+            <div class="htmlContent"><p>The day of the month from which to calculate the end of daylight savings time per the rules defined in endOccurrences.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-854">26048_1-854</a></span>  Configure daylight savings schedule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-855">26048_1-855</a></span>  Confirm daylight savings schedule config…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Clock-MIB-45">
+          <td class="id-col">Clock-MIB-45</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstEndTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>35&nbsp;Time at which DST adjustment ends</h1>
+            <div class="htmlContent"><p>Indicates the time of day when the offset specified in this row shall be removed (if it is currently applied). For example, if the value of this object is 1800000 and offset is 3600000, the daylight savings time offset will be removed at the first instance of 00:30 on the identified end date. Removing the offset in this case would cause the local time to fall back to 23:30 on the previous day and then the clock would run normally.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-854">26048_1-854</a></span>  Configure daylight savings schedule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-855">26048_1-855</a></span>  Confirm daylight savings schedule config…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Clock-MIB-46">
+          <td class="id-col">Clock-MIB-46</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstOffset</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>36&nbsp;Adjustment made by DST entry</h1>
+            <div class="htmlContent"><p>The number of seconds to advance the local clock when this row of daylight savings time is in effect. The total adjustment made to the local clock shall be the sum of all rows where the daylight savings time is in effect.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-854">26048_1-854</a></span>  Configure daylight savings schedule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-855">26048_1-855</a></span>  Confirm daylight savings schedule config…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Clock-MIB-47">
+          <td class="id-col">Clock-MIB-47</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstApplied</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>37&nbsp;Indication whether this DST entry is active</h1>
+            <div class="htmlContent"><p>Indicates whether the offset defined by the row is currently applied.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-856">26048_1-856</a></span>  Determine daylight savings time active</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Clock-MIB-48">
+          <td class="id-col">Clock-MIB-48</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstStorageType</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>38&nbsp;DST storage type</h1>
+            <div class="htmlContent"><p>The type of memory in which this entry is stored.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-854">26048_1-854</a></span>  Configure daylight savings schedule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-855">26048_1-855</a></span>  Confirm daylight savings schedule config…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Clock-MIB-49">
+          <td class="id-col">Clock-MIB-49</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdClockDstRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>39&nbsp;DST row status</h1>
+            <div class="htmlContent"><p>The status of this conceptual row. The value of this object shall be 'notReady' whenever the offset for this row is set to zero (0). Setting this object to 'notInService' while the offset defined by this row is currently applied will immediately remove the offset (adjusting the local time). Setting this object to 'active' shall immediately cause the offset to be applied per the rules defined by this row of the table as if the row had been active the entire time. The other objects in this row may not be modified while the value of this object is 'active'. An attempt to set any other object in this row while this object is 'active' shall result in an inconsistentValue error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-854">26048_1-854</a></span>  Configure daylight savings schedule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-855">26048_1-855</a></span>  Confirm daylight savings schedule config…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-50</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Conformance Information </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-51</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdClockConformance</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node containing conformance statements related to the fdClockMIB, as defined in ISO/TS 20684-7.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-52</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdClockCompliances</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for compliance statements for the fdClockMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-53</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdClockGroups</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for group definitions related to fdClockMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-54</td>
+          <td class="custom-col htmlContent">module-compliance</td>
+                      <td class="custom-col htmlContent">fdClockComplianceV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>An implementation that supports a local clock may support DST settings.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-55</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdUtcClockGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information that identifies the capabilities of the UTC Clock.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-56</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdLocalClockGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information used to configure the Local Clock.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-57</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdDstClockGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information that describes the capabilities of the daylight saving time (a.k.a. summer time) feature of the Local Clock.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Clock-MIB-58</td>
+          <td class="custom-col htmlContent">end</td>
+                      <td class="custom-col htmlContent">end</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+      </tbody>
+    </table>
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

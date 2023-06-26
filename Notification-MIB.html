@@ -1,0 +1,1222 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>Notification</h1><p><em>Last modified on 2023-06-25 13:46</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-6">1 Notification enable</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-7">2 Total notification events</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-8">3 Total notification packets</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-9">4 Total dropped notifications</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-10">5 Total notification failures</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-11">6 Notification owner table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-14">7 Maximum notification factories for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-15">8 Maximum notification channels for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-16">9 Number of notification events for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-17">10 Number of notification packets for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-18">11 Number of dropped notifications for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-19">12 Number of notification failures for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-21">13 Notification mode support</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-22">14 Maximum size of notifications</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-23">15 Notification factory table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-26">16 Notification factory index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-27">17 Notification factory description</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-28">18 Context for object to be reported in notification </a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-29">19 Object identifier for value to be reported in notification</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-30">20 Maximum number of aggregated events within packet</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-31">21 Time to aggregate before sending notification packet</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-32">22 Allow use of notification queue</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-33">23 Notification acknowledgements enabled</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-34">24 Notification factory channel</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-35">25 Number of events from notification factory</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-36">26 Notification factory time stamp</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-37">27 Notification factory security model</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-38">28 Notification factory security level</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-39">29 Notification factory security name</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-40">30 Notification factory storage type</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-41">31 Notification factory row status</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-42">32 Notification channel table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-45">33 Notification channel index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-46">34 Notification channel description</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-47">35 Target for notification channel</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-48">36 Queue depth for notification channel</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-49">37 Maximum stream rate for notification channel</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-50">38 Maximum notification size for notification channel</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-51">39 Number of packets for notification channel</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-52">40 Number of dropped packets for notification channel</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-53">41 Number of packet failures for notification channel</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-54">42 Notification channel time stamp</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-55">43 Clear notification channel queue</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-56">44 Notification channel storage type</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-57">45 Notification channel row status</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-59">46 Notification data</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Notification-MIB-61">47 Notification packet</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col" style="color: white;"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Type</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Name</th>
+          <th class="description-col" style="color: white;"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col" style="color: white;"><i class="fas fa-link"></i> Links</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Access</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col">Notification-MIB-1</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Notification Header </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-2</td>
+          <td class="custom-col htmlContent">mib</td>
+                      <td class="custom-col htmlContent">ISO26048-1-Notification</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><pre>  <br>MODULE-IDENTITY, OBJECT-TYPE, OBJECT-IDENTITY, Unsigned32,<br>NOTIFICATION-TYPE<br>                                                    FROM SNMPv2-SMI<br>                                                      -- RFC 2578<br>RowStatus, StorageType, TimeStamp, TruthValue, VariablePointer<br>                                                    FROM SNMPv2-TC<br>                                                      -- RFC 2579<br>MODULE-COMPLIANCE, OBJECT-GROUP, NOTIFICATION-GROUP<br>                                                    FROM SNMPv2-CONF<br>                                                      -- RFC 2580<br>SnmpAdminString, SnmpSecurityLevel, SnmpSecurityModel<br>                                                    FROM SNMP-FRAMEWORK-MIB<br>                                                      -- RFC 3411<br>ITSCounter32, ITSOerString, ITSPositive8, ITSPositive16, ITSRelativeRowPointer, <br>ITSUnsigned8, ITSUnsigned16<br>                                                    FROM ISO26048-1-FieldDevice<br>fdGlobalMIB, fdAdminGlobal, fdGlobalConformance<br>                                                    FROM ISO26048-1-Global<br>fdOwnerEntry, fdOwnerIndex<br>                                                    FROM ISO26048-1-Owner<br>  <br></pre></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-3</td>
+          <td class="custom-col htmlContent">module-identity</td>
+                      <td class="custom-col htmlContent">fdNotifyMIB</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>This MIB defines a mechanism by which a field device can be configured to manage the transmission of notifications to one or more managers in an efficient manner. Copyright (C) International Organization for Standardization (ISO). This MIB module is part of ISO 26048-1; see ISO 26048-1 for full legal notices.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-4</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Administrative Objects </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-5</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdAdminNotifyObjects</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node defining management information related to the administration of the notification feature.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Notification-MIB-6">
+          <td class="id-col">Notification-MIB-6</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminNotifyEnabled</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>1&nbsp;Notification enable</h1>
+            <div class="htmlContent"><p>An indication of whether the filed device is allowed to generate Notification Events and send Notification Packets. Changing the value to false shall result in all queued Notification Packets on all channels to be cleared, all buffered Notification Events on all channels to be cleared, and will prevent the generation of any new Notification Events from any Notification Factory.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-663">26048_1-663</a></span>  Change enabled status for all notificati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                    </tr>
+        <tr id="Notification-MIB-7">
+          <td class="id-col">Notification-MIB-7</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminNotifyTotalEvents</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>2&nbsp;Total notification events</h1>
+            <div class="htmlContent"><p>The number of Notification Events generated by this context since the last initialization (i.e., reboot).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-633">26048_1-633</a></span>  Retrieve administrative notification sta…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Notification-MIB-8">
+          <td class="id-col">Notification-MIB-8</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminNotifyTotalPackets</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>3&nbsp;Total notification packets</h1>
+            <div class="htmlContent"><p>The number of Notification Packets generated by this context since the last initialization (i.e., reboot).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-633">26048_1-633</a></span>  Retrieve administrative notification sta…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Notification-MIB-9">
+          <td class="id-col">Notification-MIB-9</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminNotifyTotalDrops</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>4&nbsp;Total dropped notifications</h1>
+            <div class="htmlContent"><p>The number of Notification Packets generated by any Notification Channel that have been dropped prior to transmission for any reason since the last initialization (i.e., reboot).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-633">26048_1-633</a></span>  Retrieve administrative notification sta…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Notification-MIB-10">
+          <td class="id-col">Notification-MIB-10</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminNotifyTotalFailures</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>5&nbsp;Total notification failures</h1>
+            <div class="htmlContent"><p>The number of times any notification channel has transmitted an inform packet and has not received an acknowledgement in a timely fashion since the last initialization (i.e., reboot).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-633">26048_1-633</a></span>  Retrieve administrative notification sta…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Notification-MIB-11">
+          <td class="id-col">Notification-MIB-11</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerNotifyTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>6&nbsp;Notification owner table</h1>
+            <div class="htmlContent"><p>A table containing configuration rights for the notification-realted tables for specific owners.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-12</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerNotifyEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A row in the fdOwnerNotifyTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-13</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdOwnerNotifyEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Notification-MIB-14">
+          <td class="id-col">Notification-MIB-14</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerNotifyMaxFactories</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>7&nbsp;Maximum notification factories for owner</h1>
+            <div class="htmlContent"><p>The maximum number of rows that this owner is allowed to manage within the fdNotifyFactoryTable at any point in time.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-634">26048_1-634</a></span>  Configure notification owner</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-635">26048_1-635</a></span>  Confirm notification owner configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-15">
+          <td class="id-col">Notification-MIB-15</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerNotifyMaxChannels</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>8&nbsp;Maximum notification channels for owner</h1>
+            <div class="htmlContent"><p>The maximum number of rows that this owner is allowed to manage within the fdNotifyChannelTable at any point in time.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-634">26048_1-634</a></span>  Configure notification owner</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-635">26048_1-635</a></span>  Confirm notification owner configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-16">
+          <td class="id-col">Notification-MIB-16</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerNotifyEvents</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>9&nbsp;Number of notification events for owner</h1>
+            <div class="htmlContent"><p>The number of times any notification factory associated with this owner has generated a notification event since the last discontinuity for this owner. The last discontinuity is indicated by fdOwnerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-636">26048_1-636</a></span>  Retrieve notification owner statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Notification-MIB-17">
+          <td class="id-col">Notification-MIB-17</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerNotifyPackets</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>10&nbsp;Number of notification packets for owner</h1>
+            <div class="htmlContent"><p>The number of times any notification channel associated with this owner has transmitted a notification packet since the last discontinuity for this owner. The last discontinuity is indicated by fdOwnerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-636">26048_1-636</a></span>  Retrieve notification owner statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Notification-MIB-18">
+          <td class="id-col">Notification-MIB-18</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerNotifyDrops</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>11&nbsp;Number of dropped notifications for owner</h1>
+            <div class="htmlContent"><p>The number of Notification Packets generated by any Notification Channel associated with this owner that have been dropped prior to transmission for any reason since the last discontinuity for this owner. The last discontinuity is indicated by the fdOwnerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-636">26048_1-636</a></span>  Retrieve notification owner statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Notification-MIB-19">
+          <td class="id-col">Notification-MIB-19</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerNotifyFailures</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>12&nbsp;Number of notification failures for owner</h1>
+            <div class="htmlContent"><p>The number of times any notification channel associated with this owner has transmitted an inform packet and has not received an acknowledgement in a timely fashion since the last discontinuity for this owner. The last discontinuity is indicated by fdOwnerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-636">26048_1-636</a></span>  Retrieve notification owner statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-20</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Notification Objects </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Notification-MIB-21">
+          <td class="id-col">Notification-MIB-21</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifiesModeSupport</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>13&nbsp;Notification mode support</h1>
+            <div class="htmlContent"><p>An indication of the notification features that the field device supports.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-618">26048_1-618</a></span>  Determine notification factory capabilit…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Notification-MIB-22">
+          <td class="id-col">Notification-MIB-22</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifiesMaxSize</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>14&nbsp;Maximum size of notifications</h1>
+            <div class="htmlContent"><p>The maximum size, in octets, that the field device supports for a notification.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-618">26048_1-618</a></span>  Determine notification factory capabilit…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Notification-MIB-23">
+          <td class="id-col">Notification-MIB-23</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactoryTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>15&nbsp;Notification factory table</h1>
+            <div class="htmlContent"><p>A table of notification factories that define how notifications are to be generated and sent.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-24</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactoryEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The definition of a notification factory.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-25</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdNotifyFactoryEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Notification-MIB-26">
+          <td class="id-col">Notification-MIB-26</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactoryIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>16&nbsp;Notification factory index</h1>
+            <div class="htmlContent"><p>The index of this notification factory within the scope of fdOwnerIndex. The fdOwnerIndex and this value are transmitted as a part of the Notification Event to identify the notification factory used to generate the notification. NOTE: If desired, multiple notification factories can be configured exactly the same with the different values for fdOwnerIndex and fdNotifyFactoryIndex serving as an indicator of what event initiated the notification. For example, two different conditional triggers might be defined, each calling a different action group, which call different notification factories. The resulting notifications would be transmitted with different index values even if the configuration of the two factories were identical. It is the responsibility of the SNMP Target to understand the configuration of the notification factory, including the value of fdNotifyFactoryObjectID so that it can successfully decode the associated dataValue field of the received notification.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="Notification-MIB-27">
+          <td class="id-col">Notification-MIB-27</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactoryDescription</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>17&nbsp;Notification factory description</h1>
+            <div class="htmlContent"><p>A textual description of this notification factory.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-621">26048_1-621</a></span>  Configure a notification factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-628">26048_1-628</a></span>  Confirm notification factory configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-28">
+          <td class="id-col">Notification-MIB-28</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactoryObjectContext</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>18&nbsp;Context for object to be reported in notification </h1>
+            <div class="htmlContent"><p>The management context from which to obtain fdNotifyFactoryObjectID.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-621">26048_1-621</a></span>  Configure a notification factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-628">26048_1-628</a></span>  Confirm notification factory configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-29">
+          <td class="id-col">Notification-MIB-29</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactoryObjectID</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>19&nbsp;Object identifier for value to be reported in notification</h1>
+            <div class="htmlContent"><p>The object identifier of the object instance who's value is to be included in the Notification Event. When creating a Notification Event, the value shall be obtained using the security credentials of the SNMP Target to which this Notification Event is to be sent. If the object instance does not exist within the defined MIB view, an SNMP NULL shall be returned instead.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-621">26048_1-621</a></span>  Configure a notification factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-628">26048_1-628</a></span>  Confirm notification factory configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-30">
+          <td class="id-col">Notification-MIB-30</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactoryAggMaxEvents</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>20&nbsp;Maximum number of aggregated events within packet</h1>
+            <div class="htmlContent"><p>The maximum number of Notification Events in the notification channel buffer that shall cause the notification channel to group all Notification Events in the buffer and immediately send to the fdNotifyChannelEntry notify process. If the value of this object is equal to one (1), the Notification Event shall be immediately sent to the fdNotifyChannelEntry notify process as an independent Notification (i.e., without impacting the trap or inform buffer). If the value of this object is greater than one (1), the Notification Event shall be immediately sent to one of the two buffers associated with the Notification Channel. If fdNotifyFactoryAckEnabled is true, the Notification Event shall be sent to the inform buffer; if fdNotifyFactoryAckEnabled is false, the Notification Event shall be sent to the trap buffer. NOTE: This size will be exceeded if the Notification Event is added to a buffer that already has the indicated number of Notification Events</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-621">26048_1-621</a></span>  Configure a notification factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-628">26048_1-628</a></span>  Confirm notification factory configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-31">
+          <td class="id-col">Notification-MIB-31</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactoryAggregationTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>21&nbsp;Time to aggregate before sending notification packet</h1>
+            <div class="htmlContent"><p>The maximum time, in seconds, that a Notification Event generated by this notification factory may be held within its aggregation buffer prior to initiating the fdNotifyChannelEntry notify process. If the value of fdNotifyFactoryAggMaxEvents is one (1), the value of this object is ignored; otherwise, the Notification Event shall be added to the appropriate notification buffer (as defined by fdNotifyFactoryAggMaxEvents). When the Notification Event is added to the buffer, a countdown timer shall start for the nunber of seconds defined by this object. If the countdown timer reaches zero, all Notification Events in the buffer shall be grouped immediately into a single, aggregated Notification and immediately sent to the fdNotifyChannelEntry notify process. Once all Notification Events in the buffer have been grouped together, all countdown timers for the buffer shall be deleted. If the value of this object is zero (0), the above notification process shall start immediately.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-621">26048_1-621</a></span>  Configure a notification factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-628">26048_1-628</a></span>  Confirm notification factory configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-32">
+          <td class="id-col">Notification-MIB-32</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactoryQueueEnabled</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>22&nbsp;Allow use of notification queue</h1>
+            <div class="htmlContent"><p>An indication of whether the Notification Channel should queue the independent Notification if the channel is in anti-streaming mode when the Notification is generated. When adding a message to a notification queue, the notification channel shall determine the number of messages in the queue and if the number of messages in the queue is equal to or exceeds the configured maximum queue depth, the Notification Channel shall: b) delete the oldest notifications in the queue until the number remaining in the queue is less than the maximum queue depth; c) add the new notification message to the end of the notification queue; d) at the top of every minute, determine if there are any notifications in the notification queue. If so, it shall transmit each notification in the queue, in order from oldest to newest, until either the queue is empty or the anti-streaming rate has been met.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-621">26048_1-621</a></span>  Configure a notification factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-628">26048_1-628</a></span>  Confirm notification factory configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-33">
+          <td class="id-col">Notification-MIB-33</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactoryAckEnabled</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>23&nbsp;Notification acknowledgements enabled</h1>
+            <div class="htmlContent"><p>An indication of whether the SNMP Target will be requested to acknowledge the notification. If the value of this object is true and the value of the value of fdNotifyFactoryAggMaxEvents is one, the independent Notification Event shall be sent as an SNMP inform message. If the value of this object is true and the value of the value of fdNotifyFactoryAggMaxEvents greater than one, the Notification Event shall be be added to the inform buffer. If the value of this object is false and the value of the value of fdNotifyFactoryAggMaxEvents is one, the independent Notification Event shall be sent as an SNMP trap message. If the value of this object is false and the value of the value of fdNotifyFactoryAggMaxEvents greater than one, the Notification Event shall be be added to the trap buffer.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-621">26048_1-621</a></span>  Configure a notification factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-628">26048_1-628</a></span>  Confirm notification factory configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-34">
+          <td class="id-col">Notification-MIB-34</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactoryChannel</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>24&nbsp;Notification factory channel</h1>
+            <div class="htmlContent"><p>A pointer to the fdNotifyChannelEntry that identifies the notification channel to which Notification Events created by this Notification Factory are to be sent. The RELATIVE OID has a root of fdNotifyChannelTarget. It is expected that the fdOwnerIndex of the notification channel will typically be the same as that for the notification factory, but the design allows for a more complex relationship. For example, a manager might want to define more than 255 notification factories while assigning them to a common set of notification channels. In this case, the one manager might be associated with two fdOwnerIndex values but some of the notification factories using the second fdOwnerIndex might be configured to send notifications to a notification channel using the first fdOwnerIndex. As long as the permissions are properly configured, this is allowed.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-621">26048_1-621</a></span>  Configure a notification factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-628">26048_1-628</a></span>  Confirm notification factory configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-35">
+          <td class="id-col">Notification-MIB-35</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactoryEvents</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>25&nbsp;Number of events from notification factory</h1>
+            <div class="htmlContent"><p>The number of Notifications Events generated by this entry in the table since the last discontinuity. The last discontinuity is indicated by the fdNotifyFactoryTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-629">26048_1-629</a></span>  Retrieve notification factory statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Notification-MIB-36">
+          <td class="id-col">Notification-MIB-36</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactoryTimeStamp</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>26&nbsp;Notification factory time stamp</h1>
+            <div class="htmlContent"><p>The value of sysUpTime at the last discontinuity of any of the counters associated with this row of the fdNotifyFactoryTable. Discontinuities occur when the row is created.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-629">26048_1-629</a></span>  Retrieve notification factory statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Notification-MIB-37">
+          <td class="id-col">Notification-MIB-37</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactorySecurityModel</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>27&nbsp;Notification factory security model</h1>
+            <div class="htmlContent"><p>The security model used to activate this row of the fdNotifyFactoryTable and to access the object referenced by fdNotifyFactoryObjectID.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="Notification-MIB-38">
+          <td class="id-col">Notification-MIB-38</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactorySecurityLevel</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>28&nbsp;Notification factory security level</h1>
+            <div class="htmlContent"><p>The security level used to activate this row of the fdNotifyFactoryTable and to access the object referenced by fdNotifyFactoryObjectID.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="Notification-MIB-39">
+          <td class="id-col">Notification-MIB-39</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactorySecurityName</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>29&nbsp;Notification factory security name</h1>
+            <div class="htmlContent"><p>The security name used to activate this row of the fdNotifyFactoryTable and to access the object referenced by fdNotifyFactoryObjectID.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="Notification-MIB-40">
+          <td class="id-col">Notification-MIB-40</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactoryStorageType</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>30&nbsp;Notification factory storage type</h1>
+            <div class="htmlContent"><p>The type of memory used to store this entry in the table.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-621">26048_1-621</a></span>  Configure a notification factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-628">26048_1-628</a></span>  Confirm notification factory configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-41">
+          <td class="id-col">Notification-MIB-41</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyFactoryRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>31&nbsp;Notification factory row status</h1>
+            <div class="htmlContent"><p>The status of this conceptual row. Any attempt to modify any other read- create object within this conceptual row while the value of this object is active (1) shall result in an inconsistentValue error. This object shall indicate notReady when fdNotifyFactoryAggMaxEvents is greater than one and fdNotifyFactoryQueueEnabled is true. This object shall indicate notReady when fdNotifyFactoryAggMaxEvents is greater than fdNotifyChannelMaxSize for its assigned notification channel.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-631">26048_1-631</a></span>  Change status of notification factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-621">26048_1-621</a></span>  Configure a notification factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-628">26048_1-628</a></span>  Confirm notification factory configurati…</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-632">26048_1-632</a></span>  Delete notification factory</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-42">
+          <td class="id-col">Notification-MIB-42</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyChannelTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>32&nbsp;Notification channel table</h1>
+            <div class="htmlContent"><p>A table containing information on how to generate, manage, and send notification packets to a specified SNMP Target.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-43</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyChannelEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>One row in the fdNotifyChannelTable. In addition to the columns defined by FdNotifyChannelEntry, each row is associated with an inform buffer, a trap buffer, a size limit for each buffer, and a shared queue (shared by informs and traps). This additional information is not accessible via SNMP and therefore is not associated with any OBJECT-TYPE definitions. Implementations are allowed to modify the internal design as long as they conform to the observable specifications defined in this MIB. Inputs Notification Events shall be received from a fdNotifyFactory either as an independent Notification (not impacting either buffer) or as an event to be added to either the channel's inform buffer or the trap buffer. When a Notification is added to a buffer, a new countdown timer shall be created for the buffer with an initial time of fdNotifyFactoryAggregationTime and the buffer's size limit will be set to the smaller of its current size limit and that identified by the fdNotifyFactoryAggMaxEvents for the newly added event. Independent Notifications shall be immediately sent; buffered events shall be grouped into an aggregate notification and sent the earlier of when: a) one of the buffer's aggregation timers expire; or b) the buffer's size limit is reached or exceeded Once the events in a buffer are aggregated into a Notification, the buffer is cleared, the buffer size limit is reset to its maximum value, and all countdown timers for the buffer are deleted. Notify Process When a new Notification is to be sent, the Notification Channel shall: a) increment the notification counter; b) finalize the serialization of the Notification; c) determine the number of notification messages (traps and informs) sent during this minute and: i) if the number of notification messages sent during the minute is less than the anti-streaming rate defined for the notification channel, the serialized notification message shall be sent to the SNMP target using its defined parameters. ii) the newly serialized notification shall be placed into the notification queue for the channel if - the number of notification messages sent during the minute is equal to or exceeds the anti-streaming rate defined for the notification channel, - the Notification is an independent Notification, and - the value of its fdNotifyFactoryQueueEnabled is true; or iii) otherwise, the newly serialized notification shall be dropped and the counter of lost notifications shall be incremented by one.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-44</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdNotifyChannelEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Notification-MIB-45">
+          <td class="id-col">Notification-MIB-45</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyChannelIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>33&nbsp;Notification channel index</h1>
+            <div class="htmlContent"><p>A numeric index that identifies a unique notification channel for the specified fdOwnerIndex. The fdOwnerIndex and this value are transitted with the notification to allow the receiving SNMP Target (manager) to determine which notification channel sent the notification.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="Notification-MIB-46">
+          <td class="id-col">Notification-MIB-46</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyChannelDescription</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>34&nbsp;Notification channel description</h1>
+            <div class="htmlContent"><p>A textual description of this notification channel.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-651">26048_1-651</a></span>  Configure a notification channel</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-657">26048_1-657</a></span>  Confirm notification channel configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-47">
+          <td class="id-col">Notification-MIB-47</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyChannelTarget</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>35&nbsp;Target for notification channel</h1>
+            <div class="htmlContent"><p>The unique identifier associated with the snmpTargetAddrEntry to which the notification should be sent.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-651">26048_1-651</a></span>  Configure a notification channel</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-657">26048_1-657</a></span>  Confirm notification channel configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-48">
+          <td class="id-col">Notification-MIB-48</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyChannelQueueDepth</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>36&nbsp;Queue depth for notification channel</h1>
+            <div class="htmlContent"><p>The number of Notification Packets that the Notification Channel will allow within the queue (i.e., when the anti-streaming rate has been exceeded).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-651">26048_1-651</a></span>  Configure a notification channel</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-657">26048_1-657</a></span>  Confirm notification channel configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-49">
+          <td class="id-col">Notification-MIB-49</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyChannelAntiStreamRate</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>37&nbsp;Maximum stream rate for notification channel</h1>
+            <div class="htmlContent"><p>The maximum number of notification Packets that this Notification Channel will send within any minute (from local top of minute to next top of minute). Notification Packets received for transmission after this number has been reached shall be queued or dropped according to the rules defined in ISO/TS 20684-4, Section 6.2.4.2 and 6.2.4.3.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-651">26048_1-651</a></span>  Configure a notification channel</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-657">26048_1-657</a></span>  Confirm notification channel configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-50">
+          <td class="id-col">Notification-MIB-50</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyChannelMaxSize</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>38&nbsp;Maximum notification size for notification channel</h1>
+            <div class="htmlContent"><p>The maximum size of any notification allowed to be sent on this channel. This value should normally be set to the same value as fdNotifiesMaxSize, unless the target to which the notifications are to be sent supports a lower threshold.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-651">26048_1-651</a></span>  Configure a notification channel</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-657">26048_1-657</a></span>  Confirm notification channel configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-51">
+          <td class="id-col">Notification-MIB-51</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyChannelPackets</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>39&nbsp;Number of packets for notification channel</h1>
+            <div class="htmlContent"><p>The number of Notification Packets generated by this Notification Channel since the last discontinuity. The last discontinuity is indicated by the fdNotifyChannelTimeStamp. The fdNotifyChannelSeqNum encoded into the FdNotificationPacket message (see fdNotifyData) shall equal the lower two octets of this value once it is incremented for the new notification.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-659">26048_1-659</a></span>  Retrieve notification channel statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Notification-MIB-52">
+          <td class="id-col">Notification-MIB-52</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyChannelDrops</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>40&nbsp;Number of dropped packets for notification channel</h1>
+            <div class="htmlContent"><p>The number of Notification Packets generated by this Notification Channel that have been dropped prior to transmission for any reason since the last discontinuity for this channel. The last discontinuity is indicated by the fdNotifyChannelTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-659">26048_1-659</a></span>  Retrieve notification channel statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Notification-MIB-53">
+          <td class="id-col">Notification-MIB-53</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyChannelFailures</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>41&nbsp;Number of packet failures for notification channel</h1>
+            <div class="htmlContent"><p>The number of times this notification channel has transmitted an inform packet and has not received an acknowledgement in a timely fashion since the last discontinuity for this channel. The last discontinuity is indicated by the fdNotifyChannelTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-659">26048_1-659</a></span>  Retrieve notification channel statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Notification-MIB-54">
+          <td class="id-col">Notification-MIB-54</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyChannelTimeStamp</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>42&nbsp;Notification channel time stamp</h1>
+            <div class="htmlContent"><p>The value sysUpTime at the last discontinuity of the counters associated with this row of the fdNotifyChannelTable. Discontinuities occur when the row is created.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-659">26048_1-659</a></span>  Retrieve notification channel statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Notification-MIB-55">
+          <td class="id-col">Notification-MIB-55</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyChannelClearQueue</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>43&nbsp;Clear notification channel queue</h1>
+            <div class="htmlContent"><p>A command that, when set to true, will clear the anti-streaming queue of notifications that are awaiting transmission. The fdNotifyChannelDroppedCount shall be incremented for each notification cleared from the buffer when this occurs. Clearing the queue will not affect the buffers managed by the Notification Aggregator.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-658">26048_1-658</a></span>  Clear notification channel queue</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-56">
+          <td class="id-col">Notification-MIB-56</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyChannelStorageType</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>44&nbsp;Notification channel storage type</h1>
+            <div class="htmlContent"><p>The storage type used to store the definition of this Notification Channel.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-651">26048_1-651</a></span>  Configure a notification channel</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-657">26048_1-657</a></span>  Confirm notification channel configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Notification-MIB-57">
+          <td class="id-col">Notification-MIB-57</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyChannelRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>45&nbsp;Notification channel row status</h1>
+            <div class="htmlContent"><p>The status of this conceptual row. Any attempt to modify any read-create object within this conceptual row, other than this object and fdNotifyChannelClearQueue, while the value of this object is active (1) shall result in an inconsistentValue error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-651">26048_1-651</a></span>  Configure a notification channel</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-657">26048_1-657</a></span>  Confirm notification channel configurati…</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-662">26048_1-662</a></span>  Delete a notification channel</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-58</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Notification Objects </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Notification-MIB-59">
+          <td class="id-col">Notification-MIB-59</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdNotifyData</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>46&nbsp;Notification data</h1>
+            <div class="htmlContent"><p>The data contained in the most recent notification generated by any Notification Channel. This object packages data related to (potentially) multiple events into a single compact structure. The contents of this object shall be defined by the following ASN.1 structure encoded with the Octet Encoding Rules (OER). FdNotificationPacket ::= SEQUENCE { fdNotifyChannelIndex INTEGER (0..255), fdNotifyChannelSeqNum INTEGER (0..255), fdNotifyEvents FdNotifyEvents } FdNotifyEvents ::= SEQUENCE OF FdNotifyEvent FdNotifyEvent ::= SEQUENCE { fdOwnerIndex INTEGER (0..255), -- for NotifyFactory fdNotifyFactoryIndex INTEGER (0..65535), eventTimestamp ITSDailyTimestamp, logarithmicLatency ITSUnsigned8, data FdNotifyData } FdNotifyData ::= CHOICE { dataValue ITSOerString, dataError ITSPduErrorStatus (-128..127)} The fields starting with 'fd' represent the object types with the corresponding names; the object instances are those related to the most recent notification generated. The value of fdNotifySeqNum shall be the value of the object after the new notification packet is generated. fdOwnerIndex refers to the instance associated with the fdNotifyFactoryIndex; any ambiguity in the meaning of fdNotifyChannelIndex (i.e., in isolation of its associated fdOwnerIndex) can be resolved by determining the value of: fdNotifyFactoryChannel.fdOwnerIndex.fdNotifyFactoryIndex Such ambiguities will only arise in configurations that have factories that reference channels with different owners, and even then it is expected that most such ambiguities can be avoided with reasonable planning of index assignments. Strictly speaking, the packet does not need to contain the channel index, but its inclusion early in the packet might assist implementations in prioritizing the processing of notifications. The eventTimestamp represents the UTC time-of-day at which the trigger that initiated the notification event was fired. The notificationLatency represents the base 2 logarithm of the number of milliseconds that elapsed between the eventTimeStamp and the time at which the collection of data finished, multiplied by 10 and rounded to the nearest integer value. For example, if exactly one second (1000 ms) elapsed between the detection of the event and the collection of the notification data, the notification latency value would be round(log2(1000) * 10) = round(9.966 * 10) = round(99.66) = 100. A latency value of 255 represents a latency in excess of 12.7 hours. The dataValue represents the OER encoded value of the object referenced by fdNotifyFactoryObjectID as obtained using the fdNotifyFactoryObjectContext and the security details associated with the SNMP Target of the Notification Channel identified by fdNotifyChannelOwner and fdNotifyChannelName. If the request for this data fails using this security information, the data field shall contain the dataError value instead to indicate the type of failure.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-698">26048_1-698</a></span>  Retrieve last notification contents</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-60</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdNotifyNotifications</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node defining notifications for the fdNotifyMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Notification-MIB-61">
+          <td class="id-col">Notification-MIB-61</td>
+          <td class="custom-col htmlContent">notification-type</td>
+                      <td class="custom-col htmlContent">fdNotifyPacket</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>47&nbsp;Notification packet</h1>
+            <div class="htmlContent"><p>The notification used by each Notification Channel. The fdNotificationData object shall be populated with the data to be sent with the notification immediately prior to generating the notification.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-664">26048_1-664</a></span>  Send notifications to SNMP target</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-62</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Conformance Information </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-63</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdNotifyConformance</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node containing conformance statements related to the fdNotifyMIB, as defined in ISO/TS 26048-1.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-64</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdNotifyCompliances</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for compliance statements for the fdNotifyMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-65</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdNotifyGroups</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for group definitions related to fdNotifyMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-66</td>
+          <td class="custom-col htmlContent">module-compliance</td>
+                      <td class="custom-col htmlContent">fdNotifyMIBCompliance</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The conformance statement for the field device notification MIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-67</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdNotifyAdminGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information for the administration of the entire notification feature.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-68</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdNotifyFactoryGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information for the notification factory.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-69</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdNotifyChannelGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information for the notification channel.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-70</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdNotifyDataGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information that defines the data contained within a notification.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Notification-MIB-71</td>
+          <td class="custom-col htmlContent">end</td>
+                      <td class="custom-col htmlContent">end</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+      </tbody>
+    </table>
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

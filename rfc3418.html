@@ -1,0 +1,973 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>SNMPv2-MIB</h1><p><em>Last modified on 2023-06-23 11:18</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-3">1 sysDescr</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-4">2 sysObjectID</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-5">3 sysUpTime</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-6">4 sysContact</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-7">5 sysName</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-8">6 sysLocation</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-9">7 sysServices</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-10">8 sysORLastChange</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-11">9 sysORTable</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-12">10 sysOREntry</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-14">11 sysORIndex</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-15">12 sysORID</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-16">13 sysORDescr</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-17">14 sysORUpTime</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-18">15 snmpInPkts</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-19">16 snmpInBadVersions</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-20">17 snmpInBadCommunityNames</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-21">18 snmpInBadCommunityUses</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-22">19 snmpInASNParseErrs</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-23">20 snmpEnableAuthenTraps</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-24">21 snmpSilentDrops</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-25">22 snmpProxyDrops</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-26">23 snmpTrapOID</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-27">24 snmpTrapEnterprise</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-32">25 snmpSetSerialNo</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-35">26 snmpOutPkts</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-36">27 snmpInTooBigs</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-37">28 snmpInNoSuchNames</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-38">29 snmpInBadValues</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-39">30 snmpInReadOnlys</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-40">31 snmpInGenErrs</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-41">32 snmpInTotalReqVars</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-42">33 snmpInTotalSetVars</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-43">34 snmpInGetRequests</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-44">35 snmpInGetNexts</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-45">36 snmpInSetRequests</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-46">37 snmpInGetResponses</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-47">38 snmpInTraps</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-48">39 snmpOutTooBigs</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-49">40 snmpOutNoSuchNames</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-50">41 snmpOutBadValues</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-51">42 snmpOutGenErrs</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-52">43 snmpOutGetRequests</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-53">44 snmpOutGetNexts</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-54">45 snmpOutSetRequests</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-55">46 snmpOutGetResponses</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#rfc3418-56">47 snmpOutTraps</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col" style="color: white;"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Type</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Name</th>
+          <th class="description-col" style="color: white;"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col" style="color: white;"><i class="fas fa-link"></i> Links</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Access</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col">rfc3418-1</td>
+          <td class="custom-col htmlContent">mib</td>
+                      <td class="custom-col htmlContent">SNMPv2-MIB</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><pre>       MODULE-IDENTITY, OBJECT-TYPE, NOTIFICATION-TYPE,
+<br>       TimeTicks, Counter32, snmpModules, mib-2
+<br>           FROM SNMPv2-SMI
+<br>       DisplayString, TestAndIncr, TimeStamp
+<br>           FROM SNMPv2-TC
+<br>       MODULE-COMPLIANCE, OBJECT-GROUP, NOTIFICATION-GROUP
+<br>           FROM SNMPv2-CONF</pre></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">rfc3418-2</td>
+          <td class="custom-col htmlContent">module-identity</td>
+                      <td class="custom-col htmlContent">snmpMIB</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The MIB module for SNMP entities. Copyright (C) The Internet Society (2002). This version of this MIB module is part of RFC 3418; see the RFC itself for full legal notices.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="rfc3418-3">
+          <td class="id-col">rfc3418-3</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">sysDescr</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>1&nbsp;sysDescr</h1>
+            <div class="htmlContent"><p>A textual description of the entity. This value should include the full name and version identification of the system's hardware type, software operating-system, and networking software.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-296">26048_1-296</a></span>  Identify the controller</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-4">
+          <td class="id-col">rfc3418-4</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">sysObjectID</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>2&nbsp;sysObjectID</h1>
+            <div class="htmlContent"><p>The vendor's authoritative identification of the network management subsystem contained in the entity. This value is allocated within the SMI enterprises subtree (1.3.6.1.4.1) and provides an easy and unambiguous means for determining `what kind of box' is being managed. For example, if vendor `Flintstones, Inc.' was assigned the subtree 1.3.6.1.4.1.424242, it could assign the identifier 1.3.6.1.4.1.424242.1.1 to its `Fred Router'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-296">26048_1-296</a></span>  Identify the controller</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-5">
+          <td class="id-col">rfc3418-5</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">sysUpTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>3&nbsp;sysUpTime</h1>
+            <div class="htmlContent"><p>The time (in hundredths of a second) since the network management portion of the system was last re-initialized.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-306">26048_1-306</a></span>  Monitor controller up time</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-6">
+          <td class="id-col">rfc3418-6</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">sysContact</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>4&nbsp;sysContact</h1>
+            <div class="htmlContent"><p>The textual identification of the contact person for this managed node, together with information on how to contact this person. If no contact information is known, the value is the zero-length string.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-292">26048_1-292</a></span>  Configure the controller&#x27;s identity</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-296">26048_1-296</a></span>  Identify the controller</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                    </tr>
+        <tr id="rfc3418-7">
+          <td class="id-col">rfc3418-7</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">sysName</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>5&nbsp;sysName</h1>
+            <div class="htmlContent"><p>An administratively-assigned name for this managed node. By convention, this is the node's fully-qualified domain name. If the name is unknown, the value is the zero-length string.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-292">26048_1-292</a></span>  Configure the controller&#x27;s identity</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-296">26048_1-296</a></span>  Identify the controller</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                    </tr>
+        <tr id="rfc3418-8">
+          <td class="id-col">rfc3418-8</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">sysLocation</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>6&nbsp;sysLocation</h1>
+            <div class="htmlContent"><p>The physical location of this node (e.g., 'telephone closet, 3rd floor'). If the location is unknown, the value is the zero-length string.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-292">26048_1-292</a></span>  Configure the controller&#x27;s identity</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-296">26048_1-296</a></span>  Identify the controller</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                    </tr>
+        <tr id="rfc3418-9">
+          <td class="id-col">rfc3418-9</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">sysServices</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>7&nbsp;sysServices</h1>
+            <div class="htmlContent"><p>A value which indicates the set of services that this entity may potentially offer. The value is a sum. This sum initially takes the value zero. Then, for each layer, L, in the range 1 through 7, that this node performs transactions for, 2 raised to (L - 1) is added to the sum. For example, a node which performs only routing functions would have a value of 4 (2^(3-1)). In contrast, a node which is a host offering application services would have a value of 72 (2^(4-1) + 2^(7-1)). Note that in the context of the Internet suite of protocols, values should be calculated accordingly: layer functionality 1 physical (e.g., repeaters) 2 datalink/subnetwork (e.g., bridges) 3 internet (e.g., supports the IP) 4 end-to-end (e.g., supports the TCP) 7 applications (e.g., supports the SMTP) For systems including OSI protocols, layers 5 and 6 may also be counted.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-287">26048_1-287</a></span>  Discover basic capabilities of the contr…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-10">
+          <td class="id-col">rfc3418-10</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">sysORLastChange</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>8&nbsp;sysORLastChange</h1>
+            <div class="htmlContent"><p>The value of sysUpTime at the time of the most recent change in state or value of any instance of sysORID.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1096">26048_1-1096</a></span>  Discover when the SNMP capabilities last…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-11">
+          <td class="id-col">rfc3418-11</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">sysORTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>9&nbsp;sysORTable</h1>
+            <div class="htmlContent"><p>The (conceptual) table listing the capabilities of the local SNMP application acting as a command responder with respect to various MIB modules. SNMP entities having dynamically-configurable support of MIB modules will have a dynamically-varying number of conceptual rows.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="rfc3418-12">
+          <td class="id-col">rfc3418-12</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">sysOREntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>10&nbsp;sysOREntry</h1>
+            <div class="htmlContent"><p>An entry (conceptual row) in the sysORTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">rfc3418-13</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">SysOREntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="rfc3418-14">
+          <td class="id-col">rfc3418-14</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">sysORIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>11&nbsp;sysORIndex</h1>
+            <div class="htmlContent"><p>The auxiliary variable used for identifying instances of the columnar objects in the sysORTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="rfc3418-15">
+          <td class="id-col">rfc3418-15</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">sysORID</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>12&nbsp;sysORID</h1>
+            <div class="htmlContent"><p>An authoritative identification of a capabilities statement with respect to various MIB modules supported by the local SNMP application acting as a command responder.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-291">26048_1-291</a></span>  Discover SNMP capabilities of the contro…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-16">
+          <td class="id-col">rfc3418-16</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">sysORDescr</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>13&nbsp;sysORDescr</h1>
+            <div class="htmlContent"><p>A textual description of the capabilities identified by the corresponding instance of sysORID.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-291">26048_1-291</a></span>  Discover SNMP capabilities of the contro…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-17">
+          <td class="id-col">rfc3418-17</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">sysORUpTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>14&nbsp;sysORUpTime</h1>
+            <div class="htmlContent"><p>The value of sysUpTime at the time this conceptual row was last instantiated.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-291">26048_1-291</a></span>  Discover SNMP capabilities of the contro…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-18">
+          <td class="id-col">rfc3418-18</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInPkts</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>15&nbsp;snmpInPkts</h1>
+            <div class="htmlContent"><p>The total number of messages delivered to the SNMP entity from the transport service.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-19">
+          <td class="id-col">rfc3418-19</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInBadVersions</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>16&nbsp;snmpInBadVersions</h1>
+            <div class="htmlContent"><p>The total number of SNMP messages which were delivered to the SNMP entity and were for an unsupported SNMP version.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-20">
+          <td class="id-col">rfc3418-20</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInBadCommunityNames</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>17&nbsp;snmpInBadCommunityNames</h1>
+            <div class="htmlContent"><p>The total number of community-based SNMP messages (for example, SNMPv1) delivered to the SNMP entity which used an SNMP community name not known to said entity. Also, implementations which authenticate community-based SNMP messages using check(s) in addition to matching the community name (for example, by also checking whether the message originated from a transport address allowed to use a specified community name) MAY include in this value the number of messages which failed the additional check(s). It is strongly RECOMMENDED that the documentation for any security model which is used to authenticate community-based SNMP messages specify the precise conditions that contribute to this value.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-21">
+          <td class="id-col">rfc3418-21</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInBadCommunityUses</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>18&nbsp;snmpInBadCommunityUses</h1>
+            <div class="htmlContent"><p>The total number of community-based SNMP messages (for example, SNMPv1) delivered to the SNMP entity which represented an SNMP operation that was not allowed for the SNMP community named in the message. The precise conditions under which this counter is incremented (if at all) depend on how the SNMP entity implements its access control mechanism and how its applications interact with that access control mechanism. It is strongly RECOMMENDED that the documentation for any access control mechanism which is used to control access to and visibility of MIB instrumentation specify the precise conditions that contribute to this value.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-22">
+          <td class="id-col">rfc3418-22</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInASNParseErrs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>19&nbsp;snmpInASNParseErrs</h1>
+            <div class="htmlContent"><p>The total number of ASN.1 or BER errors encountered by the SNMP entity when decoding received SNMP messages.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-23">
+          <td class="id-col">rfc3418-23</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpEnableAuthenTraps</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>20&nbsp;snmpEnableAuthenTraps</h1>
+            <div class="htmlContent"><p>Indicates whether the SNMP entity is permitted to generate authenticationFailure traps. The value of this object overrides any configuration information; as such, it provides a means whereby all authenticationFailure traps may be disabled. Note that it is strongly recommended that this object be stored in non-volatile memory so that it remains constant across re-initializations of the network management system.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                    </tr>
+        <tr id="rfc3418-24">
+          <td class="id-col">rfc3418-24</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpSilentDrops</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>21&nbsp;snmpSilentDrops</h1>
+            <div class="htmlContent"><p>The total number of Confirmed Class PDUs (such as GetRequest-PDUs, GetNextRequest-PDUs, GetBulkRequest-PDUs, SetRequest-PDUs, and InformRequest-PDUs) delivered to the SNMP entity which were silently dropped because the size of a reply containing an alternate Response Class PDU (such as a Response-PDU) with an empty variable-bindings field was greater than either a local constraint or the maximum message size associated with the originator of the request.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-25">
+          <td class="id-col">rfc3418-25</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpProxyDrops</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>22&nbsp;snmpProxyDrops</h1>
+            <div class="htmlContent"><p>The total number of Confirmed Class PDUs (such as GetRequest-PDUs, GetNextRequest-PDUs, GetBulkRequest-PDUs, SetRequest-PDUs, and InformRequest-PDUs) delivered to the SNMP entity which were silently dropped because the transmission of the (possibly translated) message to a proxy target failed in a manner (other than a time-out) such that no Response Class PDU (such as a Response-PDU) could be returned.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-26">
+          <td class="id-col">rfc3418-26</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpTrapOID</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>23&nbsp;snmpTrapOID</h1>
+            <div class="htmlContent"><p>The authoritative identification of the notification currently being sent. This variable occurs as the second varbind in every SNMPv2-Trap-PDU and InformRequest-PDU.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">accessible-for-notify</td>
+                    </tr>
+        <tr id="rfc3418-27">
+          <td class="id-col">rfc3418-27</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpTrapEnterprise</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>24&nbsp;snmpTrapEnterprise</h1>
+            <div class="htmlContent"><p>The authoritative identification of the enterprise associated with the trap currently being sent. When an SNMP proxy agent is mapping an RFC1157 Trap-PDU into a SNMPv2-Trap-PDU, this variable occurs as the last varbind.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">accessible-for-notify</td>
+                    </tr>
+        <tr>
+          <td class="id-col">rfc3418-28</td>
+          <td class="custom-col htmlContent">notification-type</td>
+                      <td class="custom-col htmlContent">coldStart</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A coldStart trap signifies that the SNMP entity, supporting a notification originator application, is reinitializing itself and that its configuration may have been altered.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">rfc3418-29</td>
+          <td class="custom-col htmlContent">notification-type</td>
+                      <td class="custom-col htmlContent">warmStart</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A warmStart trap signifies that the SNMP entity, supporting a notification originator application, is reinitializing itself such that its configuration is unaltered.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">rfc3418-30</td>
+          <td class="custom-col htmlContent">notification-type</td>
+                      <td class="custom-col htmlContent">--</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">rfc3418-31</td>
+          <td class="custom-col htmlContent">notification-type</td>
+                      <td class="custom-col htmlContent">authenticationFailure</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>An authenticationFailure trap signifies that the SNMP entity has received a protocol message that is not properly authenticated. While all implementations of SNMP entities MAY be capable of generating this trap, the snmpEnableAuthenTraps object indicates whether this trap will be generated.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="rfc3418-32">
+          <td class="id-col">rfc3418-32</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpSetSerialNo</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>25&nbsp;snmpSetSerialNo</h1>
+            <div class="htmlContent"><p>An advisory lock used to allow several cooperating command generator applications to coordinate their use of the SNMP set operation. This object is used for coarse-grain coordination. To achieve fine-grain coordination, one or more similar objects might be defined within each MIB group, as appropriate.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                    </tr>
+        <tr>
+          <td class="id-col">rfc3418-33</td>
+          <td class="custom-col htmlContent">module-compliance</td>
+                      <td class="custom-col htmlContent">snmpBasicCompliance</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>This group is mandatory for SNMPv2 entities which support community-based authentication.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">rfc3418-34</td>
+          <td class="custom-col htmlContent">module-compliance</td>
+                      <td class="custom-col htmlContent">snmpBasicComplianceRev2</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>This group is mandatory for an SNMP entity which supports command responder applications, and is able to reinitialize itself such that its configuration is unaltered.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="rfc3418-35">
+          <td class="id-col">rfc3418-35</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpOutPkts</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>26&nbsp;snmpOutPkts</h1>
+            <div class="htmlContent"><p>The total number of SNMP Messages which were passed from the SNMP protocol entity to the transport service.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-36">
+          <td class="id-col">rfc3418-36</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInTooBigs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>27&nbsp;snmpInTooBigs</h1>
+            <div class="htmlContent"><p>The total number of SNMP PDUs which were delivered to the SNMP protocol entity and for which the value of the error-status field was `tooBig'.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-37">
+          <td class="id-col">rfc3418-37</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInNoSuchNames</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>28&nbsp;snmpInNoSuchNames</h1>
+            <div class="htmlContent"><p>The total number of SNMP PDUs which were delivered to the SNMP protocol entity and for which the value of the error-status field was `noSuchName'.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-38">
+          <td class="id-col">rfc3418-38</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInBadValues</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>29&nbsp;snmpInBadValues</h1>
+            <div class="htmlContent"><p>The total number of SNMP PDUs which were delivered to the SNMP protocol entity and for which the value of the error-status field was `badValue'.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-39">
+          <td class="id-col">rfc3418-39</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInReadOnlys</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>30&nbsp;snmpInReadOnlys</h1>
+            <div class="htmlContent"><p>The total number valid SNMP PDUs which were delivered to the SNMP protocol entity and for which the value of the error-status field was `readOnly'. It should be noted that it is a protocol error to generate an SNMP PDU which contains the value `readOnly' in the error-status field, as such this object is provided as a means of detecting incorrect implementations of the SNMP.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-40">
+          <td class="id-col">rfc3418-40</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInGenErrs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>31&nbsp;snmpInGenErrs</h1>
+            <div class="htmlContent"><p>The total number of SNMP PDUs which were delivered to the SNMP protocol entity and for which the value of the error-status field was `genErr'.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-41">
+          <td class="id-col">rfc3418-41</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInTotalReqVars</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>32&nbsp;snmpInTotalReqVars</h1>
+            <div class="htmlContent"><p>The total number of MIB objects which have been retrieved successfully by the SNMP protocol entity as the result of receiving valid SNMP Get-Request and Get-Next PDUs.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-42">
+          <td class="id-col">rfc3418-42</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInTotalSetVars</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>33&nbsp;snmpInTotalSetVars</h1>
+            <div class="htmlContent"><p>The total number of MIB objects which have been altered successfully by the SNMP protocol entity as the result of receiving valid SNMP Set-Request PDUs.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-43">
+          <td class="id-col">rfc3418-43</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInGetRequests</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>34&nbsp;snmpInGetRequests</h1>
+            <div class="htmlContent"><p>The total number of SNMP Get-Request PDUs which have been accepted and processed by the SNMP protocol entity.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-44">
+          <td class="id-col">rfc3418-44</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInGetNexts</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>35&nbsp;snmpInGetNexts</h1>
+            <div class="htmlContent"><p>The total number of SNMP Get-Next PDUs which have been accepted and processed by the SNMP protocol entity.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-45">
+          <td class="id-col">rfc3418-45</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInSetRequests</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>36&nbsp;snmpInSetRequests</h1>
+            <div class="htmlContent"><p>The total number of SNMP Set-Request PDUs which have been accepted and processed by the SNMP protocol entity.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-46">
+          <td class="id-col">rfc3418-46</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInGetResponses</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>37&nbsp;snmpInGetResponses</h1>
+            <div class="htmlContent"><p>The total number of SNMP Get-Response PDUs which have been accepted and processed by the SNMP protocol entity.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-47">
+          <td class="id-col">rfc3418-47</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpInTraps</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>38&nbsp;snmpInTraps</h1>
+            <div class="htmlContent"><p>The total number of SNMP Trap PDUs which have been accepted and processed by the SNMP protocol entity.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-48">
+          <td class="id-col">rfc3418-48</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpOutTooBigs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>39&nbsp;snmpOutTooBigs</h1>
+            <div class="htmlContent"><p>The total number of SNMP PDUs which were generated by the SNMP protocol entity and for which the value of the error-status field was `tooBig.'</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-49">
+          <td class="id-col">rfc3418-49</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpOutNoSuchNames</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>40&nbsp;snmpOutNoSuchNames</h1>
+            <div class="htmlContent"><p>The total number of SNMP PDUs which were generated by the SNMP protocol entity and for which the value of the error-status was `noSuchName'.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-50">
+          <td class="id-col">rfc3418-50</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpOutBadValues</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>41&nbsp;snmpOutBadValues</h1>
+            <div class="htmlContent"><p>The total number of SNMP PDUs which were generated by the SNMP protocol entity and for which the value of the error-status field was `badValue'.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-51">
+          <td class="id-col">rfc3418-51</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpOutGenErrs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>42&nbsp;snmpOutGenErrs</h1>
+            <div class="htmlContent"><p>The total number of SNMP PDUs which were generated by the SNMP protocol entity and for which the value of the error-status field was `genErr'.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-52">
+          <td class="id-col">rfc3418-52</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpOutGetRequests</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>43&nbsp;snmpOutGetRequests</h1>
+            <div class="htmlContent"><p>The total number of SNMP Get-Request PDUs which have been generated by the SNMP protocol entity.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-53">
+          <td class="id-col">rfc3418-53</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpOutGetNexts</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>44&nbsp;snmpOutGetNexts</h1>
+            <div class="htmlContent"><p>The total number of SNMP Get-Next PDUs which have been generated by the SNMP protocol entity.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-54">
+          <td class="id-col">rfc3418-54</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpOutSetRequests</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>45&nbsp;snmpOutSetRequests</h1>
+            <div class="htmlContent"><p>The total number of SNMP Set-Request PDUs which have been generated by the SNMP protocol entity.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-55">
+          <td class="id-col">rfc3418-55</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpOutGetResponses</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>46&nbsp;snmpOutGetResponses</h1>
+            <div class="htmlContent"><p>The total number of SNMP Get-Response PDUs which have been generated by the SNMP protocol entity.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="rfc3418-56">
+          <td class="id-col">rfc3418-56</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">snmpOutTraps</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>47&nbsp;snmpOutTraps</h1>
+            <div class="htmlContent"><p>The total number of SNMP Trap PDUs which have been generated by the SNMP protocol entity.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+      </tbody>
+    </table>
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

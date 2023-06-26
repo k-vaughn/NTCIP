@@ -1,0 +1,449 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>Controller</h1><p><em>Last modified on 2023-06-23 11:21</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Controller-MIB-5">1 Configuration identifier</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Controller-MIB-6">2 Configuration changed by</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Controller-MIB-7">3 Watchdog failures</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Controller-MIB-8">4 Controller status</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Controller-MIB-9">5 Controller reset</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Controller-MIB-10">6 Total changeable memory</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Controller-MIB-11">7 Free changeable memory</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Controller-MIB-12">8 Total volatile memory</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Controller-MIB-13">9 Free volatile memory</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Controller-MIB-14">10 Default language</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col" style="color: white;"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Type</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Name</th>
+          <th class="description-col" style="color: white;"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col" style="color: white;"><i class="fas fa-link"></i> Links</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col">Controller-MIB-1</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Header </div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Controller-MIB-2</td>
+          <td class="custom-col htmlContent">mib</td>
+                      <td class="custom-col htmlContent">DEFINITIONS</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><pre>MODULE-IDENTITY, OBJECT-TYPE, OBJECT-IDENTITY, Unsigned32<br>                                                    FROM SNMPv2-SMI<br>                                                      -- RFC 2578<br>TruthValue, DisplayString<br>                                                    FROM SNMPv2-TC<br>                                                      -- RFC 2579<br>MODULE-COMPLIANCE, OBJECT-GROUP<br>                                                    FROM SNMPv2-CONF<br>                                                      -- RFC 2580<br>SnmpAdminString<br>                                                    FROM SNMP-FRAMEWORK-MIB<br>                                                      -- RFC 3411<br>ITSCounter32<br>                                                    FROM ISO26048-1-FieldDevice<br>fdGlobalMIB, fdGlobalConformance<br>                                                    FROM ISO26048-1-Global<br></pre></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Controller-MIB-3</td>
+          <td class="custom-col htmlContent">module-identity</td>
+                      <td class="custom-col htmlContent">fdControllerMIB</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The MIB that defines basic information that is generic to most field device controllers. Copyright (C) International Organization for Standardization (ISO). This MIB module is part of ISO 26048-1; see ISO 26048-1 for full legal notices.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Controller-MIB-4</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Object Definitions </div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr id="Controller-MIB-5">
+          <td class="id-col">Controller-MIB-5</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdConfigurationID</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>1&nbsp;Configuration identifier</h1>
+            <div class="htmlContent"><p>A relatively unique identifier that shall change when and only when there is a change to one or more of the configuration parameters stored within the device. The value shall be determined by a formula that always produces the same value for a given configuration. For example, if a parameter changes, the value of this object shall change and if that parameter is changed back to its original value, the vaklue of this object will return to its previous value. \ For example, the identifier may reflect a checksum.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-298">26048_1-298</a></span>  Monitor the field device
+configuration i…</div>
+          </td>
+        </tr>
+        <tr id="Controller-MIB-6">
+          <td class="id-col">Controller-MIB-6</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdConfigurationChangedBy</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>2&nbsp;Configuration changed by</h1>
+            <div class="htmlContent"><p>The securityName used to make the last change to a configuration parameter within the field device. The field device specification shall identify which object types are considered configuration parameters.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-298">26048_1-298</a></span>  Monitor the field device
+configuration i…</div>
+          </td>
+        </tr>
+        <tr id="Controller-MIB-7">
+          <td class="id-col">Controller-MIB-7</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdWatchdogFailures</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>3&nbsp;Watchdog failures</h1>
+            <div class="htmlContent"><p>Indicates the number of times the watchdog timer elapsed (i.e., reported a suspected error condition in the device) since the last initialization of the SNMP engine.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-307">26048_1-307</a></span>  Monitor watchdog failure count</div>
+          </td>
+        </tr>
+        <tr id="Controller-MIB-8">
+          <td class="id-col">Controller-MIB-8</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdControllerStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>4&nbsp;Controller status</h1>
+            <div class="htmlContent"><p>A bitmap that indicates if there are any errors currently detected in the field device. other - an error not defined by the other values of this object; the error may be related to objects defined by other standards, other parts of the ISO 20684 series, or proprietary conditions. prom - an error with the programable read-only memory ram - an error with the random access memory program - an error detected in the program or processor display - an error associated with the display on the controller gpio - a bit is set on one or more of the fdGPIOTypeStatus objects</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-299">26048_1-299</a></span>  Monitor controller operation</div>
+          </td>
+        </tr>
+        <tr id="Controller-MIB-9">
+          <td class="id-col">Controller-MIB-9</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdControllerReset</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>5&nbsp;Controller reset</h1>
+            <div class="htmlContent"><p>A mechanism allowing the manager to reset/reboot the field device. SETting this value to 'true' shall cause the field device to reset (but will not modify values stored in changeable memory). Once the controller resets, the value of this object shall return to 'false'. SETting this value to 'false' shall result in a 'wrongValue' error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-308">26048_1-308</a></span>  Reset the controller</div>
+          </td>
+        </tr>
+        <tr id="Controller-MIB-10">
+          <td class="id-col">Controller-MIB-10</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdTotalChangeableMemory</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>6&nbsp;Total changeable memory</h1>
+            <div class="htmlContent"><p>The total amount of 'non-volatile' memory supported by the device whose values are able to survive a power loss.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-287">26048_1-287</a></span>  Discover basic capabilities of the contr…</div>
+          </td>
+        </tr>
+        <tr id="Controller-MIB-11">
+          <td class="id-col">Controller-MIB-11</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdFreeChangeableMemory</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>7&nbsp;Free changeable memory</h1>
+            <div class="htmlContent"><p>The amount of free 'non-volatile' memory available whose values is able to survive a power loss.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-287">26048_1-287</a></span>  Discover basic capabilities of the contr…</div>
+          </td>
+        </tr>
+        <tr id="Controller-MIB-12">
+          <td class="id-col">Controller-MIB-12</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdTotalVolatileMemory</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>8&nbsp;Total volatile memory</h1>
+            <div class="htmlContent"><p>The total amount of memory supported by the device whose values will not survive a power loss.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-287">26048_1-287</a></span>  Discover basic capabilities of the contr…</div>
+          </td>
+        </tr>
+        <tr id="Controller-MIB-13">
+          <td class="id-col">Controller-MIB-13</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdFreeVolatileMemory</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>9&nbsp;Free volatile memory</h1>
+            <div class="htmlContent"><p>The amount of free memory available whose values will not survive a power loss.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-287">26048_1-287</a></span>  Discover basic capabilities of the contr…</div>
+          </td>
+        </tr>
+        <tr id="Controller-MIB-14">
+          <td class="id-col">Controller-MIB-14</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDefaultLanguage</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>10&nbsp;Default language</h1>
+            <div class="htmlContent"><p>The two-letter ISO 639-1 code in lowercase letters that identifies the language that the controller should use when populating textual fields based on internal controller logic (e.g., when producing a textual error message to the user). Implementations should restrict the range of values supported for this object to those codes that represent languages for which the controller can provide messages. This setting does not restrict users from entering values in other languages in writable objects.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-309">26048_1-309</a></span>  Configure the default language</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-310">26048_1-310</a></span>  Determine the current default language</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Controller-MIB-15</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Conformance Information </div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Controller-MIB-16</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdControllerConformance</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node defining conformance information related to the field device controller objects.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Controller-MIB-17</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdControllerCompliances</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for compliance statements for the controller objects.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Controller-MIB-18</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdControllerGroups</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for group definitions related to controller objects.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Controller-MIB-19</td>
+          <td class="custom-col htmlContent">module-compliance</td>
+                      <td class="custom-col htmlContent">fdControllerComplianceV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The original compliance statement for controller objects.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Controller-MIB-20</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdControllerGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The objects required to claim conformance to the first version of the controller group.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Controller-MIB-21</td>
+          <td class="custom-col htmlContent">end</td>
+                      <td class="custom-col htmlContent">end</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

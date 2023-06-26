@@ -1,0 +1,797 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>DayPlan</h1><p><em>Last modified on 2023-06-23 12:02</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-5">1 Day Plan Schedule Table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-8">2 Day plan schedule index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-9">3 Day plan schedule description</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-10">4 Day plan schedule month</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-11">5 Day plan schedule day of week</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-12">6 Day plan schedule day of month</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-13">7 Selected day plan for schedule entry</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-14">8 Day plan schedule storage type</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-15">9 Day plan schedule row status</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-16">10 Enable day plan schedule</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-17">11 Currently selected day plan schedule rule</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-18">12 Currently selected day plan</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-19">13 Day plan trigger fires</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-20">14 Day plan trigger failures</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-21">15 Day plan table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-24">16 Day plan index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-25">17 Day plan description</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-26">18 Day plan storage type</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-27">19 Day plan row status</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-28">20 Day plan trigger table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-31">21 Day plan trigger time</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-32">22 Action group called by day plan trigger</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-33">23 Day plan trigger security model</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-34">24 Day plan trigger security level</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-35">25 Day plan trigger security name</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DayPlan-MIB-36">26 Day plan trigger row status</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col" style="color: white;"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Type</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Name</th>
+          <th class="description-col" style="color: white;"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col" style="color: white;"><i class="fas fa-link"></i> Links</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Access</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col">DayPlan-MIB-1</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Day Plan Header </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DayPlan-MIB-2</td>
+          <td class="custom-col htmlContent">mib</td>
+                      <td class="custom-col htmlContent">ISO26048-1-DayPlan</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><pre>  <br>MODULE-IDENTITY, OBJECT-TYPE, OBJECT-IDENTITY<br>                                                    FROM SNMPv2-SMI<br>                                                      -- RFC 2578<br>TruthValue, StorageType, RowStatus<br>                                                    FROM SNMPv2-TC<br>                                                      -- RFC 2579<br>MODULE-COMPLIANCE, OBJECT-GROUP<br>                                                    FROM SNMPv2-CONF<br>                                                      -- RFC 2580<br>SnmpAdminString, SnmpSecurityModel, SnmpSecurityLevel<br>                                                    FROM SNMP-FRAMEWORK-MIB<br>                                                      -- RFC 3411<br>ITSCounter8, ITSDailyTimeStamp, ITSPositive8, ITSPositive16, <br>ITSRelativeRowPointer, ITSUnsigned8, ITSUnsigned16<br>                                                    FROM ISO26048-1-FieldDevice<br>fdGlobalMIB, fdGlobalConformance<br>                                                    FROM ISO26048-1-Global<br></pre></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DayPlan-MIB-3</td>
+          <td class="custom-col htmlContent">module-identity</td>
+                      <td class="custom-col htmlContent">fdDayPlanMIB</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>This MIB defines a mechanism by which a manager can schedule a series of actions to occur during one day (from local midnight to local midnight). Copyright (C) International Organization for Standardization (ISO). This MIB module is part of ISO 26048-1; see ISO 26048-1 for full legal notices.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DayPlan-MIB-4</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Day Plan Schedule Objects </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="DayPlan-MIB-5">
+          <td class="id-col">DayPlan-MIB-5</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanScheduleTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>1&nbsp;Day Plan Schedule Table</h1>
+            <div class="htmlContent"><p>A dynamic table that uses fdClockLocalDate to determine which day plan should be active. To determine the current day plan, each row in this table, with a RowStatus of 'active', shall be evaluated to identify the most specific rule that is currently applicable. The field device shall then apply the day plan associated with that rule. A row is only applicable for the current day if the current fdClockLocalDate meets the conditions specified by fdDayPlanScheduleMonth, fdDayPlanScheduleDayOfMonth, and fdDayPlanScheduleDayOfWeek. If multiple entries are applicable, the field device shall identify those with the minimum number of bits set within fdDayPlanScheduleMonth. If multiple entries are identified, the field device will identify those with the minimum number of bits set in fdDayPlanScheduleDayOfMonth. If multiple entries are still identified, the field device will identify those with the minimum number of bits set in fdDayPlanScheduleDayOfWeek. If multiple entries are still identified, the field device will select the remaining entry with the lowest value for fdDayPlanScheduleNumber. If no entry is applicable, no day plan will be active.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">DayPlan-MIB-6</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanScheduleEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>An entry in the fdDayPlanScheduleTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">DayPlan-MIB-7</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdDayPlanScheduleEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="DayPlan-MIB-8">
+          <td class="id-col">DayPlan-MIB-8</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanScheduleIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>2&nbsp;Day plan schedule index</h1>
+            <div class="htmlContent"><p>An index used to identify the entry within the fdDayPlanScheduleTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="DayPlan-MIB-9">
+          <td class="id-col">DayPlan-MIB-9</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanScheduleDescription</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>3&nbsp;Day plan schedule description</h1>
+            <div class="htmlContent"><p>A textual description of the day plan selection rule.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-505">26048_1-505</a></span>  Configure day plan selection rule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-506">26048_1-506</a></span>  Confirm day plan selection rule configur…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DayPlan-MIB-10">
+          <td class="id-col">DayPlan-MIB-10</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanScheduleMonth</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>4&nbsp;Day plan schedule month</h1>
+            <div class="htmlContent"><p>The month(s) of the year during which this entry is applicable.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-505">26048_1-505</a></span>  Configure day plan selection rule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-506">26048_1-506</a></span>  Confirm day plan selection rule configur…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DayPlan-MIB-11">
+          <td class="id-col">DayPlan-MIB-11</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanScheduleDayOfWeek</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>5&nbsp;Day plan schedule day of week</h1>
+            <div class="htmlContent"><p>The day(s) of week during which this entry is applicable.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-505">26048_1-505</a></span>  Configure day plan selection rule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-506">26048_1-506</a></span>  Confirm day plan selection rule configur…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DayPlan-MIB-12">
+          <td class="id-col">DayPlan-MIB-12</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanScheduleDayOfMonth</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>6&nbsp;Day plan schedule day of month</h1>
+            <div class="htmlContent"><p>The day(s) of the month during which this entry is applicable.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-505">26048_1-505</a></span>  Configure day plan selection rule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-506">26048_1-506</a></span>  Confirm day plan selection rule configur…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DayPlan-MIB-13">
+          <td class="id-col">DayPlan-MIB-13</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanScheduleDayPlan</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>7&nbsp;Selected day plan for schedule entry</h1>
+            <div class="htmlContent"><p>The day plan that shall be active when this entry is selected.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-505">26048_1-505</a></span>  Configure day plan selection rule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-506">26048_1-506</a></span>  Confirm day plan selection rule configur…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DayPlan-MIB-14">
+          <td class="id-col">DayPlan-MIB-14</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanScheduleStorageType</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>8&nbsp;Day plan schedule storage type</h1>
+            <div class="htmlContent"><p>The storage type for this conceptual row. Conceptual rows having the value 'permanent' shall not allow write-access to any columnar objects in the row.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-505">26048_1-505</a></span>  Configure day plan selection rule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-506">26048_1-506</a></span>  Confirm day plan selection rule configur…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DayPlan-MIB-15">
+          <td class="id-col">DayPlan-MIB-15</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanScheduleRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>9&nbsp;Day plan schedule row status</h1>
+            <div class="htmlContent"><p>The status of this conceptual row. This object may be used to create or remove rows from this table. A row that contains a value for fdScheduleMonth, fdScheduleDayofMonth, or fdScheduleDayOfWeek where no bits are assigned shall have a status of notReady. Any attempt to modify fdDayPlanScheduleStorageType within this conceptual row while the value of this object is active(1) shall result in an inconsistentValue error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-507">26048_1-507</a></span>  Change status of day plan schedule rule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-505">26048_1-505</a></span>  Configure day plan selection rule</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-506">26048_1-506</a></span>  Confirm day plan selection rule configur…</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-508">26048_1-508</a></span>  Delete a day plan schedule rule</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DayPlan-MIB-16">
+          <td class="id-col">DayPlan-MIB-16</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanSchedulerEnable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>10&nbsp;Enable day plan schedule</h1>
+            <div class="htmlContent"><p>A control object that indicates whether the scheduler will result in the selected day plan issuing commands. The scheduler shall always process the rules to select a day plan and reflect that selection in the value of fdDayPlanSchedulerCurrentDayPlan. When this object has a value of 'true', the day plan scheduler shall also issue commands according to the entries in the selected day plan table.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-511">26048_1-511</a></span>  Change enabled status of day plan schedu…</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-509">26048_1-509</a></span>  Retrieve day plan scheduler status</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                    </tr>
+        <tr id="DayPlan-MIB-17">
+          <td class="id-col">DayPlan-MIB-17</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanSchedulerSelectedRule</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>11&nbsp;Currently selected day plan schedule rule</h1>
+            <div class="htmlContent"><p>The fdDayPlanScheduleIndex for the entry in the fdDayPlanScheduleTable that has been selected according to the defined logic. A value of zero shall indicate that no entry in the fdDayPlanScheduleTable is applicable for the current date.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-509">26048_1-509</a></span>  Retrieve day plan scheduler status</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="DayPlan-MIB-18">
+          <td class="id-col">DayPlan-MIB-18</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanSchedulerCurrentDayPlan</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>12&nbsp;Currently selected day plan</h1>
+            <div class="htmlContent"><p>The day plan that has been selected by the day plan schedule logic. This shall be identical to value of the fdDayPlanScheduleDayPlan objet for the selected entry of the fdDayPlanScheduleTable with a fdDayPlanScheduleNumber equal to fdDayPlanSchedulerSelectedRule if, and only if, the associated fdDayPlanRowStatus is 'active'. If no rule is applicable for the current date, or if the indicated day plan is not active, this object shall have a value of zero.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-509">26048_1-509</a></span>  Retrieve day plan scheduler status</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="DayPlan-MIB-19">
+          <td class="id-col">DayPlan-MIB-19</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanTriggersFires</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>13&nbsp;Day plan trigger fires</h1>
+            <div class="htmlContent"><p>The total number of day plan trigger fires that called any action group by any day plan scheduler since the last reboot. This counter will only increment by one, even if the called action group contains multiple actions.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-510">26048_1-510</a></span>  Retrieve day plan schedule statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="DayPlan-MIB-20">
+          <td class="id-col">DayPlan-MIB-20</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanTriggersFailures</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>14&nbsp;Day plan trigger failures</h1>
+            <div class="htmlContent"><p>The number of times that a day plan triggered fired and called an action group that resulted in an error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-510">26048_1-510</a></span>  Retrieve day plan schedule statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="DayPlan-MIB-21">
+          <td class="id-col">DayPlan-MIB-21</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>15&nbsp;Day plan table</h1>
+            <div class="htmlContent"><p>The day plan table that indicates the calls to action groups that are issued for a particular day plan.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">DayPlan-MIB-22</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>An entry in the day plan table.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">DayPlan-MIB-23</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdDayPlanEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="DayPlan-MIB-24">
+          <td class="id-col">DayPlan-MIB-24</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>16&nbsp;Day plan index</h1>
+            <div class="htmlContent"><p>An index used to identify the instance of the day plan.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="DayPlan-MIB-25">
+          <td class="id-col">DayPlan-MIB-25</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanDescription</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>17&nbsp;Day plan description</h1>
+            <div class="htmlContent"><p>A description for the day plan.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-513">26048_1-513</a></span>  Configure day plan</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-514">26048_1-514</a></span>  Confirm day plan configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DayPlan-MIB-26">
+          <td class="id-col">DayPlan-MIB-26</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanStorageType</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>18&nbsp;Day plan storage type</h1>
+            <div class="htmlContent"><p>The storage type for this conceptual row and all related conceptual rows in the fdDayPlanTriggerTable. Conceptual rows having the value 'permanent' must allow the row status column to be set to 'notInService'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-513">26048_1-513</a></span>  Configure day plan</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-514">26048_1-514</a></span>  Confirm day plan configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DayPlan-MIB-27">
+          <td class="id-col">DayPlan-MIB-27</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>19&nbsp;Day plan row status</h1>
+            <div class="htmlContent"><p>The status of the conceptual row. Data contained within this row or in an associated row of the fdDayPlanTriggerTable can not be modified when in the 'active' state. A request to 'destroy' a conceptual row of this table shall also result in destroying all associated conceptual rows in the fdDayPlanTriggerTable.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-515">26048_1-515</a></span>  Change status of day plan</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-513">26048_1-513</a></span>  Configure day plan</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-514">26048_1-514</a></span>  Confirm day plan configuration</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-517">26048_1-517</a></span>  Delete a day plan</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DayPlan-MIB-28">
+          <td class="id-col">DayPlan-MIB-28</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanTriggerTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>20&nbsp;Day plan trigger table</h1>
+            <div class="htmlContent"><p>A dynamic table where each entry defines an action to be performed for a specified day plan at a specified time.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">DayPlan-MIB-29</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanTriggerEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>An entry in the fdDayPlanActionTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">DayPlan-MIB-30</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdDayPlanTriggerEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="DayPlan-MIB-31">
+          <td class="id-col">DayPlan-MIB-31</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanTriggerTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>21&nbsp;Day plan trigger time</h1>
+            <div class="htmlContent"><p>The local time of day at which the action shall be taken.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="DayPlan-MIB-32">
+          <td class="id-col">DayPlan-MIB-32</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanTriggerActions</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>22&nbsp;Action group called by day plan trigger</h1>
+            <div class="htmlContent"><p>The RELATIVE OID of the row within the fdActionTable to be called.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-518">26048_1-518</a></span>  Configure a day plan trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-519">26048_1-519</a></span>  Confirm day plan trigger configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DayPlan-MIB-33">
+          <td class="id-col">DayPlan-MIB-33</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanTriggerSecurityModel</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>23&nbsp;Day plan trigger security model</h1>
+            <div class="htmlContent"><p>The security model used to activate this row of the fdDayPlanTriggerTable and that shall be used when calling the fdDayPlanTriggerActionGroup.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="DayPlan-MIB-34">
+          <td class="id-col">DayPlan-MIB-34</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanTriggerSecurityLevel</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>24&nbsp;Day plan trigger security level</h1>
+            <div class="htmlContent"><p>The security level used to activate this row of the fdDayPlanTriggerTable and that shall be used when calling fdDayPlanTriggerActionGroup.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="DayPlan-MIB-35">
+          <td class="id-col">DayPlan-MIB-35</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanTriggerSecurityName</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>25&nbsp;Day plan trigger security name</h1>
+            <div class="htmlContent"><p>The security name used to activate this row of the fdDayPlanTriggerTable and that shall be used when calling fdDayPlanTriggerActionGroup.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="DayPlan-MIB-36">
+          <td class="id-col">DayPlan-MIB-36</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDayPlanTriggerRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>26&nbsp;Day plan trigger row status</h1>
+            <div class="htmlContent"><p>The status of the conceptual row. The row status shall indicate 'notReady' whenever the security model, level, and name do not provide write access to the fdActionGroupDescription object referenced by fdDayPlanTriggerActionGroup. At a minimum, the access rights shall be verified whenever (1) any configuration parameter in this conceptual row is changed and (2) any changes are made to the vacmSecurityToGroupTable, vacmAccessTable, or vacmViewTreeFamilyTable. Data contained within this row can not be modified when in the 'active' state. An 'active' row of this table shall only call an action group if the corresponding row in the fdDayPlanTable is also 'active'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-520">26048_1-520</a></span>  Change status of day plan trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-518">26048_1-518</a></span>  Configure a day plan trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-519">26048_1-519</a></span>  Confirm day plan trigger configuration</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-522">26048_1-522</a></span>  Delete a day plan trigger</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr>
+          <td class="id-col">DayPlan-MIB-37</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Conformance Information </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DayPlan-MIB-38</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdDayPlanConformance</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node containing conformance statements related to the fdDayPlanMIB, as defined in ISO/TS 26048-1.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DayPlan-MIB-39</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdDayPlanCompliances</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for compliance statements for the fdDayPlanMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DayPlan-MIB-40</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdDayPlanGroups</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for group definitions related to fdObjectSetMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DayPlan-MIB-41</td>
+          <td class="custom-col htmlContent">module-compliance</td>
+                      <td class="custom-col htmlContent">fdDayPlanMIBCompliance</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The conformance statement for day plans.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DayPlan-MIB-42</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdDayPlanSchedulerGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information used for the configuration of an fdDayPlanScheduleEntry.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DayPlan-MIB-43</td>
+          <td class="custom-col htmlContent">end</td>
+                      <td class="custom-col htmlContent">end</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+      </tbody>
+    </table>
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

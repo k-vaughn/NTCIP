@@ -1,0 +1,939 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>Command</h1><p><em>Last modified on 2023-06-23 10:13</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-6">1 Number of times commands have been called</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-7">2 Number of times commands have been sent</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-8">3 Number of command responses received</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-9">4 Number of error responses</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-10">5 Owner table for commands</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-13">6 Maximum number of commands for an owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-14">7 Calls of an owner&#x27;s commands</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-15">8 Attempts to send owner&#x27;s commands</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-16">9 Responses to owner&#x27;s commands</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-17">10 Errors received to owner&#x27;s commands</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-19">11 Maximum variable binding size for commands</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-20">12 Command table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-23">13 Command index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-24">14 Command description</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-25">15 Command variable bindings</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-26">16 Command target</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-27">17 Command context</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-28">18 Command state</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-29">19 Command calls</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-30">20 Command attempts</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-31">21 Command responses</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-32">22 Command errors</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-33">23 Command time stamp</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-34">24 Source of last attempt</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-35">25 Date of last attempt</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-36">26 Time of last attempt</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-37">27 Status of last attempt</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-38">28 Last response identifier</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-39">29 Last response error status</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-40">30 Last response error index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-41">31 Last response date</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-42">32 Last response time</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-43">33 Command storage type</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Command-MIB-44">34 Command row status</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col" style="color: white;"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Type</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Name</th>
+          <th class="description-col" style="color: white;"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col" style="color: white;"><i class="fas fa-link"></i> Links</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Access</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col">Command-MIB-1</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Command Header </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-2</td>
+          <td class="custom-col htmlContent">mib</td>
+                      <td class="custom-col htmlContent">ISO26048-1-Command</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><pre>  <br>MODULE-IDENTITY, OBJECT-TYPE, OBJECT-IDENTITY, Integer32, Unsigned32<br>                                                    FROM SNMPv2-SMI<br>                                                      -- RFC 2578<br>StorageType, RowStatus, TimeStamp, VariablePointer<br>                                                    FROM SNMPv2-TC<br>                                                      -- RFC 2579<br>MODULE-COMPLIANCE, OBJECT-GROUP<br>                                                    FROM SNMPv2-CONF<br>                                                      -- RFC 2580<br>SnmpAdminString <br>                                                    FROM SNMP-FRAMEWORK-MIB<br>                                                      -- RFC 3411<br>SnmpTagValue<br>                                                    FROM SNMP-TARGET-MIB<br>                                                      -- RFC 3413<br>ITSCounter16, ITSCounter32, ITSDailyTimeStamp, ITSDateStamp, ITSPositive8, <br>ITSPduErrorStatus, ITSVariableBindings, ITSUnsigned8<br>                                                    FROM ISO26048-1-FieldDevice<br>fdGlobalMIB, fdAdminGlobal, fdGlobalConformance<br>                                                    FROM ISO26048-1-Global<br>fdOwnerEntry, fdOwnerIndex<br>                                                    FROM ISO26048-1-Owner<br></pre></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-3</td>
+          <td class="custom-col htmlContent">module-identity</td>
+                      <td class="custom-col htmlContent">fdCommandMIB</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>This MIB defines a mechanism by which a manager can configure a device to issue SNMP SET requests to another SNMP Agent when called. Copyright (C) International Organization for Standardization (ISO). This MIB module is part of ISO 26048-1; see ISO 26048-1 for full legal notices.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-4</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Administrative Objects </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-5</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdAdminCommand</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for management information related to the administration of the objects within the fdCommandMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Command-MIB-6">
+          <td class="id-col">Command-MIB-6</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminCommandCalls</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>1&nbsp;Number of times commands have been called</h1>
+            <div class="htmlContent"><p>The total number of times entries within the fdCommandTable have been called from all sources (e.g., through an SNMP set request, by the action table, etc.) since the last initialization of the device. This counter will increment by one each time a command is called, even if the command is sent to zero or multiple targets.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-810">26048_1-810</a></span>  Retrieve summary statistics for commands</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-7">
+          <td class="id-col">Command-MIB-7</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminCommandAttempts</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>2&nbsp;Number of times commands have been sent</h1>
+            <div class="htmlContent"><p>The number of times the field device has attempted to send a command to a target based on an entry in the command table since the last initialization.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-810">26048_1-810</a></span>  Retrieve summary statistics for commands</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-8">
+          <td class="id-col">Command-MIB-8</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminCommandResponses</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>3&nbsp;Number of command responses received</h1>
+            <div class="htmlContent"><p>The total number of responses received to sent commands from the command table since the last discontinuity. The last discontinuity is indicated by the fdCommandTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-810">26048_1-810</a></span>  Retrieve summary statistics for commands</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-9">
+          <td class="id-col">Command-MIB-9</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminCommandErrors</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>4&nbsp;Number of error responses</h1>
+            <div class="htmlContent"><p>The total number of error responses received to commands sent by entries in the command table since the last initialization. The value of this object should always be less than or equal to fdAdminCommandResponses.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-810">26048_1-810</a></span>  Retrieve summary statistics for commands</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-10">
+          <td class="id-col">Command-MIB-10</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerCommandTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>5&nbsp;Owner table for commands</h1>
+            <div class="htmlContent"><p>A table containing configuration rights for the command-realted tables for specific owners.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-11</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerCommandEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A row in the fdOwnerCommandTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-12</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdOwnerCommandEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Command-MIB-13">
+          <td class="id-col">Command-MIB-13</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerCommandMaxRows</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>6&nbsp;Maximum number of commands for an owner</h1>
+            <div class="htmlContent"><p>The maximum number of rows that this owner is allowed to manage within the fdCommandTable at any point in time.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-811">26048_1-811</a></span>  Configure command owner</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-812">26048_1-812</a></span>  Confirm command owner configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Command-MIB-14">
+          <td class="id-col">Command-MIB-14</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerCommandCalls</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>7&nbsp;Calls of an owner&#x27;s commands</h1>
+            <div class="htmlContent"><p>The number of times entries within the fdCommandTable that are associated with this owner have been called (e.g., through an SNMP set request, by the action table, etc.) since the last discontinuity. This counter will increment by one each time a command is called, even if the command is sent to zero or multiple targets. The last discontinuity is indicated by the fdOwnerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-813">26048_1-813</a></span>  Retrieve statistics for command owner</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-15">
+          <td class="id-col">Command-MIB-15</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerCommandAttempts</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>8&nbsp;Attempts to send owner&#x27;s commands</h1>
+            <div class="htmlContent"><p>The number of times the field device has attempted to send a command to a target based on an entry in the command table that is associated with this owner since the last discontinuity. The last discontinuity is indicated by the fdOwnerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-813">26048_1-813</a></span>  Retrieve statistics for command owner</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-16">
+          <td class="id-col">Command-MIB-16</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerCommandResponses</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>9&nbsp;Responses to owner&#x27;s commands</h1>
+            <div class="htmlContent"><p>The number of responses received to sent commands from this owner's rows within the command table since the last discontinuity. The last discontinuity is indicated by the fdCommandTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-813">26048_1-813</a></span>  Retrieve statistics for command owner</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-17">
+          <td class="id-col">Command-MIB-17</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerCommandErrors</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>10&nbsp;Errors received to owner&#x27;s commands</h1>
+            <div class="htmlContent"><p>The number of times a command associated with this owner has resulted in an error response since the last discontinuity for this owner. The last discontinuity is indicated by fdOwnerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-813">26048_1-813</a></span>  Retrieve statistics for command owner</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-18</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Command Objects </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Command-MIB-19">
+          <td class="id-col">Command-MIB-19</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandsMaxVBSize</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>11&nbsp;Maximum variable binding size for commands</h1>
+            <div class="htmlContent"><p>The maximum size, in octets, of a value of fdCommandVariableBindings.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-803">26048_1-803</a></span>  Determine command factory capabilities</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-20">
+          <td class="id-col">Command-MIB-20</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>12&nbsp;Command table</h1>
+            <div class="htmlContent"><p>A dynamic table where each entry defines a set request that can be sent to either the local or a remote device.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-21</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>An entry in the fdCommandTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-22</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdCommandEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Command-MIB-23">
+          <td class="id-col">Command-MIB-23</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>13&nbsp;Command index</h1>
+            <div class="htmlContent"><p>A secondary index that identifies the specific command defined by an owner.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="Command-MIB-24">
+          <td class="id-col">Command-MIB-24</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandDescription</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>14&nbsp;Command description</h1>
+            <div class="htmlContent"><p>A textual description of the command.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-804">26048_1-804</a></span>  Configure a command factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-805">26048_1-805</a></span>  Confirm command factory configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Command-MIB-25">
+          <td class="id-col">Command-MIB-25</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandVariableBindings</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>15&nbsp;Command variable bindings</h1>
+            <div class="htmlContent"><p>The variableBindings field of the SNMP SetRequest-PDU to be sent to the target. An implementation shall restrict the size of this of this object to the fdCommandsMaxVBSize.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-804">26048_1-804</a></span>  Configure a command factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-805">26048_1-805</a></span>  Confirm command factory configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Command-MIB-26">
+          <td class="id-col">Command-MIB-26</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandTargetTag</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>16&nbsp;Command target</h1>
+            <div class="htmlContent"><p>The tag for the target(s) to which the SNMP SetRequest shall be sent. Systems limited to self-management may subrange this value to a zero length field. A value of zero (0) length shall indicate the local system. In this case, the command shall be under the security credentials of the requester that set fdCommandRowStatus to 'active'. Those credentials are the input parameters for isAccessAllowed from RFC 3411. Otherwise access rights are checked according to the security parameters resulting from the tag.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-804">26048_1-804</a></span>  Configure a command factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-805">26048_1-805</a></span>  Confirm command factory configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Command-MIB-27">
+          <td class="id-col">Command-MIB-27</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandContextName</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>17&nbsp;Command context</h1>
+            <div class="htmlContent"><p>The management context to use with the variableBindings value.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-804">26048_1-804</a></span>  Configure a command factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-805">26048_1-805</a></span>  Confirm command factory configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Command-MIB-28">
+          <td class="id-col">Command-MIB-28</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandState</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>18&nbsp;Command state</h1>
+            <div class="htmlContent"><p>This object provides control and status information for the command. The values 'notReady', 'ready', and 'pending' are status values; the value 'call' is a command value. The status shall indicate 'notReady' whenever this table entry is not 'active'. When this table entry is 'active', the value of this object shall be 'pending' if the field device is still processing a previous call for a command; otherwise, it shall be 'ready'. Setting this object to 'call' when it is in the 'ready' state shall cause the state to change to 'pending' and cause the field device to send the command to the identified targets. This object shall automatically transition back to the 'ready' state once the data exchange has been completed for each target (i.e., the command has been sent and all expected responses have been received, timeouts have occurred, or transmission errors have been detected). In addition, the fdCommandLastAttempt object shall be updated. This mechanism allows identification of why the attempt failed. Setting this object to any value other than 'call' shall result in a 'wrongValue' error. Setting this object to 'call' when it is in the 'notReady' or 'pending' state shall result in an 'inconsistentValue' error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-807">26048_1-807</a></span>  Retrieve command factory status</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Command-MIB-29">
+          <td class="id-col">Command-MIB-29</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandCalls</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>19&nbsp;Command calls</h1>
+            <div class="htmlContent"><p>The number of times this command entry has been called from all sources (e.g., through an SNMP set request, by the scheduler, by the trigger, etc.) since the last discontinuity. This counter will increment by one each time the table entry is called, even if the command is sent to zero or multiple targets. The last discontinuity is indicated by the fdCommandTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1095">26048_1-1095</a></span>  Retrieve command factory statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-30">
+          <td class="id-col">Command-MIB-30</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandAttempts</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>20&nbsp;Command attempts</h1>
+            <div class="htmlContent"><p>The number of times the field device has attempted to send this command to a target since the last discontinuity. If the command is not in the 'active' state or if no targets are identified to receive the command, this counter will not increment. If the command is sent to multiple targets, it will increment once for each target the command is sent to. The last discontinuity is indicated by the fdCommandTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1095">26048_1-1095</a></span>  Retrieve command factory statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-31">
+          <td class="id-col">Command-MIB-31</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandResponses</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>21&nbsp;Command responses</h1>
+            <div class="htmlContent"><p>The total number of responses received for this row of the table since the last discontinuity. The last discontinuity is indicated by the fdCommandTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1095">26048_1-1095</a></span>  Retrieve command factory statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-32">
+          <td class="id-col">Command-MIB-32</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandErrors</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>22&nbsp;Command errors</h1>
+            <div class="htmlContent"><p>The number of error responses received to commands sent for this row of the table since the last discontinuity. The value of this object should always be less than or equal to fdCommandResponses. The last discontinuity is indicated by the fdCommandTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1095">26048_1-1095</a></span>  Retrieve command factory statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-33">
+          <td class="id-col">Command-MIB-33</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandTimeStamp</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>23&nbsp;Command time stamp</h1>
+            <div class="htmlContent"><p>The value of sysUpTime at the last discontinuity of any of the counters associated with this row of the fdLogClassTable. Discontinuities occur when the row is activated.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1095">26048_1-1095</a></span>  Retrieve command factory statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-34">
+          <td class="id-col">Command-MIB-34</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandLastAttemptSource</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>24&nbsp;Source of last attempt</h1>
+            <div class="htmlContent"><p>The OBJECT IDENTIFIER indicating the source that requested the last command to be sent. If the command was called by the action table, this object shall indicate the OBJECT IDENTIFIER of the fdActionPointer object instance. If the command was called by setting the fdCommandIssue object to 'true', this object shall indicate the OBJECT IDENTIFIER of the fdCommandIssue object instance.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-806">26048_1-806</a></span>  Retrieve command factory last use inform…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-35">
+          <td class="id-col">Command-MIB-35</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandLastAttemptDate</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>25&nbsp;Date of last attempt</h1>
+            <div class="htmlContent"><p>The UTC date on which this last command was sent for this row.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-806">26048_1-806</a></span>  Retrieve command factory last use inform…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-36">
+          <td class="id-col">Command-MIB-36</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandLastAttemptTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>26&nbsp;Time of last attempt</h1>
+            <div class="htmlContent"><p>The UTC time at which the last command was sent for this row.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-806">26048_1-806</a></span>  Retrieve command factory last use inform…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-37">
+          <td class="id-col">Command-MIB-37</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandLastAttemptStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>27&nbsp;Status of last attempt</h1>
+            <div class="htmlContent"><p>The status of the last attempt, defined as: other: a status other than those shown (e.g., no command has been sent yet) pending: a command has been sent for which a response has not been received and the timeout has not yet expired success: a 'noError' response was received in response to the last request errorNotActive: a request was made to send the command when the table entry was not in the 'active' state errorPending: a request was made to send the command when it was in the 'pending' state errorTransmit: an error occurred in attempting to transmit the command (e.g., a sockets error) errorResponse: a response was received to the command, but it indicated an error-status other than 'noError' timeout: no response was received for the last request and the timeout has expired; if a response is received after the timeout, the value of this object shall be updated to reflect the response.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-806">26048_1-806</a></span>  Retrieve command factory last use inform…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-38">
+          <td class="id-col">Command-MIB-38</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandLastResponseID</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>28&nbsp;Last response identifier</h1>
+            <div class="htmlContent"><p>The value of the request-id field of the last Response-PDU received in response to a command generated by this row.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-806">26048_1-806</a></span>  Retrieve command factory last use inform…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-39">
+          <td class="id-col">Command-MIB-39</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandLastResponseErrorStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>29&nbsp;Last response error status</h1>
+            <div class="htmlContent"><p>The value of the error-status field of the last Response-PDU received in response to a command generated by this row.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-806">26048_1-806</a></span>  Retrieve command factory last use inform…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-40">
+          <td class="id-col">Command-MIB-40</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandLastResponseErrorIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>30&nbsp;Last response error index</h1>
+            <div class="htmlContent"><p>The value of the error-index field of the last Response-PDU received in response to a command generated by this row.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-806">26048_1-806</a></span>  Retrieve command factory last use inform…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-41">
+          <td class="id-col">Command-MIB-41</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandLastResponseDate</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>31&nbsp;Last response date</h1>
+            <div class="htmlContent"><p>The value of fdClockUtcDate when the field device last received a response to a command generated by this row.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-806">26048_1-806</a></span>  Retrieve command factory last use inform…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-42">
+          <td class="id-col">Command-MIB-42</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandLastResponseTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>32&nbsp;Last response time</h1>
+            <div class="htmlContent"><p>The value of fdClockUtcTime when the field device last received a response to a command generated by this row.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-806">26048_1-806</a></span>  Retrieve command factory last use inform…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Command-MIB-43">
+          <td class="id-col">Command-MIB-43</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandStorageType</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>33&nbsp;Command storage type</h1>
+            <div class="htmlContent"><p>The storageType for this conceptual row. Permanent rows shall allow setting fdCommandRowStatus to 'notInService'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-804">26048_1-804</a></span>  Configure a command factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-805">26048_1-805</a></span>  Confirm command factory configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Command-MIB-44">
+          <td class="id-col">Command-MIB-44</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCommandRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>34&nbsp;Command row status</h1>
+            <div class="htmlContent"><p>The status of this conceptual row. The value of this object shall be 'notReady' whenever the variableBindings for this row is set to a zero- length string (''H). Objects in this row may be modified while the value of this object is active.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-808">26048_1-808</a></span>  Change status of a command factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-804">26048_1-804</a></span>  Configure a command factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-805">26048_1-805</a></span>  Confirm command factory configuration</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-809">26048_1-809</a></span>  Delete command factory</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-45</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Conformance Information </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-46</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdCommandConformance</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node containing conformance statements related to the fdCommandMIB, as defined in ISO/TS 20684-6.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-47</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdCommandCompliances</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for compliance statements for the fdCommandMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-48</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdCommandGroups</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for group definitions related to fdCommandMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-49</td>
+          <td class="custom-col htmlContent">module-compliance</td>
+                      <td class="custom-col htmlContent">fdCommandMIBComplianceV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The conformance statement for the field device command MIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-50</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdCommandAdminGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Administrative information for the command feature.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-51</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdCommandGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information for the command feature.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Command-MIB-52</td>
+          <td class="custom-col htmlContent">end</td>
+                      <td class="custom-col htmlContent">end</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+      </tbody>
+    </table>
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

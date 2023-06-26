@@ -1,0 +1,801 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>Action</h1><p><em>Last modified on 2023-06-21 19:28</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-6">1 Total triggers</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-7">2 Total failures</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-8">3 Owner action table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-11">4 Maximum action groups for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-12">5 Owner actions per group</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-13">6 Number of action triggers for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-14">7 Number of action failures for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-16">8 Action group table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-19">9 Action group index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-20">10 Action group description</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-21">11 Action group triggers</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-22">12 Action group failures</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-23">13 Action group time stamp</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-24">14 Action group storage type</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-25">15 Action group row status</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-26">16 Action table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-29">17 Action index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-30">18 Action pointer</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-31">19 Action triggers</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-32">20 Action failures</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-33">21 Action time stamp</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-34">22 Action security model</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-35">23 Action security level</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-36">24 Action security name</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-37">25 Action row status</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Action-MIB-38">26 Conformance Information</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col" style="color: white;"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Type</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Name</th>
+          <th class="description-col" style="color: white;"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col" style="color: white;"><i class="fas fa-link"></i> Links</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Access</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col">Action-MIB-1</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Action MIB Header </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-2</td>
+          <td class="custom-col htmlContent">mib</td>
+                      <td class="custom-col htmlContent">ISO26048-1-Action</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><pre>  <br>MODULE-IDENTITY, OBJECT-TYPE, OBJECT-IDENTITY<br>                                                       FROM SNMPv2-SMI<br>                                                         -- RFC 2578<br>RowStatus, StorageType, TimeStamp, VariablePointer<br>                                                       FROM SNMPv2-TC<br>                                                         -- RFC 2579<br>MODULE-COMPLIANCE, OBJECT-GROUP<br>                                                       FROM SNMPv2-CONF<br>                                                         -- RFC 2580<br>SnmpAdminString, SnmpSecurityLevel, SnmpSecurityModel<br>                                                    FROM SNMP-FRAMEWORK-MIB<br>                                                      -- RFC 3411<br>ITSCounter8, ITSCounter16, ITSPositive8, ITSUnsigned8<br>                                                    FROM ISO26048-1-FieldDevice<br>fdGlobalMIB, fdAdminGlobal, fdGlobalConformance<br>                                                    FROM ISO26048-1-Global<br>fdOwnerEntry, fdOwnerIndex<br>                                                    FROM ISO26048-1-Owner<br></pre></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-3</td>
+          <td class="custom-col htmlContent">module-identity</td>
+                      <td class="custom-col htmlContent">fdActionMIB</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>This MIB defines a management information to configure actions to be performed when called (e.g., by a trigger firing). Copyright (C) International Organization for Standardization (ISO). This MIB module is part of ISO 26048-1; see ISO 26048-1 for full legal notices.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-4</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Administrator Objects to Manage Actions </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-5</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdAdminAction</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node defining management information related to the field device's Action table.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Action-MIB-6">
+          <td class="id-col">Action-MIB-6</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminActionsTotalTriggers</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>1&nbsp;Total triggers</h1>
+            <div class="htmlContent"><p>The number of times any action group has been called since the last initialization of the SNMP engine.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-552">26048_1-552</a></span>  Retrieve summary action statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Action-MIB-7">
+          <td class="id-col">Action-MIB-7</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminActionsTotalFailures</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>2&nbsp;Total failures</h1>
+            <div class="htmlContent"><p>The number of times any action was called since the last initialization of the SNMP engine but was unsuccessful (e.g., the relative row pointer did not point to an existing row).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-552">26048_1-552</a></span>  Retrieve summary action statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Action-MIB-8">
+          <td class="id-col">Action-MIB-8</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerActionTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>3&nbsp;Owner action table</h1>
+            <div class="htmlContent"><p>A table containing management information about the actions associated with each owner. It is recommended that administrators are granted read- write access to the entire table while owners are only granted read-access to their specific row(s).</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-9</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerActionEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A row in the fdOwnerActionTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-10</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdOwnerActionEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Action-MIB-11">
+          <td class="id-col">Action-MIB-11</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerActionMaxGroups</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>4&nbsp;Maximum action groups for owner</h1>
+            <div class="htmlContent"><p>The maximum number of rows that this owner is allowed to manage within the fdActionGroupTable at any point in time.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-553">26048_1-553</a></span>  Configure an action owner</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-554">26048_1-554</a></span>  Confirm action owner configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Action-MIB-12">
+          <td class="id-col">Action-MIB-12</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerActionActionsPerGroup</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>5&nbsp;Owner actions per group</h1>
+            <div class="htmlContent"><p>The maximum number of fdActionTable rows that this owner is allowed to manage within each action group at any point in time.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-553">26048_1-553</a></span>  Configure an action owner</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-554">26048_1-554</a></span>  Confirm action owner configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Action-MIB-13">
+          <td class="id-col">Action-MIB-13</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerActionTriggers</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>6&nbsp;Number of action triggers for owner</h1>
+            <div class="htmlContent"><p>The number of times any action group associated with this owner has been called since the last discontinuity, as defined by the fdOwnerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-555">26048_1-555</a></span>  Retrieve action owner statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Action-MIB-14">
+          <td class="id-col">Action-MIB-14</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerActionFailures</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>7&nbsp;Number of action failures for owner</h1>
+            <div class="htmlContent"><p>The number of times an action group for this owner was called but one or more actions within the group was unsuccessful (e.g., the relative row pointer did not point to an existing row).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-555">26048_1-555</a></span>  Retrieve action owner statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-15</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Action objects </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Action-MIB-16">
+          <td class="id-col">Action-MIB-16</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionGroupTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>8&nbsp;Action group table</h1>
+            <div class="htmlContent"><p>A table that manages the actions that can be internally called by the device.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-17</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionGroupEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>An action that can be performed by the device. The action table provides a way for a single trigger to call multiple specific actions.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-18</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdActionGroupEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Action-MIB-19">
+          <td class="id-col">Action-MIB-19</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionGroupIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>9&nbsp;Action group index</h1>
+            <div class="htmlContent"><p>The unique index of the action group, within the scope of the fdOwnerIndex.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="Action-MIB-20">
+          <td class="id-col">Action-MIB-20</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionGroupDescription</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>10&nbsp;Action group description</h1>
+            <div class="htmlContent"><p>The human readable description of the purpose of this entry.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-544">26048_1-544</a></span>  Configure an action group</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-545">26048_1-545</a></span>  Confirm action group configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Action-MIB-21">
+          <td class="id-col">Action-MIB-21</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionGroupTriggers</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>11&nbsp;Action group triggers</h1>
+            <div class="htmlContent"><p>The number of times this action group has been called by a triggering event when the entry was in the active and enabled state. Any discontinuity shall result in resetting this object to zero and updating the value of fdActionGroupTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-546">26048_1-546</a></span>  Retrieve action group statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Action-MIB-22">
+          <td class="id-col">Action-MIB-22</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionGroupFailures</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>12&nbsp;Action group failures</h1>
+            <div class="htmlContent"><p>The number of times this action group has been called by a triggering event when the entry was in the active and enabled state and one or more of the associated actions experienced a failure. Any discontinuity shall result in resetting this object to zero and updating the value of fdActionGroupTimeMark.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-546">26048_1-546</a></span>  Retrieve action group statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Action-MIB-23">
+          <td class="id-col">Action-MIB-23</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionGroupTimeStamp</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>13&nbsp;Action group time stamp</h1>
+            <div class="htmlContent"><p>The value sysUpTime at the last discontinuity of the counters associated with this row of the fdActionGroupTable. Discontinuities occur when the row is created.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-546">26048_1-546</a></span>  Retrieve action group statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Action-MIB-24">
+          <td class="id-col">Action-MIB-24</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionGroupStorageType</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>14&nbsp;Action group storage type</h1>
+            <div class="htmlContent"><p>This object defines whether this action group and all of its component actions are kept in volatile storage and lost upon reboot or if this row is backed up by non-volatile or permanent storage. Conceptual rows having the value 'permanent' must allow write access to the fdActionGroupRowStatus and fdActionRowStatus columnar objects to disable the group and/or action.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-544">26048_1-544</a></span>  Configure an action group</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-545">26048_1-545</a></span>  Confirm action group configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Action-MIB-25">
+          <td class="id-col">Action-MIB-25</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionGroupRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>15&nbsp;Action group row status</h1>
+            <div class="htmlContent"><p>The status of this action group. A control that allows entries to be added and removed from this table. A 'destroy' command for this object shall also destroy all fdActionEntires associated with this action group. fdActionGroupDescription can be modified independent of the current row status. All other read-create objects in this entry can only be modified when the value of this object is not 'active'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-544">26048_1-544</a></span>  Configure an action group</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-545">26048_1-545</a></span>  Confirm action group configuration</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-550">26048_1-550</a></span>  Delete action group</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-548">26048_1-548</a></span>  Toggle action group</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Action-MIB-26">
+          <td class="id-col">Action-MIB-26</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>16&nbsp;Action table</h1>
+            <div class="htmlContent"><p>A table that manages the actions that can be internally called by the device.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-27</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>An action that can be performed by the device. The action table provides a way for a single trigger to call multiple specific actions.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-28</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdActionEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Action-MIB-29">
+          <td class="id-col">Action-MIB-29</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>17&nbsp;Action index</h1>
+            <div class="htmlContent"><p>The index of this component within the scope of the fdOwnerIndex and fdActionIndex. When a trigger fires, it will call a specific fdOwnerIndex and fdActionGroupIndex; this third index allows multiple actions to be associated with a single trigger.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="Action-MIB-30">
+          <td class="id-col">Action-MIB-30</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionPointer</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>18&nbsp;Action pointer</h1>
+            <div class="htmlContent"><p>A pointer to an action to be performed when this action group is called. This shall point either to the first writable object within the row of a table that is associted with a specific action (e.g., fdNotificationFactory, fdLogFactory, fdCommandFactory) or to a specific object that has a defined action. Any object that is designed to allow this object to call it should explicitly indicate how the call to action should be interpreted.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1077">26048_1-1077</a></span>  Configure an action</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1078">26048_1-1078</a></span>  Confirm action configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Action-MIB-31">
+          <td class="id-col">Action-MIB-31</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionTriggers</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>19&nbsp;Action triggers</h1>
+            <div class="htmlContent"><p>The number of times this action has been called by a triggering event. Any discontinuity shall result in resetting this object to zero and updating the fdActionTimeStamp object.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1079">26048_1-1079</a></span>  Retrieve action statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Action-MIB-32">
+          <td class="id-col">Action-MIB-32</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionFailures</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>20&nbsp;Action failures</h1>
+            <div class="htmlContent"><p>The number of times this action has been called by a triggering event when this fdActionEntry was active but the referenced action could not be performed. Any discontinuity shall result in resetting this object to zero and updating the fdActionTimeStamp object.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1079">26048_1-1079</a></span>  Retrieve action statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Action-MIB-33">
+          <td class="id-col">Action-MIB-33</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionTimeStamp</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>21&nbsp;Action time stamp</h1>
+            <div class="htmlContent"><p>The value sysUpTime at the last discontinuity of the counters associated with this row of the fdActionTable. Discontinuities occur when the row is created.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1079">26048_1-1079</a></span>  Retrieve action statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="Action-MIB-34">
+          <td class="id-col">Action-MIB-34</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionSecurityModel</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>22&nbsp;Action security model</h1>
+            <div class="htmlContent"><p>The security model used to activate this row of the fdActionTable and to call the object referenced by fdActionPointer.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="Action-MIB-35">
+          <td class="id-col">Action-MIB-35</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionSecurityLevel</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>23&nbsp;Action security level</h1>
+            <div class="htmlContent"><p>The security level used to activate this row of the fdActionTable and to call the object referenced by fdActionPointer.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="Action-MIB-36">
+          <td class="id-col">Action-MIB-36</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionSecurityName</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>24&nbsp;Action security name</h1>
+            <div class="htmlContent"><p>The security name used to activate this row of the fdActionTable and to call the object referenced by fdActionPointer.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="Action-MIB-37">
+          <td class="id-col">Action-MIB-37</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdActionRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>25&nbsp;Action row status</h1>
+            <div class="htmlContent"><p>The status of this action. The row status shall indicate 'notReady' whenever the security model, level, and name do not provide write access to the object referenced by either fdActionPointer. At a minimum, these access rights shall be verified whenever (1) any configuration parameter in this conceptual row is changed and (2) any changes are made to the vacmSecurityToGroupTable, vacmAccessTable, or vacmViewTreeFamilyTable. fdActionPointer can only be modified when the value of this object is not 'active'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1077">26048_1-1077</a></span>  Configure an action</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1078">26048_1-1078</a></span>  Confirm action configuration</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-551">26048_1-551</a></span>  Delete action</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-549">26048_1-549</a></span>  Toggle action</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="Action-MIB-38">
+          <td class="id-col">Action-MIB-38</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>26&nbsp;Conformance Information</h1>
+            <div class="htmlContent"><p>Conformance Information</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-39</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdActionConformance</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node containing conformance statements related to the fdActionMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-40</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdActionCompliances</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for compliance statements for the fdActionMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-41</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdActionGroups</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for group definitions related to fdActionMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-42</td>
+          <td class="custom-col htmlContent">module-compliance</td>
+                      <td class="custom-col htmlContent">fdActionComplianceV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The original conformance statement for actions for a device to perform when a trigger fires.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-43</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdActionAdminGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Administrative information for actions.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Action-MIB-44</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdActionGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information for actions.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+      </tbody>
+    </table>
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

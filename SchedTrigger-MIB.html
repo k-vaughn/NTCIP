@@ -1,0 +1,779 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>SchedTrigger</h1><p><em>Last modified on 2023-06-25 15:52</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-6">1 Number of scheduled trigger fires</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-7">2 Number of scheduled trigger failures</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-8">3 Scheduled trigger owner table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-11">4 Maximum scheduled triggers for owner </a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-12">5 Fires for owner&#x27;s scheduled triggers</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-13">6 Failures for owner&#x27;s scheduled triggers</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-14">7 Scheduled trigger objects</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-15">8 Scheduled trigger table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-18">9 Scheduled trigger index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-19">10 Scheduled trigger description</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-20">11 Days of week for scheduled trigger</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-21">12 Months for scheduled trigger</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-22">13 Days for scheduled trigger</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-23">14 Hours for scheduled trigger</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-24">15 Minutes for scheduled trigger</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-25">16 Scheduled trigger type</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-26">17 Scheduled trigger action</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-27">18 Scheduled trigger fires</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-28">19 Scheduled trigger failures</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-29">20 Scheduled trigger time stamp</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-30">21 Scheduled trigger security model</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-31">22 Scheduled trigger security level</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-32">23 Scheduled trigger security name</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-33">24 Scheduled trigger storage type</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#SchedTrigger-MIB-34">25 Scheduled trigger row status</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col" style="color: white;"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Type</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Name</th>
+          <th class="description-col" style="color: white;"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col" style="color: white;"><i class="fas fa-link"></i> Links</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Access</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-1</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Scheduled Trigger Header </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-2</td>
+          <td class="custom-col htmlContent">mib</td>
+                      <td class="custom-col htmlContent">ISO26048-1-SchedTrigger</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><pre>  <br>MODULE-IDENTITY, OBJECT-TYPE, OBJECT-IDENTITY<br>                                                    FROM SNMPv2-SMI<br>                                                      -- RFC 2578<br>StorageType, RowStatus, TimeStamp<br>                                                    FROM SNMPv2-TC<br>                                                      -- RFC 2579<br>MODULE-COMPLIANCE, OBJECT-GROUP<br>                                                    FROM SNMPv2-CONF<br>                                                      -- RFC 2580<br>SnmpAdminString, SnmpSecurityModel, SnmpSecurityLevel<br>                                                    FROM SNMP-FRAMEWORK-MIB<br>                                                      -- RFC 3411<br>ITSCounter8, ITSCounter16, ITSPositive8, ITSRelativeRowPointer, ITSUnsigned8<br>                                                    FROM ISO26048-1-FieldDevice<br>fdGlobalMIB, fdAdminGlobal, fdGlobalConformance<br>                                                    FROM ISO26048-1-Global<br>fdOwnerEntry, fdOwnerIndex<br>                                                    FROM ISO26048-1-Owner                                                     <br></pre></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-3</td>
+          <td class="custom-col htmlContent">module-identity</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerMIB</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>This MIB defines a mechanism by which a manager can schedule actions to be performed at specified times and dates, regardless of other scheduled actions. Copyright (C) International Organization for Standardization (ISO). This MIB module is part of ISO 26048-1; see ISO 26048-1 for full legal notices.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-4</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Administrative Objects </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-5</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdAdminSchedTriggerObjects</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node defining management information related to the administration of the field device's Trigger Schedule.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-6">
+          <td class="id-col">SchedTrigger-MIB-6</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminSchedTriggerTotalFires</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>1&nbsp;Number of scheduled trigger fires</h1>
+            <div class="htmlContent"><p>The number of times any scheduled trigger has fired since the last reboot.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-533">26048_1-533</a></span>  Retrieve summary statistics for schedule…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-7">
+          <td class="id-col">SchedTrigger-MIB-7</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminSchedTriggerTotalCallErrs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>2&nbsp;Number of scheduled trigger failures</h1>
+            <div class="htmlContent"><p>The number of times an attempt by a scheduled trigger to call an action group failed (e.g., the action group was not defined).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-533">26048_1-533</a></span>  Retrieve summary statistics for schedule…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-8">
+          <td class="id-col">SchedTrigger-MIB-8</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerSchedTriggerTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>3&nbsp;Scheduled trigger owner table</h1>
+            <div class="htmlContent"><p>A table containing configuration rights for the fdSchedTriggerTable for specific owners.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-9</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerSchedTriggerEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A row in the fdCondTriggerOwnerTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-10</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdOwnerSchedTriggerEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-11">
+          <td class="id-col">SchedTrigger-MIB-11</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerSchedTriggerMaxRows</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>4&nbsp;Maximum scheduled triggers for owner </h1>
+            <div class="htmlContent"><p>The maximum number of rows that this owner is allowed to manage within the fdTriggerSheduleTable at any point in time.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-534">26048_1-534</a></span>  Configure scheduled trigger owner</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-535">26048_1-535</a></span>  Retrieve scheduled trigger owner configu…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-12">
+          <td class="id-col">SchedTrigger-MIB-12</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerSchedTriggerFires</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>5&nbsp;Fires for owner&#x27;s scheduled triggers</h1>
+            <div class="htmlContent"><p>The number of times any enabled scheduled trigger managed by this owner has fired (e.g., evaluated to true) since the last discontinuity. The last discontinuity is indicated by the fdOwnerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-536">26048_1-536</a></span>  Retrieve statistics for scheduled trigge…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-13">
+          <td class="id-col">SchedTrigger-MIB-13</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerSchedTriggerCallErrs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>6&nbsp;Failures for owner&#x27;s scheduled triggers</h1>
+            <div class="htmlContent"><p>The number of times this scheduled trigger fired but the call to the action group failed (e.g., due to the referenced row not being active) since the last discontinuity. The last discontinuity is indicated by the fdCondTriggerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-536">26048_1-536</a></span>  Retrieve statistics for scheduled trigge…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-14">
+          <td class="id-col">SchedTrigger-MIB-14</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>7&nbsp;Scheduled trigger objects</h1>
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-15">
+          <td class="id-col">SchedTrigger-MIB-15</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>8&nbsp;Scheduled trigger table</h1>
+            <div class="htmlContent"><p>A table that manages when actions are to be performed by the field device.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-16</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>An entry defining when to perform a scheduled action. Each trigger schedule defines time(s) at which specific action(s) are to be performed. The defined times are relative to the local timezone, which may be affected by summer time schedules.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-17</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdSchedTriggerEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-18">
+          <td class="id-col">SchedTrigger-MIB-18</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>9&nbsp;Scheduled trigger index</h1>
+            <div class="htmlContent"><p>The index for this owner's entry. This object allows a fdActionManagerOwner to have multiple entries in the table.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-19">
+          <td class="id-col">SchedTrigger-MIB-19</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerDescription</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>10&nbsp;Scheduled trigger description</h1>
+            <div class="htmlContent"><p>The human readable description of the purpose of this entry.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-527">26048_1-527</a></span>  Configure a scheduled trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-528">26048_1-528</a></span>  Confirm scheduled trigger configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-20">
+          <td class="id-col">SchedTrigger-MIB-20</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerWeekDay</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>11&nbsp;Days of week for scheduled trigger</h1>
+            <div class="htmlContent"><p>The set of weekdays on which the scheduled action shall be called if all other constraints are satisfied. Setting multiple bits will include several weekdays in the set of possible weekdays for this schedule. Setting all bits will allow the scheduler to perform the action on any weekday. Note that implementations which maintain a list of pending activations must re-calculate them when this object is changed.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-527">26048_1-527</a></span>  Configure a scheduled trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-528">26048_1-528</a></span>  Confirm scheduled trigger configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-21">
+          <td class="id-col">SchedTrigger-MIB-21</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerMonth</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>12&nbsp;Months for scheduled trigger</h1>
+            <div class="htmlContent"><p>The set of months during which the scheduled action shall be called if all other constraints are satisfied. Setting multiple bits will include several months in the set of possible months for this schedule. Setting all bits will allow the scheduler to perform the action in any month. Note that implementations which maintain a list of pending activations must re-calculate them when this object is changed.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-527">26048_1-527</a></span>  Configure a scheduled trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-528">26048_1-528</a></span>  Confirm scheduled trigger configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-22">
+          <td class="id-col">SchedTrigger-MIB-22</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerDay</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>13&nbsp;Days for scheduled trigger</h1>
+            <div class="htmlContent"><p>The set of days in a month on which a scheduled action shall be called if all other constraints are satisfied. There are two sets of bits one can use to define the day within a month: Enumerations starting with the letter 'd' indicate a day in a month relative to the first day of a month. The first day of the month is specified by setting the bit d1(1) and the thirty-first is specified by the bit d31(31). Enumerations starting with the letter 'r' indicate a day in a month in reverse order, relative to the last day of a month. The last day in the month is specified by setting the bit r1(33) and the first day of a month with 31 days is specified by setting the bit r31(63). Setting multiple bits will include several days in the set of possible days for this schedule. Setting all bits will allow the scheduler to perform the action on any day within a month. Setting all bits starting with the letter 'd' or the letter 'r' will also allow the scheduler to perform the action on any day within a month. Note that implementations which maintain a list of pending activations must re-calculate them when this object is changed.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-527">26048_1-527</a></span>  Configure a scheduled trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-528">26048_1-528</a></span>  Confirm scheduled trigger configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-23">
+          <td class="id-col">SchedTrigger-MIB-23</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerHour</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>14&nbsp;Hours for scheduled trigger</h1>
+            <div class="htmlContent"><p>The set of hours within a day during which the scheduled action shall be called if all other constraints are satisfied. Note that implementations which maintain a list of pending activations must re-calculate them when this object is changed.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-527">26048_1-527</a></span>  Configure a scheduled trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-528">26048_1-528</a></span>  Confirm scheduled trigger configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-24">
+          <td class="id-col">SchedTrigger-MIB-24</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerMinute</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>15&nbsp;Minutes for scheduled trigger</h1>
+            <div class="htmlContent"><p>The set of minutes within an hour when the scheduled action shall be called if all other constraints are satisfied. should take place. Note that implementations which maintain a list of pending activations must re-calculate them when this object is changed.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-527">26048_1-527</a></span>  Configure a scheduled trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-528">26048_1-528</a></span>  Confirm scheduled trigger configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-25">
+          <td class="id-col">SchedTrigger-MIB-25</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerType</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>16&nbsp;Scheduled trigger type</h1>
+            <div class="htmlContent"><p>The type of this schedule. A repeating schedule will trigger on all local times that satisfy the bits set in fdSchedTriggerWeekDay, fdSchedTriggerMonth, fdSchedTriggerDay, fdSchedTriggerHour, and fdSchedTriggerMinute. A one-shot schedule operates in a similar manner, except that it automatically disables itself by transitioning the fdSchedTriggerRowStatus object to the 'notInService' state once the schedule triggers an action. Evidence of the trigger firing is provided by the fdSchedTriggerCount object incrementing. A one-shot schedule will only fire once, on the first instance of a local time that satisfy the configured schedule; any other local times configured in the schedule are effectively ignored. A one-and-delete schedule operates in a similar manner to the one-shot, except that it automatically deletes itself by setting the fdSchedTriggerRowStatus object to 'destroy' after the schedule triggers an action. A one-and-delete schedule will only fire once, on the first instance of a local time that satisfies the configured schedule; any other local times configured in the schedule are effectively ignored. Note that implementations which maintain a list of pending activations must re-calculate them when this object is changed.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-527">26048_1-527</a></span>  Configure a scheduled trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-528">26048_1-528</a></span>  Confirm scheduled trigger configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-26">
+          <td class="id-col">SchedTrigger-MIB-26</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerActionGroup</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>17&nbsp;Scheduled trigger action</h1>
+            <div class="htmlContent"><p>The fdActionName of the action from the fdActionTable to be performed.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-527">26048_1-527</a></span>  Configure a scheduled trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-528">26048_1-528</a></span>  Confirm scheduled trigger configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-27">
+          <td class="id-col">SchedTrigger-MIB-27</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerFires</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>18&nbsp;Scheduled trigger fires</h1>
+            <div class="htmlContent"><p>The number of times this scheduled trigger has fired (i.e., evaluated to 'true') since its last discontinuity. The last discontinuity is indicated by the fdCondTriggerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-531">26048_1-531</a></span>  Retrieve scheduled trigger statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-28">
+          <td class="id-col">SchedTrigger-MIB-28</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerCallErrs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>19&nbsp;Scheduled trigger failures</h1>
+            <div class="htmlContent"><p>The number of times this scheduled trigger fired but the call to the action group failed (e.g., due to the referenced row not being active) since the last discontinuity. The last discontinuity is indicated by the fdSchedTriggerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-531">26048_1-531</a></span>  Retrieve scheduled trigger statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-29">
+          <td class="id-col">SchedTrigger-MIB-29</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerTimeStamp</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>20&nbsp;Scheduled trigger time stamp</h1>
+            <div class="htmlContent"><p>The value of sysUpTime at the last discontinuity of any of the counters associated with this row of the fdSchedTriggerTable. Discontinuities occur when the row is created.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-531">26048_1-531</a></span>  Retrieve scheduled trigger statistics</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-30">
+          <td class="id-col">SchedTrigger-MIB-30</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerSecurityModel</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>21&nbsp;Scheduled trigger security model</h1>
+            <div class="htmlContent"><p>The security model used to activate this row of the fdSchedTriggerTable and that shall be used when calling the fdSchedTriggerActionGroup.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-31">
+          <td class="id-col">SchedTrigger-MIB-31</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerSecurityLevel</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>22&nbsp;Scheduled trigger security level</h1>
+            <div class="htmlContent"><p>The security level used to activate this row of the fdSchedTriggerTable and that shall be used when calling fdSchedTriggerActionGroup.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-32">
+          <td class="id-col">SchedTrigger-MIB-32</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerSecurityName</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>23&nbsp;Scheduled trigger security name</h1>
+            <div class="htmlContent"><p>The security name used to activate this row of the fdSchedTriggerTable and that shall be used when calling fdSchedTriggerActionGroup.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-33">
+          <td class="id-col">SchedTrigger-MIB-33</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerStorageType</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>24&nbsp;Scheduled trigger storage type</h1>
+            <div class="htmlContent"><p>This object defines whether this scheduled action is kept in volatile storage and lost upon reboot or if this row is backed up by non-volatile or permanent storage. Conceptual rows having the value `permanent' must allow write access to the columnar objects with read-create max access.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-527">26048_1-527</a></span>  Configure a scheduled trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-528">26048_1-528</a></span>  Confirm scheduled trigger configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="SchedTrigger-MIB-34">
+          <td class="id-col">SchedTrigger-MIB-34</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>25&nbsp;Scheduled trigger row status</h1>
+            <div class="htmlContent"><p>The status of this scheduled action. The row status shall indicate 'notReady' whenever the security model, level, and name do not provide write access to the fdActionGroupDescription object referenced by fdSchedTriggerActionGroup. At a minimum, these access rights shall be verified whenever (1) any configuration parameter in this conceptual row is changed and (2) any changes are made to the vacmSecurityToGroupTable, vacmAccessTable, or vacmViewTreeFamilyTable. Writable objects of this row can be modified independent of the current row status.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-529">26048_1-529</a></span>  Change status of scheduled trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-527">26048_1-527</a></span>  Configure a scheduled trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-528">26048_1-528</a></span>  Confirm scheduled trigger configuration</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-532">26048_1-532</a></span>  Delete a scheduled trigger</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-35</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Conformance Information </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-36</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerConformance</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node containing conformance statements related to the fdSchedTriggerMIB, as defined in ISO/TS 20684-3.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-37</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerCompliances</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for compliance statements for the fdSchedTriggerMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-38</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerGroups</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for group definitions related to fdSchedTriggerMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-39</td>
+          <td class="custom-col htmlContent">module-compliance</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerComplianceV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The conformance statement for scheduled trigger support.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-40</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerAdministrativeGroup</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information that provides for administration of the fdSchedTriggerTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-41</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdSchedTriggerBasicGroup</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information for each fdSchedTriggerEntry.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">SchedTrigger-MIB-42</td>
+          <td class="custom-col htmlContent">end</td>
+                      <td class="custom-col htmlContent">end</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+      </tbody>
+    </table>
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

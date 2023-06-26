@@ -1,0 +1,717 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>Srsa</h1><p><em>Last modified on 2023-06-25 16:32</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-5">1 SRSA type table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-8">2 SRSA type code</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-9">3 SRSA type port count</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-10">4 SRSA type status</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-11">5 SRSA type warning</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-12">6 SRSA port table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-15">7 SRSA port index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-16">8 SRSA port description</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-17">9 SRSA port direction</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-18">10 SRSA port units</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-19">11 SRSA port exponent</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-20">12 SRSA port precision</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-21">13 SRSA port minimum value</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-22">14 SRSA port maximum value</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-23">15 SRSA port requested value</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-24">16 SRSA port current value</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-25">17 SRSA port minimum threshold</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-26">18 SRSA port maximum threshold</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Srsa-MIB-27">19 SRSA port status</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col" style="color: white;"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Type</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Name</th>
+          <th class="description-col" style="color: white;"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col" style="color: white;"><i class="fas fa-link"></i> Links</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Access</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Syntax</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col">Srsa-MIB-1</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Header </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Srsa-MIB-2</td>
+          <td class="custom-col htmlContent">mib</td>
+                      <td class="custom-col htmlContent">ISO26048-1-SRSA</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><pre>MODULE-IDENTITY, OBJECT-IDENTITY, OBJECT-TYPE, Integer32<br>                                                    FROM SNMPv2-SMI<br>                                                      -- RFC 2578<br>MODULE-COMPLIANCE, OBJECT-GROUP<br>                                                    FROM SNMPv2-CONF<br>                                                      -- RFC 2580<br>SnmpAdminString<br>                                                    FROM SNMP-FRAMEWORK-MIB<br>                                                      -- RFC 3411<br>ITSBitmap, ITSInteger8, ITSUnits, ITSUnsigned8, ITSPositive8<br>                                                    FROM ISO26048-1-FieldDevice<br>fdGlobalMIB, fdGlobalConformance<br>                                                    FROM ISO26048-1-Global<br></pre></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Srsa-MIB-3</td>
+          <td class="custom-col htmlContent">module-identity</td>
+                      <td class="custom-col htmlContent">fdSrsaMIB</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The MIB that defines objects to manage logical supplemental roadside sensor and actuator (SRSA) ports of the field device. Copyright (C) International Organization for Standardization (ISO) This version of this MIB module is part of ISO 20684-2; see ISO 26048-1 for full legal notices. Copyright (C) International Organization for Standardization (ISO). This MIB module is part of ISO 26048-1; see ISO 26048-1 for full legal notices.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Srsa-MIB-4</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Object Definitions for Supplemental Roadside Sensor/Actuator Ports </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Srsa-MIB-5">
+          <td class="id-col">Srsa-MIB-5</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaTypeTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>1&nbsp;SRSA type table</h1>
+            <div class="htmlContent"><p>A static table that provides summary information about all of the logical SRSA ports of the indicated fdSrsaType. SRSA ports are general-purpose in the sense that they shall not be used as a part of mission-critical or safety-related functions; the fdSrsaType field usually assigns a specific function to the port. The table is static from the SNMP perspective but may be configurable by other means.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="custom-col htmlContent">SEQUENCE OF FdSrsaTypeEntry</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Srsa-MIB-6</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaTypeEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>An entry that provides summary information about all of the logical SRSA ports of the indicated fdSrsaType.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="custom-col htmlContent">FdSrsaTypeEntry</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Srsa-MIB-7</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdSrsaTypeEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">{ fdSrsaTypeCode SnmpAdminString,<br> fdSrsaTypeCount ITSUnsigned8,<br> fdSrsaTypeStatus ITSBitmap,<br> fdSrsaTypeWarning ITSBitmap<br> }</td>
+                    </tr>
+        <tr id="Srsa-MIB-8">
+          <td class="id-col">Srsa-MIB-8</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaTypeCode</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>2&nbsp;SRSA type code</h1>
+            <div class="htmlContent"><p>An index that identifies the logical type of SRSA port. Values that start with an ASCII question mark shall be available for implementation-specific purposes. All other values are registered in the Registry for ITS Identifiers (RITSI), available at https://iso-tc204.github.io/iso5345/. Each standardized value shall be associated with a precise meaning. Non- standardized entries shall not use any uppercase ASCII characters in the value of this object. Implementations reading non-standardized values should take care to verify that the meaning, units and scale are as expected. All implementations should take care to ensure precision and direction are as expected for intended use.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="custom-col htmlContent">SnmpAdminString (SIZE(3))</td>
+                    </tr>
+        <tr id="Srsa-MIB-9">
+          <td class="id-col">Srsa-MIB-9</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaTypeCount</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>3&nbsp;SRSA type port count</h1>
+            <div class="htmlContent"><p>The number of rows in the SRSA port table for the indicated SRSA port type.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-329">26048_1-329</a></span>  Determine SRSA capabilities</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="custom-col htmlContent">ITSUnsigned8</td>
+                    </tr>
+        <tr id="Srsa-MIB-10">
+          <td class="id-col">Srsa-MIB-10</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaTypeStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>4&nbsp;SRSA type status</h1>
+            <div class="htmlContent"><p>A bitmapped value indicating the status of each logical SRSA port of the type specified for this row of the table. If the current value of fdSrsaPortStatus for the port is 'unavailable' or 'nonoperational', or if the auxiliary port's value is greater than the maximum value or less than the minimum value, the bit shall be set to one (1); if the current value of fdSrsaPortStatus for the port is 'other', the value of this bit is governed by rules not defined by the ISO 20684 series; otherwise, the bit shall be set to zero (0).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-337">26048_1-337</a></span>  Monitor status of SRSA type</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="custom-col htmlContent">ITSBitmap</td>
+                    </tr>
+        <tr id="Srsa-MIB-11">
+          <td class="id-col">Srsa-MIB-11</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaTypeWarning</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>5&nbsp;SRSA type warning</h1>
+            <div class="htmlContent"><p>A bitmapped value indicating the warning status of each logical SRSA port of the type specified for this row of the table. If the current value of the auxiliary port's value is greater than the maximum threshold value or less than the minimum threshold value, the bit shall be set to one (1); otherwise, the bit shall be set to zero (0).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-337">26048_1-337</a></span>  Monitor status of SRSA type</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="custom-col htmlContent">ITSBitmap</td>
+                    </tr>
+        <tr id="Srsa-MIB-12">
+          <td class="id-col">Srsa-MIB-12</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaPortTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>6&nbsp;SRSA port table</h1>
+            <div class="htmlContent"><p>A static table that provides access to control and status objects for each logical SRSA port supported by the device. SRSA ports are supplemental in the sense that they shall not be used as a part of mission-critical or safety-related functions. The fdSrsaType field assigns a specific function to the port. The mechanism by which a logical port is associated with a physical port is notn defined by this document. The physical ports may be analogue or digital. The electrical levels used by the ports are outside the scope of this document. Rows cannot be added or deleted via the standard SNMP interface defined by this table, but implementations may provide other mechanisms to allow for end-user configuration of the table.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="custom-col htmlContent">SEQUENCE OF FdSrsaPortEntry</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Srsa-MIB-13</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaPortEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>An entry that provides detailed information about a specific logical SRSA port.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="custom-col htmlContent">FdSrsaPortEntry</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Srsa-MIB-14</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdSrsaPortEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">{ fdSrsaPortIndex ITSPositive8,<br> fdSrsaPortDescription SnmpAdminString,<br> fdSrsaPortDirection INTEGER,<br> fdSrsaPortUnits ITSUnits,<br> fdSrsaPortExponent ITSInteger8,<br> fdSrsaPortPrecision INTEGER,<br> fdSrsaPortMinValue Integer32,<br> fdSrsaPortMaxValue Integer32,<br> fdSrsaPortRequestedValue Integer32,<br> fdSrsaPortValue Integer32,<br> fdSrsaPortMinThreshold Integer32,<br> fdSrsaPortMaxThreshold Integer32,<br> fdSrsaPortStatus INTEGER<br> }</td>
+                    </tr>
+        <tr id="Srsa-MIB-15">
+          <td class="id-col">Srsa-MIB-15</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaPortIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>7&nbsp;SRSA port index</h1>
+            <div class="htmlContent"><p>An index to uniquely identify the row of the table within the fdSrsaType. Digital port numbers shall be assigned sequentially within each fdSrsaType starting at one up to a maximum of 127. Analogue port numbers shall be assigned sequentially within each fdSrsaType starting at 128 up to a maximum of 255. The location of the physical ports associated with each logical fdSrsaPort is implementation specific and may be configurable by means not defined within this document.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="custom-col htmlContent">ITSPositive8</td>
+                    </tr>
+        <tr id="Srsa-MIB-16">
+          <td class="id-col">Srsa-MIB-16</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaPortDescription</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>8&nbsp;SRSA port description</h1>
+            <div class="htmlContent"><p>A textual description of the logical SRSA port and/or the device connected to the port. The description should describe the location of any physical port and the sensor or controlled device.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-330">26048_1-330</a></span>  Configure SRSA</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-334">26048_1-334</a></span>  Confirm SRSA port configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                      <td class="custom-col htmlContent">SnmpAdminString</td>
+                    </tr>
+        <tr id="Srsa-MIB-17">
+          <td class="id-col">Srsa-MIB-17</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaPortDirection</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>9&nbsp;SRSA port direction</h1>
+            <div class="htmlContent"><p>An indication of whether the logical SRSA port supports input and/or output capabilities. For example, an input-only cabinetTemperature port would imply a temperature sensor; an output-only cabinetTemperature port would imply a thermostat; an input/output cabinetTemperature port would imply a thermostat with the ability to report the current temperature reading. The direction for entries where fdSrsaType is registered in the RITSI shall be one of the direction values defined for the fdSrsaType in the registry.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-334">26048_1-334</a></span>  Confirm SRSA port configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="custom-col htmlContent">INTEGER {<br> output (1),<br> input (2),<br> bidirectional (3)<br> }</td>
+                    </tr>
+        <tr id="Srsa-MIB-18">
+          <td class="id-col">Srsa-MIB-18</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaPortUnits</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>10&nbsp;SRSA port units</h1>
+            <div class="htmlContent"><p>Indicates the units in which the value is reported/provided. The units for entries where fdSrsaType is registered in the RITSI are encouraged to use the units recommended in the registry.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-334">26048_1-334</a></span>  Confirm SRSA port configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="custom-col htmlContent">ITSUnits</td>
+                    </tr>
+        <tr id="Srsa-MIB-19">
+          <td class="id-col">Srsa-MIB-19</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaPortExponent</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>11&nbsp;SRSA port exponent</h1>
+            <div class="htmlContent"><p>Indicates the resolution used by all value related objects for this logical SRSA port, expressed as a base 10 exponent. For example, if fdSrsaPortUnits is metres and fdSrsaPortExponent is -3, the value objects are represented in millimetres; if fdSrsaPortUnits is metres and fdSrsaPortExponent is 3, the value objects are represented in kilometres. The exponent for entries where fdSrsaType is registered in the RITSI are encouraged to use the exponent recommended in the registry when it allows sufficient resolution (e.g., if the exponent and units suggest the value is reported in millimetres, sensors that report values in 100ths of metres are encouraged to use an exponent value of -3 and to increment the value by 10 for every hundredths of a metre rather than using a value of -2 and incrementing by 1).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-334">26048_1-334</a></span>  Confirm SRSA port configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="custom-col htmlContent">ITSInteger8</td>
+                    </tr>
+        <tr id="Srsa-MIB-20">
+          <td class="id-col">Srsa-MIB-20</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaPortPrecision</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>12&nbsp;SRSA port precision</h1>
+            <div class="htmlContent"><p>The precision of the reported values. A sensor may measure the same condition multiple times and report slightly different values; the value of this object would report the maximum variation that may occur in the sensor value object (at a 99% confidence level) when reading a particular condition within the sensor's defined operating range. The precision for entries that use a fdSrsaType that is registered in the RITSI shall be less than or equal to the maximum imprecision for the type.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-334">26048_1-334</a></span>  Confirm SRSA port configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="custom-col htmlContent">Integer32 (0..2147483647)</td>
+                    </tr>
+        <tr id="Srsa-MIB-21">
+          <td class="id-col">Srsa-MIB-21</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaPortMinValue</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>13&nbsp;SRSA port minimum value</h1>
+            <div class="htmlContent"><p>The minimum value supported for the logical SRSA port. Input values below this reading should be considered unreliable.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-334">26048_1-334</a></span>  Confirm SRSA port configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="custom-col htmlContent">Integer32</td>
+                    </tr>
+        <tr id="Srsa-MIB-22">
+          <td class="id-col">Srsa-MIB-22</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaPortMaxValue</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>14&nbsp;SRSA port maximum value</h1>
+            <div class="htmlContent"><p>The maximum value supported for the logical SRSA port. Input values above this reading should be considered unreliable.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-334">26048_1-334</a></span>  Confirm SRSA port configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="custom-col htmlContent">Integer32</td>
+                    </tr>
+        <tr id="Srsa-MIB-23">
+          <td class="id-col">Srsa-MIB-23</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaPortRequestedValue</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>15&nbsp;SRSA port requested value</h1>
+            <div class="htmlContent"><p>The output value set for the logical SRSA port. The value of this object should be between fdSrsaPortMinValue and fdSrsaPortMaxValue, inclusive. A SET request for a value outside of this range on a output or bi-directional port shall result in a 'inconsistentValue' error. For output ports, this should be the same value as the value object. For bi-directional ports, this value will represent the last commanded state. For an input port, the value shall always be zero (0). An attempt to set this value on an input port shall result in a 'notWritable' error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-338">26048_1-338</a></span>  Set output value of SRSA port</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-339">26048_1-339</a></span>  Verify output setting for SRSA port</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                      <td class="custom-col htmlContent">Integer32</td>
+                    </tr>
+        <tr id="Srsa-MIB-24">
+          <td class="id-col">Srsa-MIB-24</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaPortValue</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>16&nbsp;SRSA port current value</h1>
+            <div class="htmlContent"><p>The current value on the logical SRSA port. For an output port this value should be the same as the requestedValue. For input and bidirectional ports, this is the current value being received.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-335">26048_1-335</a></span>  Monitor value from SRSA port</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="custom-col htmlContent">Integer32</td>
+                    </tr>
+        <tr id="Srsa-MIB-25">
+          <td class="id-col">Srsa-MIB-25</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaPortMinThreshold</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>17&nbsp;SRSA port minimum threshold</h1>
+            <div class="htmlContent"><p>The lower warning threshold defined for the logical SRSA port. Whenever the fdSrsaValue is less than the value of this object, the bit in fdSrsaTypeWarning that corresponds with this sensor shall have the value of one.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-330">26048_1-330</a></span>  Configure SRSA</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-334">26048_1-334</a></span>  Confirm SRSA port configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                      <td class="custom-col htmlContent">Integer32</td>
+                    </tr>
+        <tr id="Srsa-MIB-26">
+          <td class="id-col">Srsa-MIB-26</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaPortMaxThreshold</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>18&nbsp;SRSA port maximum threshold</h1>
+            <div class="htmlContent"><p>The upper warning threshold defined for the logical SRSA port. Whenever the fdSrsaValue is greater than the value of this object, the bit in fdSrsaTypeWarning that corresponds with this sensor shall have the value of one.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-330">26048_1-330</a></span>  Configure SRSA</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-334">26048_1-334</a></span>  Confirm SRSA port configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                      <td class="custom-col htmlContent">Integer32</td>
+                    </tr>
+        <tr id="Srsa-MIB-27">
+          <td class="id-col">Srsa-MIB-27</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdSrsaPortStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>19&nbsp;SRSA port status</h1>
+            <div class="htmlContent"><p>The operational status of the SRSA port. Valid values are: other - a state not defined by this document active - The SRSA port appears to be operating normally and is in service. unavailable - The logical SRSA port is determined to be unassociated with any attached equipment. This may be due to the logical port not being associated with a physical port or may be due to the device definitively determining that the physical port is not attached to any device. nonoperational- The data received from the logical SRSA port appears to be suspect, which may be due to a disconnected wire or out-of-range, jittery, or wildly fluctuating readings. notInService - The logical SRSA port has been taken out of service. A manager may set the object to 'active' or 'notInService'; an attempt to set the value to any other value will result in a 'wrongValue' error. The port will remain in the 'notInService' state until it is set to the active state. Once commanded to the active state, the status may change among any state other than notInService until manually set to the notInService state.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-336">26048_1-336</a></span>  Monitor status of SRSA port</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="custom-col htmlContent">INTEGER {<br> other (1),<br> active (2),<br> unavailable (3),<br> nonoperational (4),<br> notInService (5)<br> }</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Srsa-MIB-28</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Conformance Information </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Srsa-MIB-29</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdSrsaConformance</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node containing conformance statements related to the fdSrsaMIB, as defined in ISO 26048-1.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Srsa-MIB-30</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdSrsaCompliances</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for compliance statements for the fdSrsaMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Srsa-MIB-31</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdSrsaGroups</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for group definitions related to fdSrsaMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Srsa-MIB-32</td>
+          <td class="custom-col htmlContent">module-compliance</td>
+                      <td class="custom-col htmlContent">fdSrsaCompliance</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information that is required if the field device supports one or more input or bi-directional general-purpose I/O ports.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">{ fdSrsaBasicGroupV1<br> }</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Srsa-MIB-33</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdSrsaBasicGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The basic objects necessary for implementing the supplemental roadside sensor and actuator feature.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">{ fdSrsaTypeCount,<br> fdSrsaTypeStatus,<br> fdSrsaTypeWarning,<br> fdSrsaPortDescription,<br> fdSrsaPortMinThreshold,<br> fdSrsaPortMaxThreshold,<br> fdSrsaPortDirection,<br> fdSrsaPortUnits,<br> fdSrsaPortExponent,<br> fdSrsaPortPrecision,<br> fdSrsaPortMinValue,<br> fdSrsaPortMaxValue,<br> fdSrsaPortStatus<br> }</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Srsa-MIB-34</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdSrsaOutputGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The objects necessary for controlling and monitoring the output of a SRSA- port.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">{ fdSrsaPortRequestedValue<br> }</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Srsa-MIB-35</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdSrsaInputGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The objects necessary for monitoring the value of a SRSA port.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">{ fdSrsaPortValue<br> }</td>
+                    </tr>
+        <tr>
+          <td class="id-col">Srsa-MIB-36</td>
+          <td class="custom-col htmlContent">end</td>
+                      <td class="custom-col htmlContent">end</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+      </tbody>
+    </table>
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

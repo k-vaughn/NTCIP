@@ -1,0 +1,1133 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>Log</h1><p><em>Last modified on 2023-06-24 22:56</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-6">1 Total snapshots</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-7">2 Total bumped snapshots</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-8">3 Delete all configuration</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-9">4 Clear all logs</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-10">5 Owner table for logs</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-13">6 Maximum log factories for an owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-14">7 Maximum classes for an owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-15">8 Maximum number of entries per log class for an owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-16">9 Maximum storage allowed for an owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-17">10 Number of log snapshots for an owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-18">11 Number of snapshots bumped for an owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-19">12 Delete all configuration for an owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-20">13 Clear all logs for an owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-22">14 Latency for data retrieval</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-23">15 Maximum variable size</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-24">16 Snapshot factory table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-27">17 Snapshot factory index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-28">18 Snapshot factory description</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-29">19 Context of the object to be stored in the snapshot</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-30">20 Identifier of the object to be stored in the snapshot</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-31">21 Log class to store the snapshot</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-32">22 Security model used to obtain snapshot data</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-33">23 Security level used to obtain snapshot data</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-34">24 Security name used to obtain snapshot data</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-35">25 Snapshot factory storage type</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-36">26 Row status of the snapshot factory</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-37">27 Log Class Table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-40">28 Log class index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-41">29 Log class description</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-42">30 Maximum size of log class</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-43">31 Maximum number of entries in log class </a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-44">32 Clear date for log class</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-45">33 Clear time for log class</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-46">34 Number of snapshots made for log class</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-47">35 Number of snapshots bumped from log class</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-48">36 Time stamp of last discontinuity for log class</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-49">37 Log class storage type</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-50">38 Log class row status</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-51">39 Snapshot log table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-54">40 Log index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-55">41 Factory that generated the log entry</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-56">42 Value captured by the log snapshot factory</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-57">43 Date of event that resulted in the snapshot</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-58">44 Time of event that resulted in the snapshot</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-59">45 Date on which snapshot was logged</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-60">46 Time at which snapshot was logged</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Log-MIB-61">47 Latency between the event and data capture</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col" style="color: white;"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Type</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Name</th>
+          <th class="description-col" style="color: white;"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col" style="color: white;"><i class="fas fa-link"></i> Links</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col">Log-MIB-1</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Log Header </div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-2</td>
+          <td class="custom-col htmlContent">mib</td>
+                      <td class="custom-col htmlContent">ISO26048-1-Log</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><pre>  <br>MODULE-IDENTITY, OBJECT-TYPE, OBJECT-IDENTITY, Unsigned32<br>                                                    FROM SNMPv2-SMI<br>                                                      -- RFC 2578<br>RowStatus, StorageType, VariablePointer, TimeStamp, TruthValue<br>                                                    FROM SNMPv2-TC<br>                                                      -- RFC 2579<br>MODULE-COMPLIANCE, OBJECT-GROUP<br>                                                    FROM SNMPv2-CONF<br>                                                      -- RFC 2580<br>SnmpAdminString, SnmpSecurityLevel, SnmpSecurityModel<br>                                                    FROM SNMP-FRAMEWORK-MIB<br>                                                      -- RFC 3411<br>ITSCounter16, ITSCounter32, ITSDailyTimeStamp, ITSDateStamp, ITSOerString, <br>ITSPositive8, ITSPositive16, ITSRelativeRowPointer, ITSUnsigned8, ITSUnsigned16<br>                                                    FROM ISO26048-1-FieldDevice<br>fdGlobalMIB, fdAdminGlobal, fdGlobalConformance<br>                                                    FROM ISO26048-1-Global<br>fdOwnerEntry, fdOwnerIndex<br>                                                    FROM ISO26048-1-Owner  <br></pre></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-3</td>
+          <td class="custom-col htmlContent">module-identity</td>
+                      <td class="custom-col htmlContent">fdLogMIB</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>This MIB defines a mechanism by which a manager can configure a device to record information about events in a log for later retrieval. Copyright (C) International Organization for Standardization (ISO). This MIB module is part of ISO 26048-1; see ISO 26048-1 for full legal notices.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-4</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Administrative Objects </div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-5</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdAdminLog</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node defining management information related to the field device's Log.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr id="Log-MIB-6">
+          <td class="id-col">Log-MIB-6</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminLogsTotalSnapshots</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>1&nbsp;Total snapshots</h1>
+            <div class="htmlContent"><p>The number of snapshots that have been created by snapshot factories since the last initialization.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-764">26048_1-764</a></span>  Retrieve log class summary statistics</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-7">
+          <td class="id-col">Log-MIB-7</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminLogsTotalBumps</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>2&nbsp;Total bumped snapshots</h1>
+            <div class="htmlContent"><p>The number of log entries that have been bumped out of the log due to size limits or entry limits. Removals due to manual requests to clear are not included in this count.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-764">26048_1-764</a></span>  Retrieve log class summary statistics</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-8">
+          <td class="id-col">Log-MIB-8</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminLogsDeleteAllConfiguration</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>3&nbsp;Delete all configuration</h1>
+            <div class="htmlContent"><p>When set to true, this object shall delete all entries in the log snapshot factory and log class tables. Once complete, the value shall return to 'false'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-773">26048_1-773</a></span>  Delete all log classes</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-9">
+          <td class="id-col">Log-MIB-9</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminLogsClearAllLogs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>4&nbsp;Clear all logs</h1>
+            <div class="htmlContent"><p>When set to true, this object will delete all entries in the fdLogTable. Once complete, the value shall return to 'false'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-770">26048_1-770</a></span>  Clear all log classes</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-10">
+          <td class="id-col">Log-MIB-10</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerLogTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>5&nbsp;Owner table for logs</h1>
+            <div class="htmlContent"><p>A table containing configuration rights for the notification-realted tables for specific owners.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-11</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerLogEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A row in the fdOwnerLogTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-12</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdOwnerLogEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr id="Log-MIB-13">
+          <td class="id-col">Log-MIB-13</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerLogMaxFactories</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>6&nbsp;Maximum log factories for an owner</h1>
+            <div class="htmlContent"><p>The maximum number of rows that this owner is allowed to manage within the fdLogSnapshotFactoryTable at any point in time. An attempt to create a new row that would exceed this limit shall result in an 'inconsistentName' error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-774">26048_1-774</a></span>  Configure log owner</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-775">26048_1-775</a></span>  Confirm log owner configuration</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-14">
+          <td class="id-col">Log-MIB-14</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerLogMaxClasses</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>7&nbsp;Maximum classes for an owner</h1>
+            <div class="htmlContent"><p>The maximum number of rows that this owner is allowed to manage within the fdLogClassTable at any point in time. An attempt to create a new row that would exceed this limit shall result in an 'inconsistentName' error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-774">26048_1-774</a></span>  Configure log owner</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-775">26048_1-775</a></span>  Confirm log owner configuration</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-15">
+          <td class="id-col">Log-MIB-15</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerLogMaxClassEntries</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>8&nbsp;Maximum number of entries per log class for an owner</h1>
+            <div class="htmlContent"><p>The maximum number of rows that this owner is allowed to maintain within any class of the fdLogTable at any point in time. A new log entry that would cause the log to exceed this limit shall cause the oldest logged snapshot in the class to be bumped and deleted to enable the new entry to be stored within the limit.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-774">26048_1-774</a></span>  Configure log owner</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-775">26048_1-775</a></span>  Confirm log owner configuration</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-16">
+          <td class="id-col">Log-MIB-16</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerLogMaxStorage</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>9&nbsp;Maximum storage allowed for an owner</h1>
+            <div class="htmlContent"><p>The maximum number of octets allowed to store all instances of fdLogValue associated with the fdOwnerIndex. A new log entry that would cause the log to exceed this limit shall cause the oldest logged snapshot(s) for this owner to be bumped and deleted until the new entry can be stored within the limit.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-774">26048_1-774</a></span>  Configure log owner</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-775">26048_1-775</a></span>  Confirm log owner configuration</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-17">
+          <td class="id-col">Log-MIB-17</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerLogSnapshots</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>10&nbsp;Number of log snapshots for an owner</h1>
+            <div class="htmlContent"><p>The number of times any log snapshot factory associated with this owner has generated a snapshot since the last discontinuity for this owner. The last discontinuity is indicated by fdOwnerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-776">26048_1-776</a></span>  Retrieve log statistics for an owner</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-18">
+          <td class="id-col">Log-MIB-18</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerLogBumps</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>11&nbsp;Number of snapshots bumped for an owner</h1>
+            <div class="htmlContent"><p>The number of log entries associated with this owner that have been bumped out of a log due to entry limits or storage limitssince the last discontinuity for this owner. Removals due to aging out or due to manual requests to clear are not included in this count. The last discontinuity is indicated by fdOwnerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-776">26048_1-776</a></span>  Retrieve log statistics for an owner</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-19">
+          <td class="id-col">Log-MIB-19</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerLogDeleteConfigs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>12&nbsp;Delete all configuration for an owner</h1>
+            <div class="htmlContent"><p>When set to true, this object shall delete all entries associated with this owner in the log snapshot factory and log class tables. Once complete, the value shall return to 'false'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-772">26048_1-772</a></span>  Delete all log classes of an owner</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-20">
+          <td class="id-col">Log-MIB-20</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerLogClearLogs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>13&nbsp;Clear all logs for an owner</h1>
+            <div class="htmlContent"><p>When set to true, this object will delete all entries associated with this owner from the fdLogTable. Once complete, the value shall return to 'false'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-777">26048_1-777</a></span>  Clear logs of an owner</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-21</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Log Objects </div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr id="Log-MIB-22">
+          <td class="id-col">Log-MIB-22</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogsRecordingLatency</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>14&nbsp;Latency for data retrieval</h1>
+            <div class="htmlContent"><p>The maximum latency that the device is designed to support between a trigger firing and the data being retrieved for storage within a log.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-748">26048_1-748</a></span>  Determine log capabilities</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-23">
+          <td class="id-col">Log-MIB-23</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogsMaxVariableSize</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>15&nbsp;Maximum variable size</h1>
+            <div class="htmlContent"><p>The maximum size for any variable value that can be recorded in the log.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-748">26048_1-748</a></span>  Determine log capabilities</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-24">
+          <td class="id-col">Log-MIB-24</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogSnapshotFactoryTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>16&nbsp;Snapshot factory table</h1>
+            <div class="htmlContent"><p>A table that defines where to log snapshots and what data should be recorded with each snapshot.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-25</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogSnapshotFactoryEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>An entry in the fdLogSnapshotFactoryTable. An entry of this table can be called by external logic (e.g., the Action table defined in ISO/TS 20684-3) to create an entry in the fdLogTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-26</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdLogSnapshotFactoryEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr id="Log-MIB-27">
+          <td class="id-col">Log-MIB-27</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogSnapshotFactoryIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>17&nbsp;Snapshot factory index</h1>
+            <div class="htmlContent"><p>The index of this Log Snapshot Factory. This value is used to identify the type of event that occurred resulting in the snapshot. While it is expected that each type of trigger action would be associated with its own snapshot factory, this is not a requirement.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr id="Log-MIB-28">
+          <td class="id-col">Log-MIB-28</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogSnapshotFactoryDescription</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>18&nbsp;Snapshot factory description</h1>
+            <div class="htmlContent"><p>A textual description of the snapshot factory.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-783">26048_1-783</a></span>  Configure log snapshot factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-784">26048_1-784</a></span>  Confirm log snapshot factory configurati…</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-29">
+          <td class="id-col">Log-MIB-29</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogSnapshotFactoryObjectContext</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>19&nbsp;Context of the object to be stored in the snapshot</h1>
+            <div class="htmlContent"><p>The management context of the object instance containing the data to be retrieved and recorded with the snapshot. If the object identifier does not point to a valid context at the time that the data is being retrieved, the log shall record a zero-length string.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-783">26048_1-783</a></span>  Configure log snapshot factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-784">26048_1-784</a></span>  Confirm log snapshot factory configurati…</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-30">
+          <td class="id-col">Log-MIB-30</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogSnapshotFactoryObjectID</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>20&nbsp;Identifier of the object to be stored in the snapshot</h1>
+            <div class="htmlContent"><p>The object identifier of the object instance containing the data to be retrieved and recorded as fdLogValue for the snapshot. If the object identifier does not point to a valid object instance at the time that the data is being retrieved, the log shall record a zero-length string for the value of fdLogValue.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-783">26048_1-783</a></span>  Configure log snapshot factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-784">26048_1-784</a></span>  Confirm log snapshot factory configurati…</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-31">
+          <td class="id-col">Log-MIB-31</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogSnapshotFactoryLogClass</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>21&nbsp;Log class to store the snapshot</h1>
+            <div class="htmlContent"><p>The log class within which the snapshot shall be recorded. The root of the RELATIVE OID is fdLogClassDescription (i.e., the encoded value will consist of the fdOwnerIndex and fdLogClassIndex of the log class into which the generated log entry will be stored).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-783">26048_1-783</a></span>  Configure log snapshot factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-784">26048_1-784</a></span>  Confirm log snapshot factory configurati…</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-32">
+          <td class="id-col">Log-MIB-32</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogSnapshotFactorySecurityModel</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>22&nbsp;Security model used to obtain snapshot data</h1>
+            <div class="htmlContent"><p>The security model used to activate this row of the fdLogSnapshotFactoryTable and that shall be used when accessing the object referenced by fdLogSnapshotFactoryObjectID.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr id="Log-MIB-33">
+          <td class="id-col">Log-MIB-33</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogSnapshotFactorySecurityLevel</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>23&nbsp;Security level used to obtain snapshot data</h1>
+            <div class="htmlContent"><p>The security level used to activate this row of the fdLogSnapshotFactoryTable and that shall be used when accessing the object referenced by fdLogSnapshotFactoryObjectID.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr id="Log-MIB-34">
+          <td class="id-col">Log-MIB-34</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogSnapshotFactorySecurityName</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>24&nbsp;Security name used to obtain snapshot data</h1>
+            <div class="htmlContent"><p>The security name used to activate this row of the fdLogSnapshotFactoryTable and that shall be used when accessing the object referenced by fdLogSnapshotFactoryObjectID.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr id="Log-MIB-35">
+          <td class="id-col">Log-MIB-35</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogSnapshotFactoryStorageType</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>25&nbsp;Snapshot factory storage type</h1>
+            <div class="htmlContent"><p>The storageType for this conceptual row. Permanent rows shall allow the value of fdLogSnapshotFactoryRowStatus to be set to 'notInService'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-783">26048_1-783</a></span>  Configure log snapshot factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-784">26048_1-784</a></span>  Confirm log snapshot factory configurati…</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-36">
+          <td class="id-col">Log-MIB-36</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogSnapshotFactoryRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>26&nbsp;Row status of the snapshot factory</h1>
+            <div class="htmlContent"><p>The status of this conceptual row. Any attempt to modify any read-create object within this conceptual row, other than this object, while the value of this object is active (1) shall result in an inconsistentValue error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-785">26048_1-785</a></span>  Change status of log snapshot factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-783">26048_1-783</a></span>  Configure log snapshot factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-784">26048_1-784</a></span>  Confirm log snapshot factory configurati…</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-786">26048_1-786</a></span>  Delete log snapshot factory</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-37">
+          <td class="id-col">Log-MIB-37</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogClassTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>27&nbsp;Log Class Table</h1>
+            <div class="htmlContent"><p>A table used to manage the log.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-38</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogClassEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>An entry in the fdLogClassTable that provides for the management of a specific log class (i.e., the set of entries in the fdLogTable with a common fdOwnerIndex and fdLogClassIndex).</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-39</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdLogClassEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr id="Log-MIB-40">
+          <td class="id-col">Log-MIB-40</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogClassIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>28&nbsp;Log class index</h1>
+            <div class="htmlContent"><p>The index of this log class, unique within the scope of the fdOwnerIndex.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr id="Log-MIB-41">
+          <td class="id-col">Log-MIB-41</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogClassDescription</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>29&nbsp;Log class description</h1>
+            <div class="htmlContent"><p>A description of the purpose of this log class.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-755">26048_1-755</a></span>  Configure log class</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-760">26048_1-760</a></span>  Confirm log class configuration</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-42">
+          <td class="id-col">Log-MIB-42</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogClassSizeLimit</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>30&nbsp;Maximum size of log class</h1>
+            <div class="htmlContent"><p>The maximum number of octets allowed for all fdLogValue instances with this fdOwnerIndex and fdLogClassIndex. A new log entry that would cause the log to exceed this limit shall cause the oldest logged snapshot(s) to be bumped and deleted from the log until the new entry can be stored within the limit.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-755">26048_1-755</a></span>  Configure log class</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-760">26048_1-760</a></span>  Confirm log class configuration</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-43">
+          <td class="id-col">Log-MIB-43</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogClassEntryLimit</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>31&nbsp;Maximum number of entries in log class </h1>
+            <div class="htmlContent"><p>The maximum number of snapshots to be stored in the log class. A new log entry that would cause the log class to exceed this value shall cause the oldest snapshot to be bumped and deleted from the log class.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-755">26048_1-755</a></span>  Configure log class</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-760">26048_1-760</a></span>  Confirm log class configuration</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-44">
+          <td class="id-col">Log-MIB-44</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogClassClearDate</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>32&nbsp;Clear date for log class</h1>
+            <div class="htmlContent"><p>The date component of the clear date and time. Upon setting this value, the device shall delete any fdLogEntry that has the same fdOwnerIndex and fdLogClassIndex as this instance of fdLogClassClearDate and was entered into the log before the defined clear date and time (i.e., the entry is deleted only if the instant defined by fdLogDate and fdLogTime is before the instant defined by fdLogClassClearDate and fdLogClassClearTime). If the clear date and time represent an instant in time that is after the fdLogDate and fdLogTime of a new snapshot, the snapshot shall not be recorded in the log and the snapshot counters shall not be incremented.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-769">26048_1-769</a></span>  Clear old snapshots from log</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-45">
+          <td class="id-col">Log-MIB-45</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogClassClearTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>33&nbsp;Clear time for log class</h1>
+            <div class="htmlContent"><p>The time component of the clear date and time. Upon setting this value, the device shall delete any fdLogEntry that has the same fdOwnerIndex and fdLogClassIndex as this instance of fdLogClassClearTime and was entered into the log before the defined clear date and time (i.e., the entry is deleted only if the instant defined by fdLogDate and fdLogTime is before the instant defined by fdLogClassClearDate and fdLogClassClearTime). If the clear date and time represent an instant in time that is after the fdLogDate and fdLogTime of a new snapshot, the snapshot shall not be recorded in the log and the snapshot counters shall not be incremented.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-769">26048_1-769</a></span>  Clear old snapshots from log</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-46">
+          <td class="id-col">Log-MIB-46</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogClassSnapshots</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>34&nbsp;Number of snapshots made for log class</h1>
+            <div class="htmlContent"><p>The number of snapshots that have been recorded in the log classs since the last discontinuity. The last discontinuity is indicated by the fdLogClassTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-761">26048_1-761</a></span>  Retrieve log class statistics</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-47">
+          <td class="id-col">Log-MIB-47</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogClassBumps</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>35&nbsp;Number of snapshots bumped from log class</h1>
+            <div class="htmlContent"><p>The number of snapshots associated with this fdLogClassEntry that have been removed due to defined size or entry limits since the last discontinuity. The last discontinuity is indicated by the fdLogClassTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-761">26048_1-761</a></span>  Retrieve log class statistics</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-48">
+          <td class="id-col">Log-MIB-48</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogClassTimeStamp</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>36&nbsp;Time stamp of last discontinuity for log class</h1>
+            <div class="htmlContent"><p>The value of sysUpTime at the last discontinuity of any of the counters associated with this row of the fdLogClassTable. Discontinuities occur when the row is activated.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-761">26048_1-761</a></span>  Retrieve log class statistics</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-49">
+          <td class="id-col">Log-MIB-49</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogClassStorageType</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>37&nbsp;Log class storage type</h1>
+            <div class="htmlContent"><p>The storage type for this entry and all associated rows in the fdLogTable.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-755">26048_1-755</a></span>  Configure log class</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-760">26048_1-760</a></span>  Confirm log class configuration</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-50">
+          <td class="id-col">Log-MIB-50</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogClassRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>38&nbsp;Log class row status</h1>
+            <div class="htmlContent"><p>The status of this conceptual row. Any attempt to modify any read-create object within this conceptual row, other than this object, while the value of this object is active (1) shall result in an inconsistentValue error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-768">26048_1-768</a></span>  Change status of log class</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-755">26048_1-755</a></span>  Configure log class</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-760">26048_1-760</a></span>  Confirm log class configuration</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-771">26048_1-771</a></span>  Delete a log class</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-767">26048_1-767</a></span>  Retrieve log class status</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-51">
+          <td class="id-col">Log-MIB-51</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>39&nbsp;Snapshot log table</h1>
+            <div class="htmlContent"><p>A table storing logged snapshots.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-52</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The record of a snapshot.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-53</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdLogEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr id="Log-MIB-54">
+          <td class="id-col">Log-MIB-54</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>40&nbsp;Log index</h1>
+            <div class="htmlContent"><p>The sequential number associated with the snapshot to uniquely identity it within the scope of the fdOwnerIndex and fdLogClassIndex.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr id="Log-MIB-55">
+          <td class="id-col">Log-MIB-55</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogFactory</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>41&nbsp;Factory that generated the log entry</h1>
+            <div class="htmlContent"><p>The entry in the fdLogSnapshotFactoryTable that generated the entry in the log. This value allows a manager to identify the type data recorded in the log and to gain insight into the event that may have caused the entry. The trigger that caused the entry can be discovered if the factory is only called by one action and that action is only called by one trigger.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-749">26048_1-749</a></span>  Retrieve logged snapshot</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-56">
+          <td class="id-col">Log-MIB-56</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogValue</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>42&nbsp;Value captured by the log snapshot factory</h1>
+            <div class="htmlContent"><p>The OER-encoded value of the object instance referenced by the associated fdLogSnapshotFactoryObject when this entry was created. In theory, this is the value of the referenced object when the event occurred, but in practice there will be some delay between the event occurring and the data being obtained and recorded in this log (as recorded in the latency field).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-749">26048_1-749</a></span>  Retrieve logged snapshot</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-57">
+          <td class="id-col">Log-MIB-57</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogEventDate</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>43&nbsp;Date of event that resulted in the snapshot</h1>
+            <div class="htmlContent"><p>The date on which the event was detected according to the UTC Clock within the field device.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-749">26048_1-749</a></span>  Retrieve logged snapshot</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-58">
+          <td class="id-col">Log-MIB-58</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogEventTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>44&nbsp;Time of event that resulted in the snapshot</h1>
+            <div class="htmlContent"><p>The time of day at which the event was detected according to the UTC Clock within the field device.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-749">26048_1-749</a></span>  Retrieve logged snapshot</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-59">
+          <td class="id-col">Log-MIB-59</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogDate</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>45&nbsp;Date on which snapshot was logged</h1>
+            <div class="htmlContent"><p>The date on which the snapshot was logged in this table according to the UTC Clock within the field device.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-749">26048_1-749</a></span>  Retrieve logged snapshot</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-60">
+          <td class="id-col">Log-MIB-60</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>46&nbsp;Time at which snapshot was logged</h1>
+            <div class="htmlContent"><p>The time of day at which the snapshot was logged in this table according to the UTC Clock within the field device. The log date and time is mostly used internally when clearing entries older than a specified date and time.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-749">26048_1-749</a></span>  Retrieve logged snapshot</div>
+          </td>
+        </tr>
+        <tr id="Log-MIB-61">
+          <td class="id-col">Log-MIB-61</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdLogDataLatency</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>47&nbsp;Latency between the event and data capture</h1>
+            <div class="htmlContent"><p>A concise identification of the latency between the trigger firing and obtaining the value for the logged object. The value is represented by the base 2 logarithm of the number of milliseconds that elapsed between the event and the time at which the data was captured for recording in the log, multiplied by 10 and rounded to the nearest integer value. For example, if exactly one second (1000 ms) elapsed between the detection of the event and the recording of data in the log, the latency value would be round(log2(1000) * 10) = round(9.966 * 10) = round(99.66) = 100. A latency value of 255 represents a latency in excess of 12.73 hours.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-749">26048_1-749</a></span>  Retrieve logged snapshot</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-62</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Conformance Information </div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-63</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdLogConformance</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node containing conformance statements related to the fdLogMIB, as defined in ISO/TS 20684-7.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-64</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdLogCompliances</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for compliance statements for the fdLogMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-65</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdLogGroups</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for group definitions related to fdLogMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-66</td>
+          <td class="custom-col htmlContent">module-compliance</td>
+                      <td class="custom-col htmlContent">fdLogComplianceV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The conformance statement for the field device log MIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-67</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdLogAdminGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information that indicates administration-level statistics for the logging feature as a whole.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-68</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdLogConfigGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information that identifies the capabilities of the logging system.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-69</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdLogRetrievalGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information that allows a manager to retrieve a log entry.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Log-MIB-70</td>
+          <td class="custom-col htmlContent">end</td>
+                      <td class="custom-col htmlContent">end</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

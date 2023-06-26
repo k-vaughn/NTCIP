@@ -1,308 +1,356 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>WG9-OptionGroups: OptionGroups</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link href="jq/jquery-ui.css" rel="stylesheet">
-	<script src="external/jquery/jquery.js"></script>
-	<script src="jq/jquery-ui.js"></script>
-	<script src="glossary.js"></script>
-	<script>
-			$( document ).tooltip({
-				content: function() {
-					return $(this).attr('title');
-				}
-			});
-	</script>
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-</head>
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
 	<body class="is-preload">
-		
-	<div id="outline">
-		<ul>
-			<li><a href="">Section 1</li>
-		</ul>
-	</div>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
 
-				<!-- Header -->
-					<header id="header" style="position: static;">
-						<h2><a href="index.html"><img src="images/NTCIP-tight.jpg" style="width: 7em;" /></a></h2>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="NTCIP_1201.html">NTCIP 1201</a></li>
-								<li><a href="20684_1.html">ISO 20684-1</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>OptionGroups</h1><p><em>Last modified on 2023-06-22 19:31</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
 						</div>
-					</nav>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#OptionGroups-9">1 Trigger Options (1..*)</a></li>
 
-				<!-- Wrapper -->
-					<div class="inner">
-						<table>
-							<tr>
-								<td><h1>OptionGroups: OptionGroups</h1><br />    <em>Last modified on 2023-05-24 19:24</em></td>
-								<td width="390px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/ISO-TC204/iso24315p1/discussions" class="button primary">Submit Comment</a><br /></span></td>
-							</tr>
-						</table>
-							
-  <div class="reqviewTable table-responsive-md">
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#OptionGroups-4">2 Power sources (1..*)</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#OptionGroups-10">3 Remote Target (2)</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#OptionGroups-11">4 Conditional Trigger Modes (1..*)</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#OptionGroups-12">5 Time Sources (1..*)</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#OptionGroups-13">6 Time Keeping Options (1..*)</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#OptionGroups-14">7 SchedTrigger Options</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#OptionGroups-15">8 Memory Types</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#OptionGroups-16">9 Event Modes</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#OptionGroups-17">10 Trigger Modes</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
     <table class="table table-sm">
       <!-- Heading of the requirements table -->
       <thead>
         <tr>
-          <th class="id-col"><i class="fas fa-asterisk"></i> ID</th>
-          <th class="description-col"><i class="fas fa-align-left"></i> Description</th>
-          <th class="links-col"><i class="fas fa-link"></i> Links</th>
+          <th class="id-col" style="color: white;"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="description-col" style="color: white;"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col" style="color: white;"><i class="fas fa-link"></i> Links</th>
         </tr>
       </thead>
 
       <!-- Requirements table with list of requirements -->
       <tbody>
-        <tr>
-          <td class="id-col"><a id="OptionGroups-9"></a>OptionGroups-9</td>
+        <tr id="OptionGroups-9">
+          <td class="id-col">OptionGroups-9</td>
           <td class="description-col" style="padding-left:10px">
             <h1>1&nbsp;Trigger Options (1..*)</h1>
             <div class="htmlContent"><p>(1..*)</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Optionally fulfilled by:</div>
-                <div class="link"> <span>20684_3-227</span>  Conditional trigger</div>
-                <div class="link"> <span>20684_3-10</span>  Day plan scheduler</div>
-                <div class="link"> <span>20684_3-138</span>  Scheduled trigger</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-557">26048_1-557</a></span>  Conditional trigger</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-502">26048_1-502</a></span>  Day plan scheduler</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-524">26048_1-524</a></span>  Scheduled trigger</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
-                <div class="link"> <span>20684_4-6</span>  Real-time notifications user need</div>
-                <div class="link"> <span>20684_5-59</span>  Log user-defined exceptions</div>
-                <div class="link"> <span>20684_6-6</span>  Issue trigger-based commands</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-599">26048_1-599</a></span>  Real-time notifications user need</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-730">26048_1-730</a></span>  Log user-defined exceptions</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally fulfilled by:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-557">26048_1-557</a></span>  Conditional trigger feature</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-502">26048_1-502</a></span>  Day plan feature</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-524">26048_1-524</a></span>  Scheduled trigger feature</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-598">26048_1-598</a></span>  Receive notification of triggers firing</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-730">26048_1-730</a></span>  Log user-defined snapshots</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1047">26048_1-1047</a></span>  Record a series of snapshots</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-787">26048_1-787</a></span>  Issue trigger-based commands</div>
-                <div class="link"> <span>NTCIP_1201_Outtakes-8</span>  Event-Based Control of SNMP Devices</div>
           </td>
         </tr>
-        <tr>
-          <td class="id-col"><a id="OptionGroups-4"></a>OptionGroups-4</td>
+        <tr id="OptionGroups-4">
+          <td class="id-col">OptionGroups-4</td>
           <td class="description-col" style="padding-left:10px">
             <h1>2&nbsp;Power sources (1..*)</h1>
             <div class="htmlContent"><p>(1..*)</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Optionally refined by:</div>
-                <div class="link"> <span>20684_2-222</span>  mainline (alternating current) power,</div>
-                <div class="link"> <span>20684_2-223</span>  battery power,</div>
-                <div class="link"> <span>20684_2-224</span>  generator power,</div>
-                <div class="link"> <span>20684_2-225</span>  solar power, or</div>
-                <div class="link"> <span>20684_2-226</span>  wind power.</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally refined by:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-353">26048_1-353</a></span>  mainline (alternating current) power,</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-354">26048_1-354</a></span>  battery power,</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-355">26048_1-355</a></span>  generator power,</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-356">26048_1-356</a></span>  solar power, or</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-357">26048_1-357</a></span>  wind power.</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
-                <div class="link"> <span>20684_2-209</span>  Cabinet</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-345">26048_1-345</a></span>  Cabinet</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-345">26048_1-345</a></span>  Cabinet feature</div>
           </td>
         </tr>
-        <tr>
-          <td class="id-col"><a id="OptionGroups-10"></a>OptionGroups-10</td>
+        <tr class="deleted" id="OptionGroups-10">
+          <td class="id-col">OptionGroups-10 <i class="fas fa-trash-alt"></i></td>
           <td class="description-col" style="padding-left:10px">
             <h1>3&nbsp;Remote Target (2)</h1>
             <div class="htmlContent"><p>(2)</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Optionally fulfilled by:</div>
-                <div class="link"> <span>20684_7-66</span>  SNMP target</div>
-                <div class="link"> <span>20684_7-82</span>  SNMP target parameters</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-860">26048_1-860</a></span>  SNMP target</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-878">26048_1-878</a></span>  SNMP target parameters</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
-                <div class="link"> <span>20684_6-6</span>  Issue trigger-based commands</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-787">26048_1-787</a></span>  Issue trigger-based commands</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally fulfilled by:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-860">26048_1-860</a></span>  SNMP target feature</div>
           </td>
         </tr>
-        <tr>
-          <td class="id-col"><a id="OptionGroups-11"></a>OptionGroups-11</td>
+        <tr id="OptionGroups-11">
+          <td class="id-col">OptionGroups-11</td>
           <td class="description-col" style="padding-left:10px">
             <h1>4&nbsp;Conditional Trigger Modes (1..*)</h1>
             <div class="htmlContent"><p>(1..*)</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Optionally refined by:</div>
-                <div class="link"> <span>20684_3-241</span>  Support for creation event</div>
-                <div class="link"> <span>20684_3-242</span>  Support for deletion event</div>
-                <div class="link"> <span>20684_3-243</span>  Support for change in value event</div>
-                <div class="link"> <span>20684_3-244</span>  Support for equal event</div>
-                <div class="link"> <span>20684_3-245</span>  Support for not equal event</div>
-                <div class="link"> <span>20684_3-273</span>  Support for greater than event</div>
-                <div class="link"> <span>20684_3-274</span>  Support for less than event</div>
-                <div class="link"> <span>20684_3-275</span>  Support for hysteresis event</div>
-                <div class="link"> <span>20684_3-276</span>  Support for periodic event</div>
-                <div class="link"> <span>20684_3-277</span>  Support for bitwise &#x27;and&#x27; event</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-576">26048_1-576</a></span>  Support for creation event</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-577">26048_1-577</a></span>  Support for deletion event</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-578">26048_1-578</a></span>  Support for change in value event</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-579">26048_1-579</a></span>  Support for equal event</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-580">26048_1-580</a></span>  Support for not equal event</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-581">26048_1-581</a></span>  Support for greater than event</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-582">26048_1-582</a></span>  Support for less than event</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-583">26048_1-583</a></span>  Support for hysteresis event</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-584">26048_1-584</a></span>  Support for periodic event</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-585">26048_1-585</a></span>  Support for bitwise &#x27;and&#x27; event</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
-                <div class="link"> <span>20684_3-227</span>  Conditional trigger</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-557">26048_1-557</a></span>  Conditional trigger</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally refined by:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-576">26048_1-576</a></span>  Support for creation trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-577">26048_1-577</a></span>  Support for deletion trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-578">26048_1-578</a></span>  Support for change in value trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-579">26048_1-579</a></span>  Support for equal trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-580">26048_1-580</a></span>  Support for not equal trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-581">26048_1-581</a></span>  Support for greater than trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-582">26048_1-582</a></span>  Support for less than trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-583">26048_1-583</a></span>  Support for hysteresis trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-584">26048_1-584</a></span>  Support for periodic trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-585">26048_1-585</a></span>  Support for bitwise &#x27;and&#x27; trigger</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-557">26048_1-557</a></span>  Conditional trigger feature</div>
           </td>
         </tr>
-        <tr>
-          <td class="id-col"><a id="OptionGroups-12"></a>OptionGroups-12</td>
+        <tr id="OptionGroups-12">
+          <td class="id-col">OptionGroups-12</td>
           <td class="description-col" style="padding-left:10px">
             <h1>5&nbsp;Time Sources (1..*)</h1>
             <div class="htmlContent"><p>(1..*)</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Optionally refined by:</div>
-                <div class="link"> <span>20684_7-41</span>  Support for SNMP time configuration</div>
-                <div class="link"> <span>20684_7-42</span>  Support for network time protocol</div>
-                <div class="link"> <span>20684_7-44</span>  Support for radio time broadcast</div>
-                <div class="link"> <span>20684_7-45</span>  Support for satellite time signal</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally refined by:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-835">26048_1-835</a></span>  Support for SNMP time configuration</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-836">26048_1-836</a></span>  Support for network time protocol</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-838">26048_1-838</a></span>  Support for radio time broadcast</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-839">26048_1-839</a></span>  Support for satellite time signal</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
-                <div class="link"> <span>20684_7-25</span>  UTC clock</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-819">26048_1-819</a></span>  UTC clock</div>
           </td>
         </tr>
-        <tr>
-          <td class="id-col"><a id="OptionGroups-13"></a>OptionGroups-13</td>
+        <tr id="OptionGroups-13">
+          <td class="id-col">OptionGroups-13</td>
           <td class="description-col" style="padding-left:10px">
             <h1>6&nbsp;Time Keeping Options (1..*)</h1>
             <div class="htmlContent"><p>(1..*)</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Optionally refined by:</div>
-                <div class="link"> <span>20684_7-47</span>  Line frequency</div>
-                <div class="link"> <span>20684_7-48</span>  Crystal</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally refined by:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-841">26048_1-841</a></span>  Line frequency</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-842">26048_1-842</a></span>  Crystal</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
-                <div class="link"> <span>20684_7-25</span>  UTC clock</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-819">26048_1-819</a></span>  UTC clock</div>
           </td>
         </tr>
-        <tr>
-          <td class="id-col"><a id="OptionGroups-14"></a>OptionGroups-14</td>
+        <tr id="OptionGroups-14">
+          <td class="id-col">OptionGroups-14</td>
           <td class="description-col" style="padding-left:10px">
             <h1>7&nbsp;SchedTrigger Options</h1>
             <div class="htmlContent"><p>(1..*)</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Optionally refined by:</div>
-                <div class="link"> <span>20684_3-146</span>  Support calendar triggers</div>
-                <div class="link"> <span>20684_3-147</span>  Support one-shot triggers</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally refined by:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-538">26048_1-538</a></span>  Support calendar triggers</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-539">26048_1-539</a></span>  Support one-shot triggers</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
-                <div class="link"> <span>20684_3-138</span>  Scheduled trigger</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-524">26048_1-524</a></span>  Scheduled trigger</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-524">26048_1-524</a></span>  Scheduled trigger feature</div>
           </td>
         </tr>
-        <tr>
-          <td class="id-col"><a id="OptionGroups-15"></a>OptionGroups-15</td>
+        <tr id="OptionGroups-15">
+          <td class="id-col">OptionGroups-15</td>
           <td class="description-col" style="padding-left:10px">
             <h1>8&nbsp;Memory Types</h1>
             <div class="htmlContent"><p>(1..*)</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Optionally refined by:</div>
-                <div class="link"> <span>20684_2-163</span>  Support changeable memory</div>
-                <div class="link"> <span>20684_2-165</span>  Support volatile memory</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally refined by:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-317">26048_1-317</a></span>  Support changeable memory</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-318">26048_1-318</a></span>  Support volatile memory</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
-                <div class="link"> <span>20684_2-126</span>  Field device requirements</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-283">26048_1-283</a></span>  Field device requirements</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-283">26048_1-283</a></span>  Controller feature</div>
           </td>
         </tr>
-        <tr>
-          <td class="id-col"><a id="OptionGroups-16"></a>OptionGroups-16</td>
+        <tr id="OptionGroups-16">
+          <td class="id-col">OptionGroups-16</td>
           <td class="description-col" style="padding-left:10px">
             <h1>9&nbsp;Event Modes</h1>
             <div class="htmlContent"><p>(1..*)</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Optionally fulfilled by:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally fulfilled by:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-426">NTCIP_1201-426</a></span>  Support On-Change Events</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-428">NTCIP_1201-428</a></span>  Support Greater Than Events</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-430">NTCIP_1201-430</a></span>  Support Less Than Events</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-432">NTCIP_1201-432</a></span>  Support Hysteresis Events</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-434">NTCIP_1201-434</a></span>  Support Periodic Events</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-436">NTCIP_1201-436</a></span>  Support Bit Flag Events</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-83">NTCIP_1201-83</a></span>  Log Data for Later Retrieval</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-85">NTCIP_1201-85</a></span>  Provide Condition-Based Exception Report…</div>
           </td>
         </tr>
-        <tr>
-          <td class="id-col"><a id="OptionGroups-17"></a>OptionGroups-17</td>
+        <tr id="OptionGroups-17">
+          <td class="id-col">OptionGroups-17</td>
           <td class="description-col" style="padding-left:10px">
             <h1>10&nbsp;Trigger Modes</h1>
             <div class="htmlContent"><p>(1..*)</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Optionally fulfilled by:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally fulfilled by:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-2137">NTCIP_1201-2137</a></span>  Support On-Change Triggers</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-2139">NTCIP_1201-2139</a></span>  Support Greater Than Triggers</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-2141">NTCIP_1201-2141</a></span>  Support Less Than Triggers</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-2143">NTCIP_1201-2143</a></span>  Support Hysteresis Triggers</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-2145">NTCIP_1201-2145</a></span>  Support Periodic Triggers</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-2147">NTCIP_1201-2147</a></span>  Support Bit Flag Triggers</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Option group for:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-668">NTCIP_1201-668</a></span>  Capture High-Resolution Data Recordings</div>
           </td>
         </tr>
       </tbody>
     </table>
-    <hr>
-  </div>
-							</div>
-				<!-- Footer -->
-					<section id="footer">
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
 						<div class="inner">
-							<ul class="copyright">
-								<li><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://iso-tc204.github.io/iso24315p1/">Website Content:</a> <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p></li>
-								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-								<li>ISO terms: &copy; ISO. All rights reserved.</li>
-							</ul>
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
 						</div>
 					</section>
+
 			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-</body>
+
+	</body>
 </html>

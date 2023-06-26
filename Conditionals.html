@@ -1,146 +1,227 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>WG9-Conditionals: Conditionals</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link href="jq/jquery-ui.css" rel="stylesheet">
-	<script src="external/jquery/jquery.js"></script>
-	<script src="jq/jquery-ui.js"></script>
-	<script src="glossary.js"></script>
-	<script>
-			$( document ).tooltip({
-				content: function() {
-					return $(this).attr('title');
-				}
-			});
-	</script>
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-</head>
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
 	<body class="is-preload">
-		
-	<div id="outline">
-		<ul>
-			<li><a href="">Section 1</li>
-		</ul>
-	</div>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
 
-				<!-- Header -->
-					<header id="header" style="position: static;">
-						<h2><a href="index.html"><img src="images/NTCIP-tight.jpg" style="width: 7em;" /></a></h2>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="NTCIP_1201.html">NTCIP 1201</a></li>
-								<li><a href="20684_1.html">ISO 20684-1</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>Conditionals</h1><p><em>Last modified on 2023-06-23 08:24</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
 						</div>
-					</nav>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-23">1 Conditional Trigger</a></li>
 
-				<!-- Wrapper -->
-					<div class="inner">
-						<table>
-							<tr>
-								<td><h1>Conditionals: Conditionals</h1><br />    <em>Last modified on 2023-06-08 07:42</em></td>
-								<td width="390px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/ISO-TC204/iso24315p1/discussions" class="button primary">Submit Comment</a><br /></span></td>
-							</tr>
-						</table>
-							
-  <div class="reqviewTable table-responsive-md">
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-10">2 Creation CondTrigger</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-25">3 Day Plan Triggers</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-11">4 Deletion CondTrigger</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-15">5 DST</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-19">6 Event Report Block</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-21">7 Event Watch Block</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-17">8 NTCIP 1203 v01</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-12">9 OnChange CondTrigger</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-18">10 Output</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-9">11 Notification Queue</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-20">12 Recording Report Block</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-22">13 Recording Watch Block</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-4">14 remote: Target Info</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-24">15 Scheduled Triggers</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-7">16 Set DynObj Option</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-5">17 snmpTime</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-6">18 Two-Step DynObj (twoStep:)</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Conditionals-8">19 Two-Step Set DynObj</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
     <table class="table table-sm">
       <!-- Heading of the requirements table -->
       <thead>
         <tr>
-          <th class="id-col"><i class="fas fa-asterisk"></i> ID</th>
-          <th class="description-col"><i class="fas fa-align-left"></i> Description</th>
-          <th class="links-col"><i class="fas fa-link"></i> Links</th>
-          <th class="custom-col"><i class="fas fa-cog"></i> Reference</th>
+          <th class="id-col" style="color: white;"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="description-col" style="color: white;"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col" style="color: white;"><i class="fas fa-link"></i> Links</th>
         </tr>
       </thead>
 
       <!-- Requirements table with list of requirements -->
       <tbody>
-        <tr>
-          <td class="id-col"><a id="Conditionals-10"></a>Conditionals-10</td>
+        <tr id="Conditionals-23">
+          <td class="id-col">Conditionals-23</td>
           <td class="description-col" style="padding-left:10px">
-            <h1>1&nbsp;Creation CondTrigger</h1>
+            <h1>1&nbsp;Conditional Trigger</h1>
+            <div class="htmlContent"><p>condTrigger:</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-540">26048_1-540</a></span>  Action feature</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally fulfilled by:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-884">26048_1-884</a></span>  Dynamic object feature</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-557">26048_1-557</a></span>  Conditional trigger feature</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-598">26048_1-598</a></span>  Receive notification of triggers firing</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-730">26048_1-730</a></span>  Log user-defined snapshots</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1047">26048_1-1047</a></span>  Record a series of snapshots</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-787">26048_1-787</a></span>  Issue trigger-based commands</div>
+          </td>
+        </tr>
+        <tr id="Conditionals-10">
+          <td class="id-col">Conditionals-10</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>2&nbsp;Creation CondTrigger</h1>
             <div class="htmlContent"><p>creation:</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Refined by:</div>
-                <div class="link"> <span>20684_3-279</span>  Support for creation wildcards</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally refined by:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-590">26048_1-590</a></span>  Support for creation wildcards</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
-                <div class="link"> <span>20684_3-279</span>  Support for creation wildcards</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-590">26048_1-590</a></span>  Support for creation wildcards</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
-                <div class="link"> <span>20684_3-227</span>  Conditional trigger</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-557">26048_1-557</a></span>  Conditional trigger</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-576">26048_1-576</a></span>  Support for creation trigger</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-557">26048_1-557</a></span>  Conditional trigger feature</div>
           </td>
-          <td class="custom-col htmlContent">ISO 20684-3&amp;sect;7.2.3.3.1</td>
-                    </tr>
-        <tr>
-          <td class="id-col"><a id="Conditionals-11"></a>Conditionals-11</td>
+        </tr>
+        <tr id="Conditionals-25">
+          <td class="id-col">Conditionals-25</td>
           <td class="description-col" style="padding-left:10px">
-            <h1>2&nbsp;Deletion CondTrigger</h1>
+            <h1>3&nbsp;Day Plan Triggers</h1>
+            <div class="htmlContent"><p>dayPlanTrigger:</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-540">26048_1-540</a></span>  Action feature</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-819">26048_1-819</a></span>  UTC clock</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-843">26048_1-843</a></span>  Local clock</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally fulfilled by:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-849">26048_1-849</a></span>  Daylight saving time</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-502">26048_1-502</a></span>  Day plan feature</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-598">26048_1-598</a></span>  Receive notification of triggers firing</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-730">26048_1-730</a></span>  Log user-defined snapshots</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1047">26048_1-1047</a></span>  Record a series of snapshots</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-787">26048_1-787</a></span>  Issue trigger-based commands</div>
+          </td>
+        </tr>
+        <tr id="Conditionals-11">
+          <td class="id-col">Conditionals-11</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>4&nbsp;Deletion CondTrigger</h1>
             <div class="htmlContent"><p>deletion:</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Refined by:</div>
-                <div class="link"> <span>20684_3-280</span>  Support for deletion wildcards</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally refined by:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-591">26048_1-591</a></span>  Support for deletion wildcards</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
-                <div class="link"> <span>20684_3-280</span>  Support for deletion wildcards</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-591">26048_1-591</a></span>  Support for deletion wildcards</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
-                <div class="link"> <span>20684_3-227</span>  Conditional trigger</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-557">26048_1-557</a></span>  Conditional trigger</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-577">26048_1-577</a></span>  Support for deletion trigger</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-557">26048_1-557</a></span>  Conditional trigger feature</div>
           </td>
-          <td class="custom-col htmlContent">ISO 20684-3&amp;sect;7.2.3.3.2</td>
-                    </tr>
-        <tr>
-          <td class="id-col"><a id="Conditionals-15"></a>Conditionals-15</td>
+        </tr>
+        <tr id="Conditionals-15">
+          <td class="id-col">Conditionals-15</td>
           <td class="description-col" style="padding-left:10px">
-            <h1>3&nbsp;DST</h1>
+            <h1>5&nbsp;DST</h1>
             <div class="htmlContent"><p>dst:</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-584">NTCIP_1201-584</a></span>  Set Daylight Savings Mode</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-2156">NTCIP_1201-2156</a></span>  Determine Daylight Saving Time Capabilit…</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-585">NTCIP_1201-585</a></span>  Configure Daylight Saving Time Entry</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-590">NTCIP_1201-590</a></span>  Determine Current Daylight Saving Mode</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-598">NTCIP_1201-598</a></span>  Support a Number of Daylight Saving Entr…</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-597">NTCIP_1201-597</a></span>  Support Daylight Saving Time</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-665">NTCIP_1201-665</a></span>  Manage Day Plans</div>
           </td>
-          <td class="custom-col htmlContent">NTCIP 1201&amp;sect;3.5.10.1.3</td>
-                    </tr>
-        <tr>
-          <td class="id-col"><a id="Conditionals-19"></a>Conditionals-19</td>
+        </tr>
+        <tr id="Conditionals-19">
+          <td class="id-col">Conditionals-19</td>
           <td class="description-col" style="padding-left:10px">
-            <h1>4&nbsp;Event Report Block</h1>
+            <h1>6&nbsp;Event Report Block</h1>
             <div class="htmlContent"><p>eventReportBlock:</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-513">NTCIP_1201-513</a></span>  Determine Report Block Capabilities</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-515">NTCIP_1201-515</a></span>  Configure a Report Object</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-516">NTCIP_1201-516</a></span>  Retrieve Report Object Configuration</div>
@@ -151,22 +232,21 @@
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-521">NTCIP_1201-521</a></span>  Clear Report Blocks</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-524">NTCIP_1201-524</a></span>  Support a Number of Report Blocks</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-526">NTCIP_1201-526</a></span>  Support a Number of Report Objects</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-441">NTCIP_1201-441</a></span>  Reporting a Group of Objects (Report Blo…</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-83">NTCIP_1201-83</a></span>  Log Data for Later Retrieval</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-85">NTCIP_1201-85</a></span>  Provide Condition-Based Exception Report…</div>
           </td>
-          <td class="custom-col htmlContent">NTCIP 1201&amp;sect;3.5.5.2.9</td>
-                    </tr>
-        <tr>
-          <td class="id-col"><a id="Conditionals-21"></a>Conditionals-21</td>
+        </tr>
+        <tr id="Conditionals-21">
+          <td class="id-col">Conditionals-21</td>
           <td class="description-col" style="padding-left:10px">
-            <h1>5&nbsp;Event Watch Block</h1>
+            <h1>7&nbsp;Event Watch Block</h1>
             <div class="htmlContent"><p>eventWatchBlock:</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-601">NTCIP_1201-601</a></span>  Determine Watch Block Capabilities</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-603">NTCIP_1201-603</a></span>  Configure a Watch Object</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-604">NTCIP_1201-604</a></span>  Retrieve a Watch Object Configuration</div>
@@ -177,99 +257,87 @@
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-609">NTCIP_1201-609</a></span>  Clear Watch Blocks</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-612">NTCIP_1201-612</a></span>  Support a Number of Watch Blocks</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-614">NTCIP_1201-614</a></span>  Support a Number of Watch Objects</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-421">NTCIP_1201-421</a></span>  Detect Events Related to a Group of Obje…</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-83">NTCIP_1201-83</a></span>  Log Data for Later Retrieval</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-85">NTCIP_1201-85</a></span>  Provide Condition-Based Exception Report…</div>
           </td>
-          <td class="custom-col htmlContent"></td>
-                    </tr>
-        <tr>
-          <td class="id-col"><a id="Conditionals-17"></a>Conditionals-17</td>
+        </tr>
+        <tr id="Conditionals-17">
+          <td class="id-col">Conditionals-17</td>
           <td class="description-col" style="padding-left:10px">
-            <h1>6&nbsp;NTCIP 1203 v01</h1>
+            <h1>8&nbsp;NTCIP 1203 v01</h1>
             <div class="htmlContent"><p>ntcip1203v01:</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-2098">NTCIP_1201-2098</a></span>  Retrieve External Port Information v1</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-2112">NTCIP_1201-2112</a></span>  Retrieve Port Configuration v1</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-2104">NTCIP_1201-2104</a></span>  Configure Port Information v1</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-2106">NTCIP_1201-2106</a></span>  Monitor Status of External Device v1</div>
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Optionally fulfilled by:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally fulfilled by:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-2110">NTCIP_1201-2110</a></span>  Control External Device v1</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-2097">NTCIP_1201-2097</a></span>  Support for NTCIP 1203 v01 AuxIO</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-91">NTCIP_1201-91</a></span>  Manage Simple External Devices</div>
           </td>
-          <td class="custom-col htmlContent"></td>
-                    </tr>
-        <tr>
-          <td class="id-col"><a id="Conditionals-12"></a>Conditionals-12</td>
+        </tr>
+        <tr id="Conditionals-12">
+          <td class="id-col">Conditionals-12</td>
           <td class="description-col" style="padding-left:10px">
-            <h1>7&nbsp;OnChange CondTrigger</h1>
+            <h1>9&nbsp;OnChange CondTrigger</h1>
             <div class="htmlContent"><p>onChange:</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Refined by:</div>
-                <div class="link"> <span>20684_3-281</span>  Support for on change wildcards</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally refined by:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-592">26048_1-592</a></span>  Support for on change wildcards</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
-                <div class="link"> <span>20684_3-281</span>  Support for on change wildcards</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-592">26048_1-592</a></span>  Support for on change wildcards</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
-                <div class="link"> <span>20684_3-227</span>  Conditional trigger</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-557">26048_1-557</a></span>  Conditional trigger</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-578">26048_1-578</a></span>  Support for change in value trigger</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-557">26048_1-557</a></span>  Conditional trigger feature</div>
           </td>
-          <td class="custom-col htmlContent">ISO 20684-3&amp;sect;7.2.3.3.3</td>
-                    </tr>
-        <tr>
-          <td class="id-col"><a id="Conditionals-18"></a>Conditionals-18</td>
+        </tr>
+        <tr id="Conditionals-18">
+          <td class="id-col">Conditionals-18</td>
           <td class="description-col" style="padding-left:10px">
-            <h1>8&nbsp;Output</h1>
+            <h1>10&nbsp;Output</h1>
             <div class="htmlContent"><p>output:</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-2120">NTCIP_1201-2120</a></span>  Determine Last Commanded State</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-576">NTCIP_1201-576</a></span>  Support for any Ports with Output</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-91">NTCIP_1201-91</a></span>  Manage Simple External Devices</div>
           </td>
-          <td class="custom-col htmlContent"></td>
-                    </tr>
-        <tr>
-          <td class="id-col"><a id="Conditionals-9"></a>Conditionals-9</td>
+        </tr>
+        <tr id="Conditionals-9">
+          <td class="id-col">Conditionals-9</td>
           <td class="description-col" style="padding-left:10px">
-            <h1>9&nbsp;Notification Queue</h1>
+            <h1>11&nbsp;Notification Queue</h1>
             <div class="htmlContent"><p>queue:</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Refined by:</div>
-                <div class="link"> <span>20684_4-339</span>  Process incoming data</div>
-                <div class="link"> <span>20684_4-340</span>  Sending non-queueable notifications</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Refined by:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-668">26048_1-668</a></span>  Process incoming data</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-676">26048_1-676</a></span>  Sending non-queueable notifications</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
-                <div class="link"> <span>20684_4-441</span>  Support for queueable notifications</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-643">26048_1-643</a></span>  Support for queueable notifications</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
-                <div class="link"> <span>20684_4-79</span>  Notification channel</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-648">26048_1-648</a></span>  Notification channel</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-648">26048_1-648</a></span>  Notification feature</div>
           </td>
-          <td class="custom-col htmlContent">ISO 20684-4&amp;sect;7.4.3.2.2</td>
-                    </tr>
-        <tr>
-          <td class="id-col"><a id="Conditionals-20"></a>Conditionals-20</td>
+        </tr>
+        <tr id="Conditionals-20">
+          <td class="id-col">Conditionals-20</td>
           <td class="description-col" style="padding-left:10px">
-            <h1>10&nbsp;Recording Report Block</h1>
+            <h1>12&nbsp;Recording Report Block</h1>
             <div class="htmlContent"><p>recordingReportBlock:</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-513">NTCIP_1201-513</a></span>  Determine Report Block Capabilities</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-515">NTCIP_1201-515</a></span>  Configure a Report Object</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-516">NTCIP_1201-516</a></span>  Retrieve Report Object Configuration</div>
@@ -280,21 +348,20 @@
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-521">NTCIP_1201-521</a></span>  Clear Report Blocks</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-524">NTCIP_1201-524</a></span>  Support a Number of Report Blocks</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-526">NTCIP_1201-526</a></span>  Support a Number of Report Objects</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-2152">NTCIP_1201-2152</a></span>  Reporting a Group of Objects (Report Blo…</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-668">NTCIP_1201-668</a></span>  Capture High-Resolution Data Recordings</div>
           </td>
-          <td class="custom-col htmlContent">NTCIP 1201&amp;sect;3.5.8.2.10</td>
-                    </tr>
-        <tr>
-          <td class="id-col"><a id="Conditionals-22"></a>Conditionals-22</td>
+        </tr>
+        <tr id="Conditionals-22">
+          <td class="id-col">Conditionals-22</td>
           <td class="description-col" style="padding-left:10px">
-            <h1>11&nbsp;Recording Watch Block</h1>
+            <h1>13&nbsp;Recording Watch Block</h1>
             <div class="htmlContent"><p>recordingWatchBlock</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-601">NTCIP_1201-601</a></span>  Determine Watch Block Capabilities</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-603">NTCIP_1201-603</a></span>  Configure a Watch Object</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-604">NTCIP_1201-604</a></span>  Retrieve a Watch Object Configuration</div>
@@ -305,137 +372,194 @@
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-609">NTCIP_1201-609</a></span>  Clear Watch Blocks</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-612">NTCIP_1201-612</a></span>  Support a Number of Watch Blocks</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-614">NTCIP_1201-614</a></span>  Support a Number of Watch Objects</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-2132">NTCIP_1201-2132</a></span>  Detect Events Related to a Group of Obje…</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
                 <div class="link"> <span><a href="NTCIP_1201.html#NTCIP_1201-668">NTCIP_1201-668</a></span>  Capture High-Resolution Data Recordings</div>
           </td>
-          <td class="custom-col htmlContent"></td>
-                    </tr>
-        <tr>
-          <td class="id-col"><a id="Conditionals-4"></a>Conditionals-4</td>
+        </tr>
+        <tr id="Conditionals-4">
+          <td class="id-col">Conditionals-4</td>
           <td class="description-col" style="padding-left:10px">
-            <h1>12&nbsp;remote: Target Info</h1>
+            <h1>14&nbsp;remote: Target Info</h1>
             <div class="htmlContent"><p>remote:</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
-                <div class="link"> <span>20684_7-66</span>  SNMP target</div>
-                <div class="link"> <span>20684_7-82</span>  SNMP target parameters</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-860">26048_1-860</a></span>  SNMP target</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-878">26048_1-878</a></span>  SNMP target parameters</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
-                <div class="link"> <span>20684_3-288</span>  Support for remote data</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-860">26048_1-860</a></span>  SNMP target feature</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-596">26048_1-596</a></span>  Support for remote data</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
-                <div class="link"> <span>20684_3-176</span>  Condition-based triggers</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-486">26048_1-486</a></span>  Condition-based triggers</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
                 <div class="link"> <span>NTCIP_1201_Outtakes-8</span>  Event-Based Control of SNMP Devices</div>
                 <div class="link"> <span>NTCIP_1201_Outtakes-85</span>  Manage Conditional Triggers</div>
           </td>
-          <td class="custom-col htmlContent">ISO 20684-3&amp;sect;7.2.3.4.3</td>
-                    </tr>
-        <tr>
-          <td class="id-col"><a id="Conditionals-7"></a>Conditionals-7</td>
+        </tr>
+        <tr id="Conditionals-24">
+          <td class="id-col">Conditionals-24</td>
           <td class="description-col" style="padding-left:10px">
-            <h1>13&nbsp;Set DynObj Option</h1>
+            <h1>15&nbsp;Scheduled Triggers</h1>
+            <div class="htmlContent"><p>schedTrigger:</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Fulfilled by:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-540">26048_1-540</a></span>  Action feature</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-819">26048_1-819</a></span>  UTC clock</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-843">26048_1-843</a></span>  Local clock</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Optionally fulfilled by:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-849">26048_1-849</a></span>  Daylight saving time</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-524">26048_1-524</a></span>  Scheduled trigger feature</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-598">26048_1-598</a></span>  Receive notification of triggers firing</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-730">26048_1-730</a></span>  Log user-defined snapshots</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1047">26048_1-1047</a></span>  Record a series of snapshots</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-787">26048_1-787</a></span>  Issue trigger-based commands</div>
+          </td>
+        </tr>
+        <tr id="Conditionals-7">
+          <td class="id-col">Conditionals-7</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>16&nbsp;Set DynObj Option</h1>
             <div class="htmlContent"><p>setDynObj:</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Refined by:</div>
-                <div class="link"> <span>20684_7-115</span>  Set new value for dynamic object in one …</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Refined by:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-892">26048_1-892</a></span>  Set new value for dynamic object in one …</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
-                <div class="link"> <span>20684_7-120</span>  Support of set operations on dynamic obj…</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-909">26048_1-909</a></span>  Support of set operations on dynamic obj…</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
-                <div class="link"> <span>20684_7-89</span>  Dynamic object</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-884">26048_1-884</a></span>  Dynamic object</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-884">26048_1-884</a></span>  Dynamic object feature</div>
           </td>
-          <td class="custom-col htmlContent">ISO 20684-7&amp;sect;7.4.3.5</td>
-                    </tr>
-        <tr>
-          <td class="id-col"><a id="Conditionals-5"></a>Conditionals-5</td>
+        </tr>
+        <tr id="Conditionals-5">
+          <td class="id-col">Conditionals-5</td>
           <td class="description-col" style="padding-left:10px">
-            <h1>14&nbsp;snmpTime</h1>
+            <h1>17&nbsp;snmpTime</h1>
             <div class="htmlContent"><p>snmpTime:</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Refined by:</div>
-                <div class="link"> <span>20684_7-33</span>  Set UTC time</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Refined by:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-827">26048_1-827</a></span>  Set UTC time</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
-                <div class="link"> <span>20684_7-41</span>  Support for SNMP time configuration</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-835">26048_1-835</a></span>  Support for SNMP time configuration</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
-                <div class="link"> <span>20684_7-25</span>  UTC clock</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-819">26048_1-819</a></span>  UTC clock</div>
           </td>
-          <td class="custom-col htmlContent">ISO 20684-7&amp;sect;7.2.3.1.1</td>
-                    </tr>
-        <tr>
-          <td class="id-col"><a id="Conditionals-6"></a>Conditionals-6</td>
+        </tr>
+        <tr id="Conditionals-6">
+          <td class="id-col">Conditionals-6</td>
           <td class="description-col" style="padding-left:10px">
-            <h1>15&nbsp;Two-Step DynObj (twoStep:)</h1>
+            <h1>18&nbsp;Two-Step DynObj (twoStep:)</h1>
             <div class="htmlContent"><p>twoStep:</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Refined by:</div>
-                <div class="link"> <span>20684_7-97</span>  Retrieve dynamic object data in two step…</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Refined by:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-891">26048_1-891</a></span>  Retrieve dynamic object data in two step…</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
-                <div class="link"> <span>20684_7-121</span>  Support for dynamic objects that use a t…</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-910">26048_1-910</a></span>  Support for dynamic objects that use a t…</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
-                <div class="link"> <span>20684_7-89</span>  Dynamic object</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-884">26048_1-884</a></span>  Dynamic object</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-884">26048_1-884</a></span>  Dynamic object feature</div>
           </td>
-          <td class="custom-col htmlContent">ISO 20684-7&amp;sect;7.4.3.6</td>
-                    </tr>
-        <tr>
-          <td class="id-col"><a id="Conditionals-8"></a>Conditionals-8</td>
+        </tr>
+        <tr id="Conditionals-8">
+          <td class="id-col">Conditionals-8</td>
           <td class="description-col" style="padding-left:10px">
-            <h1>16&nbsp;Two-Step Set DynObj</h1>
+            <h1>19&nbsp;Two-Step Set DynObj</h1>
             <div class="htmlContent"><p>(twoStep AND setDynObj):</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> Refined by:</div>
-                <div class="link"> <span>20684_7-166</span>  Set new value for dynamic object in two …</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> Refined by:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-893">26048_1-893</a></span>  Set new value for dynamic object in two …</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
-                <div class="link"> <span>20684_7-120</span>  Support of set operations on dynamic obj…</div>
-                <div class="link"> <span>20684_7-121</span>  Support for dynamic objects that use a t…</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Condition depends upon:</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-909">26048_1-909</a></span>  Support of set operations on dynamic obj…</div>
                 <div class="link"> <span><a href="26048_1.html#26048_1-910">26048_1-910</a></span>  Support for dynamic objects that use a t…</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
-                <div class="link"> <span>20684_7-89</span>  Dynamic object</div>
-                <div class="link"> <span><a href="26048_1.html#26048_1-884">26048_1-884</a></span>  Dynamic object</div>
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Conditionally meets:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-884">26048_1-884</a></span>  Dynamic object feature</div>
           </td>
-          <td class="custom-col htmlContent"></td>
-                    </tr>
+        </tr>
       </tbody>
     </table>
-    <hr>
-  </div>
-							</div>
-				<!-- Footer -->
-					<section id="footer">
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
 						<div class="inner">
-							<ul class="copyright">
-								<li><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://iso-tc204.github.io/iso24315p1/">Website Content:</a> <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p></li>
-								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-								<li>ISO terms: &copy; ISO. All rights reserved.</li>
-							</ul>
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
 						</div>
 					</section>
+
 			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-</body>
+
+	</body>
 </html>

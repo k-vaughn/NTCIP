@@ -1,0 +1,1515 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>Recording</h1><p><em>Last modified on 2023-06-25 15:16</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-7">1 Number of recordings</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-9">2 Number of completed recordings</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-11">3 Clear all recording configuration</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-13">4 Clear all recording classes</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-15">5 Clear all recording factories</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-17">6 Clear all recordings</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-19">7 Owner table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-22">8 Maximum recording factories for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-23">9 Maximum recording classes for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-24">10 Maximum recordings for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-25">11 Maximum recording storage for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-27">12 Number of recordings for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-29">13 Number of completed recordings for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-33">14 Clear all recording classes for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-35">15 Clear all recording factories for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-37">16 Clear all recordings for owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-39">17 Recording class table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-43">18 Recording class index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-45">19 Recording class description</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-47">20 Size limit for recording class</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-49">21 Recording class clear date</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-51">22 Recording class clear time</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-53">23 Number of recordings in class</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-55">24 Number of completed recordings in class</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-134">25 Recording class time stamp</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-57">26 Recording class storage type</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-59">27 Recording class row status</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-61">28 Recording factory table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-65">29 Recording factory index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-73">30 Context of object to be sampled</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-75">31 Object to be sampled in recording</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-77">32 Percent of pre-trigger samples</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-79">33 Sample period</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-81">34 Context of object to be monitored</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-83">35 Object to be monitored for on-change recordings</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-85">36 Number of samples</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-67">37 Recording factory security model</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-69">38 Recording factory level</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-71">39 Recording factory name</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-87">40 Recording factory storage type</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-89">41 Recording factory row status</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-91">42 Recording table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-95">43 Recording index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-97">44 Recording trigger</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-99">45 Recording trigger date</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-101">46 Recording trigger time</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-103">47 Recording status</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-105">48 Position of trigger within recording</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-107">49 Number of samples within recording</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-109">50 Delete recording</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-111">51 Recording sample table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-115">52 Recording sample index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-117">53 Recording sample time</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-119">54 Recording sample value</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-120">55 Capability objects</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-121">56 Minimum sample period for recordings</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-123">57 Maximum sample period for recordings</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-125">58 Sample period resolution for recordings</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Recording-MIB-126">59 Compliance groups</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col" style="color: white;"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Type</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Name</th>
+          <th class="description-col" style="color: white;"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col" style="color: white;"><i class="fas fa-link"></i> Links</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Access</th>
+          <th class="discussion-col" style="color: white;"><i class="fas fa-comments"></i> Discussion</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col">Recording-MIB-1</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">MIB HEADER</div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-2</td>
+          <td class="custom-col htmlContent">mib</td>
+                      <td class="custom-col htmlContent">ISO26048-1-Recording</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><pre><br>MODULE-IDENTITY, OBJECT-TYPE, OBJECT-IDENTITY, Unsigned32<br>                                               FROM SNMPv2-SMI<br>                                                 -- RFC 2578<br>RowPointer, RowStatus, StorageType, TruthValue, VariablePointer<br>                                               FROM SNMPv2-TC<br>                                                 -- RFC 2579<br>OBJECT-GROUP, MODULE-COMPLIANCE<br>                                               FROM SNMPv2-CONF<br>                                                 -- RFC 2580<br>SnmpAdminString, SnmpSecurityModel, SnmpSecurityLevel<br>                                               FROM SNMP-FRAMEWORK-MIB<br>                                                 -- RFC 3411<br>ITSCounter16, ITSClear, ITSDateStamp, ITSDailyTimeStamp, ITSOerString, <br>ITSPercent, ITSPositive8, ITSPositive16, ITSUnsigned8, ITSUnsigned16<br>                                                    FROM ISO26048-1-FieldDevice<br>fdGlobalMIB, fdAdminGlobal, fdGlobalConformance<br>                                                    FROM ISO26048-1-Global<br>fdOwnerEntry, fdOwnerIndex<br>                                                    FROM ISO26048-1-Owner                                                     <br></pre></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-3</td>
+          <td class="custom-col htmlContent">module-identity</td>
+                      <td class="custom-col htmlContent">fdRecordingMIB</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The MIB that defines a high-resolution recording mechanism that allows a device to record information at a high rate for a defined period of time. Copyright (C) International Organization for Standardization (ISO). This MIB module is part of ISO 26048-1; see ISO 26048-1 for full legal notices.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-4</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Administrative objects</div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-5</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdAdminRecording</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node used to group administrative objects for the recording feature. This node is intended to assist administrators in configuring access control. In general, administrator-level accounts can be given access to this node. In addition, it is envisioned that administrators may wish to grant owner-level accounts read-only access to the appropriate row within the fdOwnerRecordingTable so that owners can discover the amount of memory that they are allowed to access for recordings.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-7">
+          <td class="id-col">Recording-MIB-7</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminRecordings</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>1&nbsp;Number of recordings</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The number of in-progress and completed recordings currently stored, regardless of fdOwnerIndex.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1013">26048_1-1013</a></span>  Retrieve total number of recordings</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-9">
+          <td class="id-col">Recording-MIB-9</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminRecordingCompletes</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>2&nbsp;Number of completed recordings</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The number of recordings that have been completed since the last reboot, regardless of fdOwnerIndex.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1013">26048_1-1013</a></span>  Retrieve total number of recordings</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-11">
+          <td class="id-col">Recording-MIB-11</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminRecordingClearAll</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>3&nbsp;Clear all recording configuration</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; A control object that destroys all rows in the fdRecordingClassTable, fdRecordingFactoryTable, fdRecordingTable, and fdRecordingSampleTable and also resets all writable values within the fdOwnerRecordingTable back to their default values.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1027">26048_1-1027</a></span>  Clear all recordings in device</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-13">
+          <td class="id-col">Recording-MIB-13</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminRecordingClearAllClasses</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>4&nbsp;Clear all recording classes</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; A control object that destroys all rows in the fdRecordingClassTable, fdRecordingFactoryTable, fdRecordingTable, and fdRecordingSampleTable.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1025">26048_1-1025</a></span>  Clear all recording classes</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-15">
+          <td class="id-col">Recording-MIB-15</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminRecordingClearAllFactories</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>5&nbsp;Clear all recording factories</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; A control object that destroys all rows in the fdRecordingFactoryTable, fdRecordingTable, and fdRecordingSampleTable.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1023">26048_1-1023</a></span>  Clear all recording factories</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-17">
+          <td class="id-col">Recording-MIB-17</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminRecordingClearAllRecordings</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>6&nbsp;Clear all recordings</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; A control object that destroys all rows in the fdRecordingTable and fdRecordingSampleTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-19">
+          <td class="id-col">Recording-MIB-19</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerRecordingTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>7&nbsp;Owner table</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This table is used to allow owners to manage their recordings mechanism and the recording tables that they own.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-20</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerRecordingEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>&lt;Definition&gt; This object defines a row in the fdOwnerRecordingTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-21</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdOwnerRecordingEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-22">
+          <td class="id-col">Recording-MIB-22</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerRecordingMaxFactories</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>8&nbsp;Maximum recording factories for owner</h1>
+            <div class="htmlContent"><p>The maximum number of rows that this owner is allowed to manage within the fdRecordingFactoryTable at any point in time. An attempt to create a new row that would exceed this limit shall result in an 'inconsistentName' error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1003">26048_1-1003</a></span>  Configure an owner for recordings</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1100">26048_1-1100</a></span>  Confirm recording owner configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-23">
+          <td class="id-col">Recording-MIB-23</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerRecordingMaxClasses</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>9&nbsp;Maximum recording classes for owner</h1>
+            <div class="htmlContent"><p>The maximum number of rows that this owner is allowed to manage within the fdRecordingClassTable at any point in time. An attempt to create a new row that would exceed this limit shall result in an 'inconsistentName' error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1003">26048_1-1003</a></span>  Configure an owner for recordings</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1100">26048_1-1100</a></span>  Confirm recording owner configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-24">
+          <td class="id-col">Recording-MIB-24</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerRecordingMaxClassEntries</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>10&nbsp;Maximum recordings for owner</h1>
+            <div class="htmlContent"><p>The maximum number of rows that this owner is allowed to maintain within any class of the fdRecordingTable at any point in time. A new recordong that would cause the table to exceed this limit shall cause the oldest recording in the class to be deleted to enable the new entry to be stored within the limit.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1003">26048_1-1003</a></span>  Configure an owner for recordings</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1100">26048_1-1100</a></span>  Confirm recording owner configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-25">
+          <td class="id-col">Recording-MIB-25</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerRecordingMaxStorage</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>11&nbsp;Maximum recording storage for owner</h1>
+            <div class="htmlContent"><p>The maximum number of octets allowed to store all snapshots for all recordings within the fdRecordingSampleTable associated with the fdOwnerIndex. A new recording that would cause the table to exceed this limit shall cause the oldest recording(s) for this owner to be deleted until the new entry can be stored within the limit.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1003">26048_1-1003</a></span>  Configure an owner for recordings</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1100">26048_1-1100</a></span>  Confirm recording owner configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-27">
+          <td class="id-col">Recording-MIB-27</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerRecordingEntries</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>12&nbsp;Number of recordings for owner</h1>
+            <div class="htmlContent"><p>The number of in-progress and completed recordings currently stored, for the fdOwnerIndex.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1015">26048_1-1015</a></span>  Retrieve number of recordings for an own…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-29">
+          <td class="id-col">Recording-MIB-29</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerRecordingCompletes</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>13&nbsp;Number of completed recordings for owner</h1>
+            <div class="htmlContent"><p>A counter that increments upon the completion of each recording associated with the fdOwnerIndex.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1015">26048_1-1015</a></span>  Retrieve number of recordings for an own…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-33">
+          <td class="id-col">Recording-MIB-33</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerRecordingClearAllClasses</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>14&nbsp;Clear all recording classes for owner</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; A control object that destroys all rows associated with the adminRecMechV2Owner in the recMechV2ClassTable, recMechV2FactoryTable, recMechV2RecordingTable, and recMechV2SampleTable.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1031">26048_1-1031</a></span>  Clear all recording classes for owner</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-35">
+          <td class="id-col">Recording-MIB-35</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerRecordingClearAllFactories</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>15&nbsp;Clear all recording factories for owner</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; A control object that destroys all rows associated with the adminRecMechV2Owner in the recMechV2FactoryTable, recMechV2RecordingTable, and recMechV2SampleTable.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1029">26048_1-1029</a></span>  Clear all recording factories for owner</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-37">
+          <td class="id-col">Recording-MIB-37</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerRecordingClearAllRecordings</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>16&nbsp;Clear all recordings for owner</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; A control object that destroys all rows associated with the adminRecMechV2Owner in the recMechV2RecordingTable, and recMechV2SampleTable.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1033">26048_1-1033</a></span>  Clear all recordings for owner</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-39">
+          <td class="id-col">Recording-MIB-39</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingClassTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>17&nbsp;Recording class table</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt;This table is used to manage the recording mechanism and the recording tables.</p><p>&lt;Table Type&gt; managed</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-40</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingClassEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>&lt;Definition&gt;This object defines a row in the Recording Mechanism Manger Table. Rows defined within this table allow recordings from multiple triggers to be grouped together into a single class for easier management.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-41</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdRecordingClassEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-43">
+          <td class="id-col">Recording-MIB-43</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingClassIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>18&nbsp;Recording class index</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; A unique index for the recording class within the scope of the adminfdRecordingOwner. All recordings assigned to the class will be managed according to the other columns of this row.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-45">
+          <td class="id-col">Recording-MIB-45</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingClassDescription</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>19&nbsp;Recording class description</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; A description of the recording class.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1005">26048_1-1005</a></span>  Configure a recording class</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1101">26048_1-1101</a></span>  Confirm recording class configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-47">
+          <td class="id-col">Recording-MIB-47</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingClassSizeLimit</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>20&nbsp;Size limit for recording class</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object specifies the maximum amount of memory to be used within the device to store recordings for the associated recording class. When the size limit is reached (e.g., due to a new recording or through the modification of this object) the oldest recording(s) within the class (based on the values of fdRecordingTriggerDate and fdRecordingTriggerTime) are bumped out of storage until the storage used for this recording class is less than or equal to the size defined by this object. An attempt to set this object to a value that would cause the sum of all fdRecordingClassSizeLimit objects for the associated adminfdRecordingOwner to exceed the adminRecMechSizeLimit for the adminfdRecordingOwner shall cause Step 10 of the set operation to fail, thereby resulting in an 'inconsistentVlaue' error. A recording that exceeds fdRecordingClassSizeLimit octets shall not be stored within the recording class.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1005">26048_1-1005</a></span>  Configure a recording class</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1101">26048_1-1101</a></span>  Confirm recording class configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-49">
+          <td class="id-col">Recording-MIB-49</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingClassClearDate</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>21&nbsp;Recording class clear date</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object, along with fdRecordingClassClearTime, is used to clear multiple recordings from the fdRecordingTable and fdRecordingSampleTable. All completed recordings (and associated samples) for this recording class that are associated with a fdRecordingTriggerDate and fdRecordingTriggerTime equal to or older than the fdRecordingClassClearDate and fdRecordingClassClearTime shall be cleared from the fdRecordingTable and fdRecordingSampleTable. If the fdRecordingClassClearDate and fdRecordingClassClearTime refer to a future point in time, no recordings shall be initiated for the associated recording class.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1035">26048_1-1035</a></span>  Clear all recordings in a class</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-51">
+          <td class="id-col">Recording-MIB-51</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingClassClearTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>22&nbsp;Recording class clear time</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object, along with fdRecordingClassClearDate, is used to clear multiple recordings from the fdRecordingTable and fdRecordingSampleTable. All completed recordings (and associated samples) for this recording class that are associated with a fdRecordingTriggerDate and fdRecordingTriggerTime equal to or older than the fdRecordingClassClearDate and fdRecordingClassClearTime shall be cleared from the fdRecordingTable and fdRecordingSampleTable. If the fdRecordingClassClearDate and fdRecordingClassClearTime refer to a future point in time, no recordings shall be initiated for the associated recording class.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1035">26048_1-1035</a></span>  Clear all recordings in a class</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-53">
+          <td class="id-col">Recording-MIB-53</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingClassEntries</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>23&nbsp;Number of recordings in class</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The number of recordings for this recording class that are currently stored in the fdRecordingTable.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1019">26048_1-1019</a></span>  Retrieve number of recordings within a c…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-55">
+          <td class="id-col">Recording-MIB-55</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingClassCompletes</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>24&nbsp;Number of completed recordings in class</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object is a counter that gets incremented every time a recording is completed for this class.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1019">26048_1-1019</a></span>  Retrieve number of recordings within a c…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-134">
+          <td class="id-col">Recording-MIB-134</td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>25&nbsp;Recording class time stamp</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The value of sysUpTime at the last discontinuity of any of the counters associated with this row of the fdRecordingFactoryTable. Discontinuities occur when the row is created.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1019">26048_1-1019</a></span>  Retrieve number of recordings within a c…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-57">
+          <td class="id-col">Recording-MIB-57</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingClassStorageType</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>26&nbsp;Recording class storage type</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object defines the storage type to use for this row of the fdRecordingClassTable. Rows having the value 'permanent' shall allow writable access to fdRecordingClassSizeLimit, fdRecordingClassClearDate, and fdRecordingClassClearTime.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1005">26048_1-1005</a></span>  Configure a recording class</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1101">26048_1-1101</a></span>  Confirm recording class configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-59">
+          <td class="id-col">Recording-MIB-59</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingClassRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>27&nbsp;Recording class row status</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object indicates the status of this row within the fdRecordingClassTable. Objects within this row can be modified regardless of the state of this object. Within the second phase of the set operation to set this object to 'destroy', all rows within the fdRecordingFactoryTable, fdRecordingTable, and fdRecordingSampleTable that use this fdRecordingClassName as an index shall also be destroyed.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1005">26048_1-1005</a></span>  Configure a recording class</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1101">26048_1-1101</a></span>  Confirm recording class configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-61">
+          <td class="id-col">Recording-MIB-61</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingFactoryTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>28&nbsp;Recording factory table</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This table is used to configure the information to be contained within each recording. &lt;Table Type&gt; managed</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-62</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingFactoryEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>&lt;Definition&gt; This object defines a row in the Recording Mechanism Factory Table. Rows defined within this table define the information the device shall record when a recording is initiated.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-63</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdRecordingFactoryEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-65">
+          <td class="id-col">Recording-MIB-65</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingFactoryIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>29&nbsp;Recording factory index</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object provides a unique index for the recording factory within the context of the adminfdRecordingOwner.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-73">
+          <td class="id-col">Recording-MIB-73</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingFactorySampleContext</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>30&nbsp;Context of object to be sampled</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The management context of the object instance to be sampled for the recording. For example, the command responder might provide access to multiple MIB instances; this object disambiguates which MIB instance is to be used.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1007">26048_1-1007</a></span>  Configure a recording factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1102">26048_1-1102</a></span>  Confirm recording factory configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-75">
+          <td class="id-col">Recording-MIB-75</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingFactorySampleOID</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>31&nbsp;Object to be sampled in recording</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The object identifier of the object instance to be sampled for the recording. The object instance shall be accessed using the security parameters as specified in fdRecordingFactorySecurityModel, fdRecordingFactorySecurityLevel, fdRecordingFactorySecurityName, and fdRecordingFactorySampleContext. (See RFC 3415 for details about how the view-based access control model uses these parameters.) An attempt to set this object to a value that is not within the read mib view for the supplied security parameters shall result in a failure of Step 10 of the set operation, thereby resulting in an 'inconsistent value' error. NOTE: The object instance does not have to exist at the time that this object is set for the set to be successful. If the object identifier does not point to a valid object instance within the read mib view for the indicated security parameters at the time that the data is being sampled, the sample shall record a zero- length string.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1007">26048_1-1007</a></span>  Configure a recording factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1102">26048_1-1102</a></span>  Confirm recording factory configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-77">
+          <td class="id-col">Recording-MIB-77</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingFactoryPreSamples</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>32&nbsp;Percent of pre-trigger samples</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object indicates the percentage of samples in a recording that are intended to be captured prior to the recording being triggered. When this value is greater than zero (0), the device will need to collect and buffer samples prior to the recording being triggered so that it can store the requisite information when a recording is triggered.</p><p>&lt;Format&gt; A value of zero (0) means that the recording shall start with the first sample captured after the recording is triggered. A value of 100 means that the recording will end with the last sample captured prior to or simultaneous with the recording being triggered, where simultaneous is defined as occurring within fdRecordingFactorySamplePeriod / 2.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1007">26048_1-1007</a></span>  Configure a recording factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1102">26048_1-1102</a></span>  Confirm recording factory configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-79">
+          <td class="id-col">Recording-MIB-79</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingFactorySamplePeriod</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>33&nbsp;Sample period</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object indicates the frequency at which samples shall be taken. Allowable sample periods are restricted to a value of zero (0) or recMechMinSamplePeriod + (fdRecordingSamplePeriodResolution * n) where n is an integer, 0 &lt;= n, and n &lt;= (recMechMaxSamplePeriod: recMechMinSamplePeriod) / fdRecordingSamplePeriodResolution If the value of this object is zero (0), samples shall be collected whenever the value of the object specified by fdRecordingFactoryMonitorOID changes (i.e., based on an on-change event rather than based on time). If the value of this object is greater than zero, this object indicates the time that shall elapse between each sample collected for the recording produced by this factory and the value of fdRecordingFactoryMonitorOID shall be ignored.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1007">26048_1-1007</a></span>  Configure a recording factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1102">26048_1-1102</a></span>  Confirm recording factory configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-81">
+          <td class="id-col">Recording-MIB-81</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingFactoryMonitorContext</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>34&nbsp;Context of object to be monitored</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The management context to use when accessing fdRecordingFactoryMonitorOID.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1007">26048_1-1007</a></span>  Configure a recording factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1102">26048_1-1102</a></span>  Confirm recording factory configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-83">
+          <td class="id-col">Recording-MIB-83</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingFactoryMonitorOID</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>35&nbsp;Object to be monitored for on-change recordings</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The object identifier of the object instance to be monitored for on-change events when fdRecordingFactorySamplePeriod is zero (0). If fdRecordingFactorySamplePeriod is non-zero, the value of this object shall be ignored. The object instance shall be accessed using the security parameters as specified in fdRecordingFactorySecurityModel, fdRecordingFactorySecurityLevel, fdRecordingFactorySecurityName, and fdRecordingFactoryMonitorContext. An attempt to set this object to a value, other than zeroDotZero, that is not within the read mib view for the supplied security parameters shall result in a failure of Step 10 of the set operation, thereby resulting in an 'inconsistent value' error. NOTE: The object instance does not have to exist at the time that this object is set for the set to be successful. If this object does not point to a valid object instance within the read mib view for the indicated security parameters at the time that the data is being monitored, the on-change event shall not fire.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1007">26048_1-1007</a></span>  Configure a recording factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1102">26048_1-1102</a></span>  Confirm recording factory configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-85">
+          <td class="id-col">Recording-MIB-85</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingFactorySampleLimit</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>36&nbsp;Number of samples</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The intended number of samples to be included for recordings produced by this factory. A recording that collects its full number of samples prior to and after the recording trigger shall have a recording of this number of samples. If this object is zero (0), then no recordings are created based on this configuration.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-67">
+          <td class="id-col">Recording-MIB-67</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingFactorySecurityModel</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>37&nbsp;Recording factory security model</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The security model used to activate this row of the fdRecordingFactoryTable and that is used to access the fdRecordingFactoryObjectID and fdRecordingFactorySampleOID.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-69">
+          <td class="id-col">Recording-MIB-69</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingFactorySecurityLevel</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>38&nbsp;Recording factory level</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The security level used to activate this row of the fdRecordingFactoryTable and that is used to access the fdRecordingFactoryObjectID and fdRecordingFactorySampleOID.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-71">
+          <td class="id-col">Recording-MIB-71</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingFactorySecurityName</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>39&nbsp;Recording factory name</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The security name used to activate this row of the fdRecordingFactoryTable and that is used to access the fdRecordingFactoryObjectID and fdRecordingFactorySampleOID.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-87">
+          <td class="id-col">Recording-MIB-87</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingFactoryStorageType</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>40&nbsp;Recording factory storage type</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object defines the storage type to use for this row within the fdRecordingFactoryTable. Permanent rows do not have to be editable.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1007">26048_1-1007</a></span>  Configure a recording factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1102">26048_1-1102</a></span>  Confirm recording factory configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-89">
+          <td class="id-col">Recording-MIB-89</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingFactoryRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>41&nbsp;Recording factory row status</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object indicates the status of this row within the fdRecordingFactoryTable. Objects within this row cannot be modified while this object is 'active'. Within the second phase of the set operation to set this object to 'destroy', all rows within the fdRecordingTable, and fdRecordingSampleTable with an index that includes both fdRecordingClassName and fdRecordingFactoryName shall also be destroyed.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1007">26048_1-1007</a></span>  Configure a recording factory</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1102">26048_1-1102</a></span>  Confirm recording factory configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-91">
+          <td class="id-col">Recording-MIB-91</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>42&nbsp;Recording table</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This table is used to provide information about each recording completed or in progress. &lt;Table Type&gt; managed</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-92</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>&lt;Definition&gt; This object defines a row in the fdRecordingTable. Rows defined within this table capture information that applies to all samples collected within the recording.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-93</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdRecordingEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-95">
+          <td class="id-col">Recording-MIB-95</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>43&nbsp;Recording index</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The recording number within this class for this recording. Recording numbers shall be assigned starting at 1 and increasing sequentially by 1 with each new recording within the class. After the assigned value reaches 255, the process shall repeat, skipping the value 0. Recordings shall be assigned the index value in order of the trigger events occurring ensuring that the trigger date/time values are chronological (except for the rollover).</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-97">
+          <td class="id-col">Recording-MIB-97</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingTrigger</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>44&nbsp;Recording trigger</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object indicates the trigger or event that caused the recording to be initiated. For example, if the recording was triggered by a conditional trigger, this object would indicate the OID of fdCondTriggerDescription for the row within the fdCondTriggerTable that caused the recording.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1021">26048_1-1021</a></span>  Retrieve recording meta-data</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-99">
+          <td class="id-col">Recording-MIB-99</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingTriggerDate</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>45&nbsp;Recording trigger date</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object contains the date on which the recording was triggered.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1021">26048_1-1021</a></span>  Retrieve recording meta-data</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-101">
+          <td class="id-col">Recording-MIB-101</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingTriggerTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>46&nbsp;Recording trigger time</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object indicates the time at which the recording was triggered.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1021">26048_1-1021</a></span>  Retrieve recording meta-data</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-103">
+          <td class="id-col">Recording-MIB-103</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>47&nbsp;Recording status</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The value of this object reflects the state of the recording located in this row.</p><p>&lt;Format&gt; Value Description available This row is available for a new recording to be initiated for this recording class. When a recording is cleared, the value is set to available. Note: This state is only applicable to implementations that have rows that can exist without any samples. pretrigger The recording is collecting pre-trigger samples. Note: When the trigger point is zero (0) percent or the trigger condition is already satisfied when the fdRecordingFactoryEntry is configured, this state does not occur. triggered The recording has been triggered and is currently collecting post event records. Triggered recordings shall survive a power outage. Upon power up, any recording in the 'triggered' state shall automatically transition to the 'complete' state. Note: When the trigger point is 100 percent, this state does not occur. complete The recording is complete (e.g., all post-event samples have been collected). Completed recordings shall survive a power outage.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1021">26048_1-1021</a></span>  Retrieve recording meta-data</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-105">
+          <td class="id-col">Recording-MIB-105</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingTriggerSample</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>48&nbsp;Position of trigger within recording</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object indicates the number (fdRecordingSampleNumber) of the first post-event sample in the recording.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1021">26048_1-1021</a></span>  Retrieve recording meta-data</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-107">
+          <td class="id-col">Recording-MIB-107</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingNumSamples</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>49&nbsp;Number of samples within recording</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The current number of samples contained in this recording. A completed recording does not necessarily have exactly fdRecordingFactoryNumSamples samples recorded (e.g., due to changes in configuration, errors in collecting samples, etc.).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1021">26048_1-1021</a></span>  Retrieve recording meta-data</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-109">
+          <td class="id-col">Recording-MIB-109</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingDelete</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>50&nbsp;Delete recording</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; A control that allows the deletion of the recording. The object shall always report false when read. Setting this object to true shall delete this row in the table and shall also delete all rows in the fdRecordingSampleTable with the same fdOwnerIndex, fdRecordingClassIndex, and fdRecordingIndex.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-111">
+          <td class="id-col">Recording-MIB-111</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingSampleTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>51&nbsp;Recording sample table</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; A table containing the samples for each recording. &lt;Table Type&gt; managed</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-112</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingSampleEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>&lt;Definition&gt; An entry in the recording mechanism sample table.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-113</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdRecordingSampleEntry::&#x3D;</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-115">
+          <td class="id-col">Recording-MIB-115</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingSampleIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>52&nbsp;Recording sample index</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The number used to uniquely identify this sample within this recording. Sample numbers shall be sequentially assigned starting at 1 and increasing by 1 until the configured number of post-event samples have been captured or the recording is otherwise completed.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-117">
+          <td class="id-col">Recording-MIB-117</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingSampleTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>53&nbsp;Recording sample time</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The time that the sample was captured. The entry shall be collected within one fdRecordingSamplePeriodResolution unit of time from the intended time and timestamped with the time of collection.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1099">26048_1-1099</a></span>  Retrieve a recording sample</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+              <div class="comment">
+                <div class="comment-header"><i class="fas fa-comment"></i> 2023-06-25: Kenneth Vaughn</div>
+                <div class="comment-text"><p>Should we also include a date object?</p></div>
+              </div>
+          </td>
+        </tr>
+        <tr id="Recording-MIB-119">
+          <td class="id-col">Recording-MIB-119</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingSampleValue</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>54&nbsp;Recording sample value</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The OER-encoded value of the object instance referenced by fdRecordingFactorySampleOID at the time when the sample was collected.</p><p>&lt;Format&gt; The value shall not contain any padding characters either before or after the values. Decoding the value of this object requires knowledge of the syntax of the object referenced by fdRecordingFactorySampleOID. For example, the value portion of the variableBinding encoding of this object could be 0x04 02 01 41, where: 04: octet string type for ITSOerString 02: length of 2 octets 01 41: sampled value of object referenced by fdRecordingFactorySampleOID The exact meaning of 01 41 is based on the syntax of fdRecordingFactorySampleOID; for example, the following table gives possible valid decodings depending on the syntax: Syntax Decoding Logic ITSInteger16 321 fixed-length two-octet integer encoding Counter64 65 one-octet length and one-octet value SnmpAdminString 'A' one-octet length and one-octet value</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1099">26048_1-1099</a></span>  Retrieve a recording sample</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-120">
+          <td class="id-col">Recording-MIB-120</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>55&nbsp;Capability objects</h1>
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-121">
+          <td class="id-col">Recording-MIB-121</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingMinSamplePeriod</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>56&nbsp;Minimum sample period for recordings</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The minimum sample period for recordings supported by the device.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-123">
+          <td class="id-col">Recording-MIB-123</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingMaxSamplePeriod</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>57&nbsp;Maximum sample period for recordings</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The maximum sample period for recordings supported by the device.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-125">
+          <td class="id-col">Recording-MIB-125</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdRecordingSamplePeriodResolution</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>58&nbsp;Sample period resolution for recordings</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; The sample period resolution for recordings supported by the device. Allowable sample periods are restricted to (recMinSamplePeriod + recSamplePeriodResolution * n), where: n is an integer, 0 &lt;= n, and n &lt;= (recMaxSamplePeriod - recMinSamplePeriod) / recSamplePeriodResolution</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1011">26048_1-1011</a></span>  Determine recording capabilities</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr id="Recording-MIB-126">
+          <td class="id-col">Recording-MIB-126</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>59&nbsp;Compliance groups</h1>
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-127</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdRecordingConformance</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node used to contain conformance concepts for the rechMechV2 feature.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-128</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdRecordingCompliances</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node used to contain compliance statements for the fdRecording feature.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-129</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdRecordingGroups</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node used to contain object groups for the fdRecording feature.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-130</td>
+          <td class="custom-col htmlContent">module-compliance</td>
+                      <td class="custom-col htmlContent">fdRecordingComplianceV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The original conformance statement for the ISO 26048-1 recording mechanism.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-131</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdRecordingGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The objects necessary for the ISO 26048-1 recording mechanism. NOTE: The recording mechanism is dependent upon the fdOwnerTable, as defined in ISO 26048-1-Owner. It is designed to be called by the ISO 26048-1 Action Table but could be called by other means as well.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col">Recording-MIB-132</td>
+          <td class="custom-col htmlContent">end</td>
+                      <td class="custom-col htmlContent">end</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="discussion-col">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

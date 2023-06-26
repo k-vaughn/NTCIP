@@ -1,0 +1,1063 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>CondTrigger</h1><p><em>Last modified on 2023-06-22 13:04</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-6">1 Total conditional trigger evaluation errors</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-7">2 Total conditional trigger fires</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-8">3 Total conditional trigger call errors</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-9">4 Owner table for conditional triggers</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-12">5 Maximum conditional triggers for an owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-13">6 Conditional trigger evaluation errors for an owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-14">7 Conditional trigger fires for an owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-15">8 Conditional trigger call errors for an owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-17">9 Supported modes for a conditional trigger </a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-18">10 Conditional trigger frequency limit</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-19">11 Conditional trigger frequency notes</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-20">12 Conditional trigger table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-23">13 Conditional trigger index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-24">14 Conditional trigger description</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-25">15 Conditional trigger mode</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-26">16 Conditional trigger sample type</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-27">17 Conditional trigger comparison value</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-28">18 Conditional trigger comparison value 2</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-29">19 Conditional trigger object</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-30">20 Conditional trigger wildcard</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-31">21 Target for conditional trigger object</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-32">22 Context for conditional trigger object</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-33">23 Frequency for checking conditional trigger</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-34">24 Conditional trigger truth duration</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-35">25 Startup value for primary trigger condition</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-36">26 Startup value for secondary trigger condition</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-37">27 Actions for primary trigger condition</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-38">28 Actions for secondary trigger condition</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-39">29 Message explaining configuration error</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-40">30 Evaluation errors for trigger</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-41">31 Fires of trigger</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-42">32 Call errors for trigger</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-43">33 Conditional error time stamp</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-44">34 Conditional trigger security model</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-45">35 Conditional trigger security level</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-46">36 Conditional trigger security name</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-47">37 Conditional trigger storage type</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#CondTrigger-MIB-48">38 Conditional trigger row status</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col" style="color: white;"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Type</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Name</th>
+          <th class="description-col" style="color: white;"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col" style="color: white;"><i class="fas fa-link"></i> Links</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Syntax</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Access</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-1</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Conditional Trigger Header </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-2</td>
+          <td class="custom-col htmlContent">mib</td>
+                      <td class="custom-col htmlContent">ISO26048-1-CondTrigger</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><pre>  <br>MODULE-IDENTITY, OBJECT-TYPE, OBJECT-IDENTITY, Unsigned32<br>                                                    FROM SNMPv2-SMI<br>                                                      -- RFC 2578<br>RowStatus, StorageType, TimeStamp, TruthValue, VariablePointer<br>                                                    FROM SNMPv2-TC<br>                                                      -- RFC 2579<br>MODULE-COMPLIANCE, OBJECT-GROUP<br>                                                    FROM SNMPv2-CONF<br>                                                      -- RFC 2580<br>SnmpAdminString, SnmpSecurityModel, SnmpSecurityLevel<br>                                                    FROM SNMP-FRAMEWORK-MIB<br>                                                      -- RFC 3411<br>ITSBerString, ITSCounter32, ITSPositive8, ITSRelativeRowPointer, ITSUnsigned8, <br>ITSCounter16<br>                                                    FROM ISO26048-1-FieldDevice<br>fdGlobalMIB, fdAdminGlobal, fdGlobalConformance<br>                                                    FROM ISO26048-1-Global<br>fdOwnerEntry, fdOwnerIndex<br>                                                    FROM ISO26048-1-Owner<br>  <br></pre></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-3</td>
+          <td class="custom-col htmlContent">module-identity</td>
+                      <td class="custom-col htmlContent">fdCondTriggerMIB</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>This MIB defines a mechanism by which a manager can configure actions to be performed based on user-defined comparisons using data within the field device. Copyright (C) International Organization for Standardization (ISO). This MIB module is part of ISO 26048-1; see ISO 26048-1 for full legal notices.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-4</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Administrator Objects </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-5</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdAdminCondTrigger</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node defining management information related to the administration of the conditional trigger table.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="CondTrigger-MIB-6">
+          <td class="id-col">CondTrigger-MIB-6</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminCondTriggersTotalEvalErrs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>1&nbsp;Total conditional trigger evaluation errors</h1>
+            <div class="htmlContent"><p>The number of times the evaluation of any enabled conditional trigger has failed since the last reboot. For example, a trigger evaluation might fail if a variable in an expression cannot be obtained.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-568">26048_1-568</a></span>  Retrieve summary statistics for conditio…</div>
+          </td>
+          <td class="custom-col htmlContent">ITSCounter32</td>
+                      <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-7">
+          <td class="id-col">CondTrigger-MIB-7</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminCondTriggersTotalFires</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>2&nbsp;Total conditional trigger fires</h1>
+            <div class="htmlContent"><p>The number of times any enabled conditional trigger has fired (i.e., evaluated to 'true') since the last reboot.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-568">26048_1-568</a></span>  Retrieve summary statistics for conditio…</div>
+          </td>
+          <td class="custom-col htmlContent">ITSCounter32</td>
+                      <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-8">
+          <td class="id-col">CondTrigger-MIB-8</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminCondTriggersTotalCallErrs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>3&nbsp;Total conditional trigger call errors</h1>
+            <div class="htmlContent"><p>The number of times an attempt by a conditional trigger to call an action group failed (e.g., the action group was not defined).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-568">26048_1-568</a></span>  Retrieve summary statistics for conditio…</div>
+          </td>
+          <td class="custom-col htmlContent">ITSCounter32</td>
+                      <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-9">
+          <td class="id-col">CondTrigger-MIB-9</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerCondTriggerTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>4&nbsp;Owner table for conditional triggers</h1>
+            <div class="htmlContent"><p>A table containing management information about the conditional triggers associated with each owner. It is recommended that administrators are granted read-write access to the entire table while owners are only granted read-access to their specific row(s).</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">SEQUENCE OF FdOwnerCondTriggerEntry</td>
+                      <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-10</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerCondTriggerEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A row in the fdOwnerCondTriggerTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">FdOwnerCondTriggerEntry</td>
+                      <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-11</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdOwnerCondTriggerEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">{ fdOwnerCondTriggerMaxRows ITSUnsigned8,<br> fdOwnerCondTriggerEvalErrs ITSCounter16,<br> fdOwnerCondTriggerFires ITSCounter16,<br> fdOwnerCondTriggerCallErrs ITSCounter16 }</td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="CondTrigger-MIB-12">
+          <td class="id-col">CondTrigger-MIB-12</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerCondTriggerMaxRows</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>5&nbsp;Maximum conditional triggers for an owner</h1>
+            <div class="htmlContent"><p>The maximum number of rows that this owner is allowed to manage within the fdCondTriggerTable at any point in time.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-571">26048_1-571</a></span>  Configure conditional trigger owner</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-572">26048_1-572</a></span>  Confirm conditional trigger owner config…</div>
+          </td>
+          <td class="custom-col htmlContent">ITSUnsigned8</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-13">
+          <td class="id-col">CondTrigger-MIB-13</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerCondTriggerEvalErrs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>6&nbsp;Conditional trigger evaluation errors for an owner</h1>
+            <div class="htmlContent"><p>The number of times an 'active' conditional trigger for this owner failed to evaluate its defined condition (e.g., due to data not being available, processor overload, etc) since the last discontinuity, as defined by the fdOwnerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-573">26048_1-573</a></span>  Retrieve statistics for conditional trig…</div>
+          </td>
+          <td class="custom-col htmlContent">ITSCounter16</td>
+                      <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-14">
+          <td class="id-col">CondTrigger-MIB-14</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerCondTriggerFires</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>7&nbsp;Conditional trigger fires for an owner</h1>
+            <div class="htmlContent"><p>The number of times any conditional trigger associated with this owner has been fired since the last discontinuity, as defined by the fdOwnerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-573">26048_1-573</a></span>  Retrieve statistics for conditional trig…</div>
+          </td>
+          <td class="custom-col htmlContent">ITSCounter16</td>
+                      <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-15">
+          <td class="id-col">CondTrigger-MIB-15</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerCondTriggerCallErrs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>8&nbsp;Conditional trigger call errors for an owner</h1>
+            <div class="htmlContent"><p>The number of times a conditional trigger fired for this owner but the call to the action group failed (e.g., due to the referenced row not being active) since the last discontinuity, as defined by the fdOwnerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-573">26048_1-573</a></span>  Retrieve statistics for conditional trig…</div>
+          </td>
+          <td class="custom-col htmlContent">ITSCounter16</td>
+                      <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-16</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Conditional Trigger Objects </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="CondTrigger-MIB-17">
+          <td class="id-col">CondTrigger-MIB-17</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggersSupport</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>9&nbsp;Supported modes for a conditional trigger </h1>
+            <div class="htmlContent"><p>The options supported by the conditional triggering system within the field device: Valid bits are: Value | Description current | The field device supports 'current' sample types delta | The field device supports 'delta' sample types onChange | The field device supports 'onChange' triggers (mode) greaterThan | The field device supports 'greaterThan' triggers lessThan | The field device supports 'lessThan' triggers hysteresis | The field device supports 'hysteresis' triggers periodic | The field device supports 'periodic' triggers equal | The field device supports 'equal' triggers notEqual | The field device supports 'notEqual' triggers creation | The field device supports 'creation' triggers deletion | The field device supports 'deletion' triggers bitwiseAnd | The field device supports 'bitwiseAnd' triggers</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-563">26048_1-563</a></span>  Determine conditional triggering capabil…</div>
+          </td>
+          <td class="custom-col htmlContent">BITS {<br> current (0), <br> delta (1), <br> onChange (2), <br> greaterThan (3), <br> lessThan (4), <br> hysteresis (5), <br> periodic (6), <br> andedWithValue (7), <br> equal (8), <br> notEqual (9), <br> creation (10), <br> deletion (11),<br> bitwiseAnd (12) }</td>
+                      <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-18">
+          <td class="id-col">CondTrigger-MIB-18</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggersFrequencyLimit</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>10&nbsp;Conditional trigger frequency limit</h1>
+            <div class="htmlContent"><p>The minimum value of fdCondTriggerObjectFrequency that can be set under any condition.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-563">26048_1-563</a></span>  Determine conditional triggering capabil…</div>
+          </td>
+          <td class="custom-col htmlContent">Unsigned32</td>
+                      <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-19">
+          <td class="id-col">CondTrigger-MIB-19</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggersFrequencyNotes</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>11&nbsp;Conditional trigger frequency notes</h1>
+            <div class="htmlContent"><p>An explanation (or a reference to an explanation, such as with a URL that points to a user guide) for any special rules for setting frequency limits. For example, if a handful of objects support a zero frequency but others have higher limits, the fdCondTriggersFrequencyLimit would be set to zero (0), but the notes would provide complete details about what limits apply to all objects.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-563">26048_1-563</a></span>  Determine conditional triggering capabil…</div>
+          </td>
+          <td class="custom-col htmlContent">SnmpAdminString</td>
+                      <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-20">
+          <td class="id-col">CondTrigger-MIB-20</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>12&nbsp;Conditional trigger table</h1>
+            <div class="htmlContent"><p>A table containing the configuration and status information for each conditional trigger.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">SEQUENCE OF FdCondTriggerEntry</td>
+                      <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-21</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A row in the fdCondTriggerTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">FdCondTriggerEntry</td>
+                      <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-22</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdCondTriggerEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"><p>{ fdCondTriggerIndex ITSPositive8,<br>fdCondTriggerDescription SnmpAdminString,<br>fdCondTriggerMode INTEGER,<br>fdCondTriggerSampleType INTEGER,<br>fdCondTriggerValue ITSBerString,<br>fdCondTriggerValue2 ITSBerString,<br>fdCondTriggerObject VariablePointer,<br>fdCondTriggerWildcard TruthValue,<br>fdCondTriggerObjectTarget SnmpAdminString,<br>fdCondTriggerObjectContext SnmpAdminString,<br>fdCondTriggerObjectFrequency Unsigned32,<br>fdCondTriggerTruthDuration Unsigned32,<br>fdCondTriggerStartup TruthValue,<br>fdCondTriggerStartup2 TruthValue,<br>fdCondTriggerActions ITSRelativeRowPointer,<br>fdCondTriggerActions2 ITSRelativeRowPointer,<br>fdCondTriggerCfgMessage SnmpAdminString,<br>fdCondTriggerEvalErrs ITSCounter32,<br>fdCondTriggerFires ITSCounter32,<br>fdCondTriggerCallErrs ITSCounter32,<br>fdCondTriggerTimeStamp TimeStamp,<br>fdCondTriggerSecurityModel SnmpSecurityModel,<br>fdCondTriggerSecurityLevel SnmpSecurityLevel,<br>fdCondTriggerSecurityName SnmpAdminString,<br>fdCondTriggerStorageType StorageType,<br>fdCondTriggerRowStatus RowStatus }</p></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="CondTrigger-MIB-23">
+          <td class="id-col">CondTrigger-MIB-23</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>13&nbsp;Conditional trigger index</h1>
+            <div class="htmlContent"><p>A locally-unique, administratively assigned index for the trigger within the scope of fdOwnerIndex.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">ITSPositive8</td>
+                      <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-24">
+          <td class="id-col">CondTrigger-MIB-24</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerDescription</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>14&nbsp;Conditional trigger description</h1>
+            <div class="htmlContent"><p>A description of the trigger's function and use.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">SnmpAdminString</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-25">
+          <td class="id-col">CondTrigger-MIB-25</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerMode</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>15&nbsp;Conditional trigger mode</h1>
+            <div class="htmlContent"><p>The type of trigger test to perform. The following text provides the special rules for each value: The term 'monitored value' referenced in the text below is 1. The value referenced by the fdCondTriggerObject, if the fdCondTriggerSampleType is 'current' or 2. The current value referenced by the fdCondTriggerObject minus the previously read value of this same object, if the fdCondTriggerSampleType is 'delta' other: Fires: Not defined by this standard; use of all objects is undefined. Startup: Not defined by this standard. Resets: Not defined by this standard. onChange: Fires: fdCondTriggerAction when the monitored value changes (includes creation and deletion) fdCondTriggerSampleType: Must be 'current' Startup: Does not fire on initialization Resets: Upon each firing greaterThan: Fires: fdCondTriggerAction when the monitored value is greater than fdCondTriggerValue for a period longer than fdCondTriggerTruthDuration fdCondTriggerObject: Points to an integer-based object instance Startup: Based on fdCondTriggerStartup Resets: When value falls below fdCondTriggerValue for a period longer than fdCondTriggerTruthDuration lessThan: Fires: fdCondTriggerAction when the monitored value is less than fdCondTriggerValue for a period longer than fdCondTriggerTruthDuration fdCondTriggerObject: Points to an integer-based object instance Startup: Based on fdCondTriggerStartup Resets: When value rises above fdCondTriggerValue for a period longer than fdCondTriggerTruthDuration hysteresis: Fires: - fdCondTriggerAction when when the monitored value is greater than the value of fdCondTriggerValue - fdCondTriggerAction2 when the monitored value is less than the value of the fdCondTriggerValue2 fdCondTriggerObject: Points to an integer-based object instance Startup: Based on fdCondTriggerStartup and fdCondTriggerStartup2 Resets: The fdCondTriggerAction when the fdCondTriggerAction2 fires The fdCondTriggerAction2 when the fdCondTriggerAction fires periodic: Fires: fdCondTriggerAction every fdCondTriggerValue seconds Startup: Based on fdCondTriggerStartup Resets: Resets upon firing equal: Fires: fdCondTriggerAction when the monitored value is equal to fdCondTriggerValue for a period longer than fdCondTriggerTruthDuration fdCondTriggerObject: Points to an integer-based object instance Startup: Based on fdCondTriggerStartup Resets: When value is no longer equal to fdCondTriggerValue for a period longer than fdCondTriggerTruthDuration notEqual: Fires: fdCondTriggerAction when the monitored value is not equal to fdCondTriggerValue for a period longer than fdCondTriggerTruthDuration fdCondTriggerObject: Points to an integer-based object instance Startup: Based on fdCondTriggerStartup Resets: When value is equal to fdCondTriggerValue for a period longer than fdCondTriggerTruthDuration creation: Fires: fdCondTriggerAction when the object pointed to by fdCondTriggerObject is created Startup: Based on fdCondTriggerStartup; must be false if wildcarded Resets: Resets upon firing deletion: Fires: fdCondTriggerAction when the object pointed to by fdCondTriggerObject is deleted Startup: Based on fdCondTriggerStartup; must be false if wildcarded Resets: Resets upon firing bitwiseAnd: Fires: fdCondTriggerAction when any bits set in the object pointed to by fdCondTriggerObject are also set in fdCondTriggerValue for a period longer than fdCondTriggerTruthDuration. In other words, a bitwise AND is performed on the values referenced by fdCondTriggerObject and fdCondTriggerValue and if any bits are set in the resulting value, the trigger is fired. Startup: Based on fdCondTriggerStartup Resets: When no bits match for a period longer than fdCondTriggerTruthDuration octetBitwiseAnd: Fires: fdCondTriggerAction when any bits set in the object pointed to by fdCondTriggerObject are also set in fdCondTriggerValueOctet for a period longer than fdCondTriggerTruthDuration. In other words, a bitwise AND is performed on the values referenced by fdCondTriggerObject and fdCondTriggerValue and if any bits are set in the resulting value for the defined duration, the trigger is fired. The value referenced by fdCondTriggerObject must be derived from an OCTET STRING or BITS; otherwise the evaluation shall fail. Startup: Based on fdCondTriggerStartup Resets: When no bits match for a period longer than fdCondTriggerTruthDuration</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">INTEGER {<br> other (1), <br> onChange (2), <br> greaterThan (3), <br> lessThan (4), <br> hysteresis (5), <br> periodic (6), <br> equal (7), <br> notEqual (8), <br> creation (9), <br> deletion (10),<br> bitwiseAnd (11) }</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-26">
+          <td class="id-col">CondTrigger-MIB-26</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerSampleType</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>16&nbsp;Conditional trigger sample type</h1>
+            <div class="htmlContent"><p>An indication of the value to monitor. Allowed values are: Value | Description other | Not defined in this standard current | The monitored value shall be the current value of the object | instance referenced by fdCondTriggerObject delta | The monitored value shall be the value calculated by taking | the current value of the object instance referenced by | fdCondTriggerObject and subtracting the previously reported | value of the same object. NOTE: Delta operations require at least two readings, separated by fdCondTriggerObjectFrequency, for a comparison to be made.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">INTEGER { other (1), current (2), delta (3) }</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-27">
+          <td class="id-col">CondTrigger-MIB-27</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerValue</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>17&nbsp;Conditional trigger comparison value</h1>
+            <div class="htmlContent"><p>The value to use for the test specified by fdCondTriggerMode. This object is ignored when the mode is 'onChange', 'periodic', 'creation', or 'deletion'. For the 'hysteresis' mode, this value shall be an integer representing the rising threshold. The value of this object shall include the Type, Length, and Value portions of the BER encoding; if the Type field does not correspond to the type of object referenced by fdCondTriggerObject and this value is required for the selected Mode, the RowStatus shall report a status of 'notReady' and CfgMessage object shall indicate the reason. NOTE: while the logic of hysteresis is always integer-based, the Type field should indicate the SNMP type (e.g., Integer32 versus Unsigned32).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">ITSBerString</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-28">
+          <td class="id-col">CondTrigger-MIB-28</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerValue2</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>18&nbsp;Conditional trigger comparison value 2</h1>
+            <div class="htmlContent"><p>When the fdCondTriggerMode value is 'hysteresis' mode, this value shall represent the falling threshold. This value shall be ignored for all other values of fdCondTriggerMode. The value of this object shall include the Type, Length, and Value portions of the BER encoding; if the Type field does not correspond to the type of object referenced by fdCondTriggerObject and this value is required for the selected Mode, the RowStatus shall report a status of 'notReady' and CfgMessage object shall indicate the reason. NOTE: while the logic of hysteresis is always integer-based, the Type field should indicate the SNMP type (e.g., Integer32 versus Unsigned32).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">ITSBerString</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-29">
+          <td class="id-col">CondTrigger-MIB-29</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerObject</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>19&nbsp;Conditional trigger object</h1>
+            <div class="htmlContent"><p>The object identifier of the MIB object instance to sample to see if the trigger should fire. If the fdCondTriggerMode is 'onChange', 'creation', or 'deletion', and fdCondTriggerWildcard is set to 'true', this value shall represent the common root portion of the object identifier for all object instances to be monitored. Bad object identifiers or a mismatch between truncating the identifier and the value of fdCondTriggerWildcard result in an operation as one would expect when providing the wrong identifier to a Get or GetNext operation. The Get will fail or get the wrong object. The GetNext will indeed get whatever is next, proceeding until it runs past the initial part of the identifier and perhaps many unintended objects for confusing results. Each instance that fills the wildcard is independent of any additional instances, that is, wildcarded objects operate as if there were a separate table entry for each instance that fills the wildcard without having to actually predict all possible instances ahead of time.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">VariablePointer</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-30">
+          <td class="id-col">CondTrigger-MIB-30</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerWildcard</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>20&nbsp;Conditional trigger wildcard</h1>
+            <div class="htmlContent"><p>Control for whether fdCondTriggerObject is to be treated as fully- specified or wildcarded, with 'true' indicating wildcard. This value is ignored (i.e., always treated as 'false') if the value of fdCondTriggerMode is not 'onChange', 'creation', or 'deletion'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">TruthValue</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-31">
+          <td class="id-col">CondTrigger-MIB-31</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerObjectTarget</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>21&nbsp;Target for conditional trigger object</h1>
+            <div class="htmlContent"><p>The unique identifier associated with the snmpTargetAddrEntry from which to obtain the value to be checked. A length of 0 indicates the local system. In this case, access to the object(s) indicated by fdCondTriggerObject is under the security credentials of the requester that set fdCondTriggerRowStatus to 'active'. Those credentials are the input parameters for isAccessAllowed from the Architecture for Describing SNMP Management Frameworks (RFC 3411). Otherwise, for values other than a zero-length string, access rights are checked according to the security parameters for the indicated target as defined in the snmpTargetParamsTable.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">SnmpAdminString (SIZE(0..32))</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-32">
+          <td class="id-col">CondTrigger-MIB-32</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerObjectContext</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>22&nbsp;Context for conditional trigger object</h1>
+            <div class="htmlContent"><p>The management context from which to obtain fdCondTriggerObject. For example, if a device is a proxy agent, it might support local data in addition to data representing one or more remote devices. Each set of data is contained within a named context per the rules defined in the Architecture for Describing SNMP Management Frameworks (RFC 3411).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">SnmpAdminString</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-33">
+          <td class="id-col">CondTrigger-MIB-33</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerObjectFrequency</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>23&nbsp;Frequency for checking conditional trigger</h1>
+            <div class="htmlContent"><p>The number of seconds to wait between trigger samples. To encourage consistency in sampling, the interval is measured from the beginning of one check to the beginning of the next and the timer is restarted immediately when it expires, not when the check completes. If the next sample begins before the previous one completed the system shall record an evalError. A frequency of 0 indicates instantaneous recognition of the condition. This is not possible in many cases, but may be supported in cases where it makes sense and the system is able to do so. This feature allows the MIB to be used in implementations where such interrupt-driven behavior is possible and is not likely to be supported for all MIB objects even then since such sampling generally has to be tightly integrated into low-level code. Systems that can support a value of zero SHOULD document those cases where it can be used. In cases where it can not, setting this object to 0 shall result in an 'inconsistentValue' error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">Unsigned32</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-34">
+          <td class="id-col">CondTrigger-MIB-34</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerTruthDuration</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>24&nbsp;Conditional trigger truth duration</h1>
+            <div class="htmlContent"><p>If the sample type is 'current' and the mode is 'greaterThan', 'lessThan', 'equal', 'notEqual', 'integerBitwiseAnd', or 'octetBitwiseAnd', the logic within this paragraph applies. If the frequency is zero (0), this value indicates the duration, in tenths of seconds, that the condition must be true prior to the trigger firing. If the frequency is greater than zero (0), this value represents the number of sequential times the the condition must evaluate to true before the trigger fires. In the latter case, the value zero (0) shall operate as if it were a one (1). For example, if the mode is 'equal' and the frequency is 60, the field device will check the object instance every minute. If the fdCondTriggerTruthDuration is set to zero or one, the trigger will fire the first time the evaluation returns 'true'. If the value of fdCondTriggerTruthDuration is two, the trigger will only fire when the evaluation returns 'true' two times in a row. In either case, the trigger will not reset until the evaluation returns false. If the sample type is 'delta' or if the mode is 'onChange', 'hysteresis', 'periodic', 'creation', or 'deletion', this value shall be ignored and the trigger will fire upon the monitored condition initially evaluating to true.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">Unsigned32</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-35">
+          <td class="id-col">CondTrigger-MIB-35</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerStartup</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>25&nbsp;Startup value for primary trigger condition</h1>
+            <div class="htmlContent"><p>The initial state of the trigger upon fdCondTriggerEnabled being enabled. In the case of the 'greaterThan', 'lessThan', 'equal', and 'notEqual' modes, if this value is true, the trigger shall initiate in a ready-to- fire state upon fdCondTriggerEnabled changing to 'enabled'. As a result, if the condition specified by this trigger is true when placed in the 'enabled' state, the trigger will immediately fire. It will then have to reset before firing again. If this value is false, the trigger shall initiate in a fired state upon fdCondTriggerEnabled changing to 'enabled'. As a result, if the condition specified by this trigger is true when placed in the 'enabled' state, the trigger will not fire immediately; instead, the trigger will first have to reset before firing. In the case of the 'hysteresis' mode, this object indicates the initial state of the rising trigger; the initial state of the falling trigger shall be defined by fdCOndTriggerStartupReady2. In the case of the 'periodic' mode, this value shall indicate whether the trigger will fire instantaneously (true) upon enablement and every fdCondTriggerFrequency seconds thereafter, or if it will only start firing after the first fdCondTriggerFrequency seconds after being enabled. In the case of the 'creation' and 'deletion' modes, this value shall be 'false' if fdCondTriggerWildcard is 'true'; otherwise, the value of fdCondTriggerRowStatus shall automatically transition to 'notReady'. The first reading of existing object instances shall be used to identify the baseline from which the trigger will detect creation or deletion events; the trigger will then reset after this initialization. In the case of 'creation' or 'deletion' modes with fdCondTriggerWildcard set to 'false', this value shall operate as described above. In the case of the 'onChange' mode, this value shall be ignored. The initial check in the onChange mode is always used to set the baseline against which changes are detected.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">TruthValue</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-36">
+          <td class="id-col">CondTrigger-MIB-36</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerStartup2</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>26&nbsp;Startup value for secondary trigger condition</h1>
+            <div class="htmlContent"><p>If the value of fdCondTriggerMode is 'hysteresis', this object indicates the initial state of the falling trigger. The initial state of the rising trigger shall be defined by fdCondTriggerStartup. This object is ignored for all other values of fdCondTriggerMode.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">TruthValue</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-37">
+          <td class="id-col">CondTrigger-MIB-37</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerActions</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>27&nbsp;Actions for primary trigger condition</h1>
+            <div class="htmlContent"><p>The row of the fdActionTable to be called when this trigger fires. In the case of the hysteresis mode, this only represents the action to be called for the rising trigger.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">ITSRelativeRowPointer</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-38">
+          <td class="id-col">CondTrigger-MIB-38</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerActions2</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>28&nbsp;Actions for secondary trigger condition</h1>
+            <div class="htmlContent"><p>If the mode is hysteresis, this object specifies the row of the fdActionTable to be called when the falling trigger fires. This value is ignored for all other modes.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">ITSRelativeRowPointer</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-39">
+          <td class="id-col">CondTrigger-MIB-39</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerCfgMessage</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>29&nbsp;Message explaining configuration error</h1>
+            <div class="htmlContent"><p>Implementation-specific message that may be used by the field device to report errors and explain why the status is notInService or notReady.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">SnmpAdminString</td>
+                      <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-40">
+          <td class="id-col">CondTrigger-MIB-40</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerEvalErrs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>30&nbsp;Evaluation errors for trigger</h1>
+            <div class="htmlContent"><p>The number of times the evaluation of this conditional trigger has failed since its last discontinuity. For example, a trigger evaluation might fail if a variable in an expression cannot be obtained. The last discontinuity is indicated by the fdCondTriggerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-567">26048_1-567</a></span>  Retrieve statistics for conditional trig…</div>
+          </td>
+          <td class="custom-col htmlContent">ITSCounter32</td>
+                      <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-41">
+          <td class="id-col">CondTrigger-MIB-41</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerFires</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>31&nbsp;Fires of trigger</h1>
+            <div class="htmlContent"><p>The number of times this conditional trigger has fired (i.e., evaluated to 'true') since its last discontinuity. The last discontinuity is indicated by the fdCondTriggerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-567">26048_1-567</a></span>  Retrieve statistics for conditional trig…</div>
+          </td>
+          <td class="custom-col htmlContent">ITSCounter32</td>
+                      <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-42">
+          <td class="id-col">CondTrigger-MIB-42</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerCallErrs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>32&nbsp;Call errors for trigger</h1>
+            <div class="htmlContent"><p>The number of times this conditional trigger fired but the call to the action group failed (e.g., due to the referenced row not being active) since the last discontinuity. The last discontinuity is indicated by the fdCondTriggerTimeStamp.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-567">26048_1-567</a></span>  Retrieve statistics for conditional trig…</div>
+          </td>
+          <td class="custom-col htmlContent">ITSCounter32</td>
+                      <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-43">
+          <td class="id-col">CondTrigger-MIB-43</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerTimeStamp</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>33&nbsp;Conditional error time stamp</h1>
+            <div class="htmlContent"><p>The value of sysUpTime at the last discontinuity of any of the counters associated with this row of the fdCondTriggerTable. Discontinuities occur when the row is created.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-567">26048_1-567</a></span>  Retrieve statistics for conditional trig…</div>
+          </td>
+          <td class="custom-col htmlContent">TimeStamp</td>
+                      <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-44">
+          <td class="id-col">CondTrigger-MIB-44</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerSecurityModel</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>34&nbsp;Conditional trigger security model</h1>
+            <div class="htmlContent"><p>The security model used to activate this row of the fdCondTriggerTable, retrieve the value of fdCondTriggerObject for evaluation and call fdCondTriggerActions and fdCondTriggerActions2.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">SnmpSecurityModel</td>
+                      <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-45">
+          <td class="id-col">CondTrigger-MIB-45</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerSecurityLevel</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>35&nbsp;Conditional trigger security level</h1>
+            <div class="htmlContent"><p>The security level used to activate this row of the fdCondTriggerTable, retrieve the value of fdCondTriggerObject for evaluation and call fdCondTriggerActions and fdCondTriggerActions2.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">SnmpSecurityLevel</td>
+                      <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-46">
+          <td class="id-col">CondTrigger-MIB-46</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerSecurityName</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>36&nbsp;Conditional trigger security name</h1>
+            <div class="htmlContent"><p>The security name used to activate this row of the fdCondTriggerTable, retrieve the value of fdCondTriggerObject for evaluation and call fdCondTriggerActions and fdCondTriggerActions2.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">SnmpAdminString</td>
+                      <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-47">
+          <td class="id-col">CondTrigger-MIB-47</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerStorageType</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>37&nbsp;Conditional trigger storage type</h1>
+            <div class="htmlContent"><p>The storage type for this conceptual row. Conceptual rows having the value 'permanent' shall allow the row status to be set to 'notInService'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">StorageType</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="CondTrigger-MIB-48">
+          <td class="id-col">CondTrigger-MIB-48</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdCondTriggerRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>38&nbsp;Conditional trigger row status</h1>
+            <div class="htmlContent"><p>The status of this conceptual row. The row status shall indicate 'notReady' whenever the security model, level, and name do not provide read access to the object referenced by fdCondTriggerObject or do not provide write access to the fdActionGroupDescription object referenced by either fdCondTriggerActions or fdCondTriggerActions2. At a minimum, these access rights shall be verified whenever (1) any configuration parameter in this conceptual row is changed and (2) any changes are made to the vacmSecurityToGroupTable, vacmAccessTable, or vacmViewTreeFamilyTable. Any attempt to modify any read-create object within this conceptual row while the value of this object is active(1) shall result in an inconsistentValue error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-564">26048_1-564</a></span>  Configure conditional trigger</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-565">26048_1-565</a></span>  Confirm conditional trigger configuratio…</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-566">26048_1-566</a></span>  Delete conditional trigger definition</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-569">26048_1-569</a></span>  Toggle conditional trigger enabled statu…</div>
+          </td>
+          <td class="custom-col htmlContent">RowStatus</td>
+                      <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-49</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Conformance Information </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-50</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdCondTriggerConformance</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node containing conformance statements related to the fdCondTriggerMIB, as defined in ISO/TS 20684-3.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-51</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdCondTriggerCompliances</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for compliance statements for the fdCondTriggerMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-52</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdCondTriggerGroups</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for group definitions related to fdCondTriggerMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-53</td>
+          <td class="custom-col htmlContent">module-compliance</td>
+                      <td class="custom-col htmlContent">fdCondTriggerComplianceV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>All implementations shall support the fdCondTriggerWildcard object but implementations may constrain the value to be 'false'. If a device constrains the value to 'false', it may also treat the object as read-only.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">{ fdCondTriggerAdminGroupV1,<br> fdCondTriggerGroupV1<br> }</td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-54</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdCondTriggerAdminGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information for the administration of conditional triggers.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">{ fdAdminCondTriggersTotalEvalErrs,<br> fdAdminCondTriggersTotalFires,<br> fdAdminCondTriggersTotalCallErrs,<br> fdOwnerCondTriggerMaxRows,<br> fdOwnerCondTriggerEvalErrs,<br> fdOwnerCondTriggerFires,<br> fdOwnerCondTriggerCallErrs<br> }</td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-55</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdCondTriggerGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information that identifies the capabilities of conditional triggers.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"><p>{ fdCondTriggersSupport,</p><p>fdCondTriggersFrequencyLimit,</p><p>fdCondTriggersFrequencyNotes,</p><p>fdCondTriggerDescription,</p><p>fdCondTriggerMode,</p><p>fdCondTriggerSampleType,</p><p>fdCondTriggerValue,</p><p>fdCondTriggerValue2,</p><p>fdCondTriggerObject,</p><p>fdCondTriggerWildcard,</p><p>fdCondTriggerObjectTarget,</p><p>fdCondTriggerObjectContext,</p><p>fdCondTriggerObjectFrequency,</p><p>fdCondTriggerTruthDuration,</p><p>fdCondTriggerStartup,</p><p>fdCondTriggerStartup2,</p><p>fdCondTriggerActions,</p><p>fdCondTriggerActions2,</p><p>fdCondTriggerCfgMessage,</p><p>fdCondTriggerEvalErrs,</p><p>fdCondTriggerFires,</p><p>fdCondTriggerCallErrs,</p><p>fdCondTriggerTimeStamp,</p><p>fdCondTriggerStorageType,</p><p>fdCondTriggerRowStatus</p><p>}</p></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">CondTrigger-MIB-56</td>
+          <td class="custom-col htmlContent">end</td>
+                      <td class="custom-col htmlContent">end</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+      </tbody>
+    </table>
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

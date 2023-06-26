@@ -1,0 +1,438 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>Transaction</h1><p><em>Last modified on 2023-06-25 18:14</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Transaction-MIB-3">1 Administrative transaction objects</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Transaction-MIB-6">2 Transaction reset</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Transaction-MIB-7">3 Transaction Objects</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Transaction-MIB-8">4 Transaction mode</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Transaction-MIB-10">5 Transaction status</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Transaction-MIB-12">6 Transaction error</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#Transaction-MIB-14">7 Transaction conformance</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col" style="color: white;"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Type</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Name</th>
+          <th class="description-col" style="color: white;"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col" style="color: white;"><i class="fas fa-link"></i> Links</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Access</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col">Transaction-MIB-1</td>
+          <td class="custom-col htmlContent">mib</td>
+                      <td class="custom-col htmlContent">ISO26048-1-Transaction</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><pre>MODULE-IDENTITY, OBJECT-TYPE, OBJECT-IDENTITY
+                                        FROM SNMPv2-SMI
+                                          -- RFC 2578
+OBJECT-GROUP, MODULE-COMPLIANCE
+                                        FROM SNMPv2-CONF
+                                          -- RFC 2580
+SnmpAdminString
+                                        FROM SNMP-FRAMEWORK-MIB
+                                          -- RFC 3411
+fdGlobalMIB, fdAdminGlobal, fdGlobalConformance
+                                        FROM ISO26048-1-Global</pre></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Transaction-MIB-2</td>
+          <td class="custom-col htmlContent">module-identity</td>
+                      <td class="custom-col htmlContent">fdTransactionMIB</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>This MIB defines a transaction mode that allows an SNMP manager to place the device into a mode where the SNMP agent buffers all set requests for configuration parameters until the SNMP manager completes the transaction. This allows an SNMP manager to configure a large number of inter-related parameters as if they were all contained in a single request and consistency checks are only performed on the complete set of updated values thereby eliminating potential consistency errors resulting from partial update conditions. Copyright (C) International Organization for Standardization (ISO). This MIB module is part of ISO 26048-1; see ISO 26048-1 for full legal notices.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Transaction-MIB-3">
+          <td class="id-col">Transaction-MIB-3</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>1&nbsp;Administrative transaction objects</h1>
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Transaction-MIB-4</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdAdminTransaction</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>&lt;Definition&gt; A node used to contain conformance concepts for the transaction feature.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr class="deleted">
+          <td class="id-col">Transaction-MIB-5 <i class="fas fa-trash-alt"></i></td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Transaction Reset</div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Transaction-MIB-6">
+          <td class="id-col">Transaction-MIB-6</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminTransactionReset</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>2&nbsp;Transaction reset</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object allows a user with sufficient rights to force the dbCreateTransactionV2 object back to the 'normal' state.</p><p>&lt;Format&gt; An attempt to set this object to 'normal' shall cause Step 6 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in a 'wrongValue' error. An attempt to set this object to 'reset' when the dbCreateTransactionV2 is in the process of implementing the buffer while shifting from the 'done' state to the 'normal' state shall cause Step 10 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in an 'inconsistentValue' error. An attempt to set this object to 'reset' when the dbCreateTransactionV2 is in the 'verify' state shall cause Step 10 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in an 'inconsistentValue' error. Phase 2 of the set operation shall include discarding any information that is in the buffer.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-993">26048_1-993</a></span>  Force Reset of Database Transaction Mode</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                    </tr>
+        <tr id="Transaction-MIB-7">
+          <td class="id-col">Transaction-MIB-7</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>3&nbsp;Transaction Objects</h1>
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Transaction-MIB-8">
+          <td class="id-col">Transaction-MIB-8</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdTransactionMode</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>4&nbsp;Transaction mode</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object allows a manager (through its command generator) to modify a potentially large number of interrelated configuration parameters within a field device (through its command responder). In the normal state, set operations are processed without any special rules. In the transaction state, value assignments for parameter objects shall be buffered until the verify state performs a consistency check. When the consistency check completes, the command responder automatically transitions to the done state where a normal or transaction command may be issued. The normal state is the default state of this object upon initialization.</p><p>&lt;Format&gt; All writable objects shall be treated as control objects unless otherwise specified (e.g., within a MIB or device-type standard). This object is a control object.<br>Implementations shall not change the designation (e.g., control, parameter, or transaction) of any writable object type from that assigned in the standards to which it claims conformance.<br>The following rules are applied during the processing of SetRequest-PDUs as defined in RFC 3416 Clause 4.2.5:<br>NORMAL:<br>When this object is in the 'normal' state:<br>1. An attempt to set a transaction object shall cause Step 9 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in a 'notWritable' error.<br>2. An attempt to set this object to any value other than 'transaction' shall cause Step 10 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in an 'inconsistentValue' error.<br>3. When setting this object to 'transition', the second phase of the set operation shall include the command responder copying all the parameter objects currently stored in the device into a buffer. A failure of this copy operation shall result in a failure in the second phase of the set operation and thereby result in a 'commitFailed' error and this object remaining in the 'normal' state.<br>TRANSACTION: When this object is in the 'transaction' state:<br>1. An attempt to set a parameter object using a securityName other than the securityName that was used to start this transaction session shall cause Step 9 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in a 'notWritable' error.<br>2. An attempt to set this object using a securityName other than the securityName that was used to start this transaction session shall cause Step 9 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in a 'notWritable' error.<br>3. An attempt to set this object to any value other than 'normal' or 'verify' shall cause Step 10 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in an 'inconsistentValue' error.<br>4. Within the second phase of the set operation, the command responder shall buffer the creation of and assignments to parameter objects rather than immediately implementing them.<br>5. Within the second phase of the set operation to set this object to 'normal', the agent shall discard all data in the transaction session buffer.<br>NOTE: Control and status objects are processed normally given the above constraints. For example, another securityName can be used to set a control object without error. However, if that request also includes a parameter object, an 'inconsistentValue' error will be generated and neither the control object nor the parameter object will be altered. If the securityName used to initiate the transaction session is used to request setting both a control and a parameter object in a single request, the control object is immediately implemented while the parameter object request is buffered. GetRequest-PDUs are not affected by transaction sessions; they return the values currently implemented while ignoring any buffered values.<br>VERIFY: Upon entry into the verify state, the command responder shall initiate the consistency check process.<br>When this object is in the 'verify' state:<br>1. An attempt to set a parameter object using a securityName other than the securityName that was used to start this transaction session shall cause Step 9 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in a 'notWritable' error.<br>2. An attempt to set this object using a securityName other than the securityName that was used to start this transaction session shall cause Step 9 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in a 'notWritable' error.<br>3. An attempt to set a parameter object shall cause Step 10 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in an 'inconsistentValue' error.<br>4. An attempt to set this object to any value shall cause Step 10 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in an 'inconsistentValue' error.<br>When consistency checks are complete the device shall update the values of dbVerifyStatusV2 and dbVerifyErrorV2 and automatically transition this object to the 'done' state.<br>DONE: When this object is in the 'done' state:<br>1. The value of dbVerifyStatusV2 and dbVerifyErrorV2 shall indicate whether the consistency checks found any errors.<br>2. An attempt to set a parameter object using a securityName other than the securityName that was used to start this transaction session shall cause Step 9 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in a 'notWritable' error.<br>3. An attempt to set this object using a securityName other than the securityName that was used to start this transaction session shall cause Step 9 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in a 'notWritable' error.<br>4. An attempt to set a parameter object shall cause Step 10 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in an 'inconsistentValue' error.<br>5. An attempt to set this object to any value other than 'normal' or 'transaction' shall cause Step 10 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in an 'inconsistentValue' error.<br>6. An attempt to set this object to any value when this object is in the process of implementing the buffer while shifting from the 'done' state to the 'normal' state shall cause Step 10 of RFC 3416 Clause 4.2.5 to fail, thereby resulting in an 'inconsistentValue' error.<br>7. An attempt to set this object to a value of 'transaction' shall cause the command responder to re-enter the 'transaction' state without affecting the contents of the buffer.<br>8. An attempt to set this object to a value of 'normal' when dbVerifyStatusV2 has a value of 'doneWithNoError' shall result in the second phase of the set operation including the assignment of all the buffered data to the device's parameter objects. Any failure in the assignment process shall result in a failure in the second phase of the set operation and thereby result in the Response-PDU indicating either a 'commitFailed' or 'undoFailed' error, as appropriate, and this object remaining in the 'done' state. The values of dbVerifyStatusV2 and dbVerifyErrorV2 shall be updated at the end of the operation as appropriate.<br>9. An attempt to set this object to a value of 'normal' when dbVerifyStatusV2 has a value other than 'doneWithNoError' shall result in the transaction buffer being discarded during the second phase of the set operation.<br>Usage<br>Consistency checks are intended to analyze parameter objects 'in context' by treating them as an interrelated whole rather than separate non-related data items. Other standards (e.g., device-type standards) should define the minimum consistency check rules to be implemented for their context. Implementations may include additional, custom consistency checks beyond those standardized.<br>NOTE: Other requests (e.g., GetRequest-PDUs and SetRequests containing only control objects) can be processed as normal regardless of the state of this object.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-987">26048_1-987</a></span>  Retrieve Current Database Transaction Mo…</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-989">26048_1-989</a></span>  Initiate Database Transaction Mode</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-991">26048_1-991</a></span>  Complete Database Transaction Mode</div>
+          </td>
+          <td class="custom-col htmlContent">read-write</td>
+                    </tr>
+        <tr class="deleted">
+          <td class="id-col">Transaction-MIB-9 <i class="fas fa-trash-alt"></i></td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Transaction Status</div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Transaction-MIB-10">
+          <td class="id-col">Transaction-MIB-10</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdTransactionStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>5&nbsp;Transaction status</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object indicates the status of the consistency checking associated with the dbCreateTransactionV2 object.</p><p>&lt;Format&gt; When dbCreateTransactionV2 is in the 'normal' or 'transaction' state, this object shall indicate the respective value. When dbCreateTransactionV2 is in the 'verify' state, this object shall indicate a value of 'verifying'.<br>When in the 'done' state, this object shall have one of the following values:<br>doneWithNoError: The consistency checks did not identify any inconsistencies with the buffered parameter objects.<br>doneWithError: The consistency checks identified one or more inconsistencies with the buffered parameter objects.<br>commitFailed: the attempt to assign the buffered parameter objects failed and the device has been restored to its previous state; dbCreateTransactionV2 can be set to 'transaction' and the process tried again<br>undoFailed: the attempt to assign the buffered parameter objects failed and the device's database is in an unknown state with potential inconsistencies; dbCreateTransactionV2 can be set to 'transaction' and the process tried again.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-991">26048_1-991</a></span>  Complete Database Transaction Mode</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr class="deleted">
+          <td class="id-col">Transaction-MIB-11 <i class="fas fa-trash-alt"></i></td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Transaction Error</div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Transaction-MIB-12">
+          <td class="id-col">Transaction-MIB-12</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdTransactionError</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>6&nbsp;Transaction error</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; This object contains a textual description of or a reference to an error or condition that was found by the consistency checks implemented with the dbCreateTransactionV2 process. The value of this object shall be updated each time dbVerifyStatusV2 is updated. If dbCreateTransactionV2 is in the 'normal' state due to a reset command of dbTransactionReset, this field shall indicate 'Reset received' as the first characters in the string. Otherwise, unless the status reflects an error state (i.e., doneWithError, commitFailed, or undoFailed), this object shall indicate 'No error' as the first characters in the string.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-991">26048_1-991</a></span>  Complete Database Transaction Mode</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr class="deleted">
+          <td class="id-col">Transaction-MIB-13 <i class="fas fa-trash-alt"></i></td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">TRANSACTION CONFORMANCE</div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="Transaction-MIB-14">
+          <td class="id-col">Transaction-MIB-14</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdTransactionConformance</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>7&nbsp;Transaction conformance</h1>
+            <div class="htmlContent"><p>&lt;Definition&gt; A node used to contain conformance concepts for the transaction feature.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Transaction-MIB-15</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdTransactionCompliances</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>&lt;Definition&gt; A node used to contain compliance statements for the transaction feature.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Transaction-MIB-16</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdTransactionGroups</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>&lt;Definition&gt; A node used to contain object groups for the transaction feature.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Transaction-MIB-17</td>
+          <td class="custom-col htmlContent">module-compliance</td>
+                      <td class="custom-col htmlContent">fdTransactionComplianceV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The conformance statement for the transaction mode within an ITS field device.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Transaction-MIB-18</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdTransactionGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>&lt;Definition&gt; The objects necessary for managing the database transaction feature.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">Transaction-MIB-19</td>
+          <td class="custom-col htmlContent">end</td>
+                      <td class="custom-col htmlContent">end</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+      </tbody>
+    </table>
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

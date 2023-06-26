@@ -1,0 +1,1006 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>DynObj</h1><p><em>Last modified on 2023-06-22 19:28</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-6">1 Maximum fields within a dynamic object</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-7">2 Owner table for dynamic objects</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-10">3 Maximum dynamic objects for an owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-11">4 Maximum fields within a dynamic object for an owner</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-12">5 Persistence time for an owner&#x27;s dynamic objects</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-13">6 Configuration identifier for an owner&#x27;s dynamic objects</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-15">7 Supported dynamic object encoding methods</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-16">8 Dynamic object support for new values</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-17">9 Dynamic object process support</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-18">10 Dynamic object table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-21">11 Dynamic object index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-22">12 Dynamic object description</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-23">13 Dynamic object encoding</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-24">14 Dynamic object process</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-25">15 Dynamic object refresh</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-26">16 Dynamic object last refresh date</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-27">17 Dynamic object last refresh time</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-28">18 Dynamic object refresh duration</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-29">19 Dynamic object current value</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-30">20 Dynamic object new value</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-31">21 Dynamic object last error</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-32">22 Dynamic object last error index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-33">23 Dynamic object last error request id</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-34">24 Dynamic object storage type</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-35">25 Dynamic object row status</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-36">26 Dynamic object field table</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-39">27 Dynamic object field index</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-40">28 Dynamic object field object</a></li>
+
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#DynObj-MIB-41">29 Dynamic object field row status</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col" style="color: white;"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Type</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Name</th>
+          <th class="description-col" style="color: white;"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col" style="color: white;"><i class="fas fa-link"></i> Links</th>
+          <th class="custom-col" style="color: white;"><i class="fas fa-cog"></i> Access</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col">DynObj-MIB-1</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Dynamic Object MIB Header </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-2</td>
+          <td class="custom-col htmlContent">mib</td>
+                      <td class="custom-col htmlContent">ISO26048-1-DynObj</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><pre>  <br>MODULE-IDENTITY, OBJECT-TYPE, OBJECT-IDENTITY, Integer32, Unsigned32<br>                                                    FROM SNMPv2-SMI<br>                                                      -- RFC 2578<br>RowStatus, StorageType, VariablePointer<br>                                                    FROM SNMPv2-TC<br>                                                      -- RFC 2579<br>MODULE-COMPLIANCE, OBJECT-GROUP<br>                                                    FROM SNMPv2-CONF<br>                                                      -- RFC 2580<br>SnmpAdminString<br>                                                    FROM SNMP-FRAMEWORK-MIB<br>                                                      -- RFC 3411<br>ITSDailyTimeStamp, ITSDateStamp, ITSPduErrorStatus, ITSPositive8, ITSUnsigned8,<br>ITSUnsigned16<br>                                                    FROM ISO26048-1-FieldDevice<br>fdGlobalMIB, fdAdminGlobal, fdGlobalConformance<br>                                                    FROM ISO26048-1-Global<br>fdOwnerEntry, fdOwnerIndex  <br>                                                    FROM ISO26048-1-Owner<br></pre></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-3</td>
+          <td class="custom-col htmlContent">module-identity</td>
+                      <td class="custom-col htmlContent">fdDynObjMIB</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>This MIB defines a mechanism by which a manager can create a more compact encoding of a group of object instances that are requested together. An Object Group is configured by defining the desired sequence of object instances to be reported as a group. The result is that the device provides a new object instance (fdObjectSetData) which represents the values of each object instance in the specified order, without the name (OID) field for each one and with the values encoded as an OER string rather than a BER string, which further compacts the encoding, especially if the listed objects are all one-octet integers.&nbsp;</p><p>Copyright (C) International Organization for Standardization (ISO). This MIB module is part of ISO 26048-1; see ISO 26048-1 for full legal notices.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-4</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Administrative Objects </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-5</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdAdminDynObj</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node defining management information related to the administration of the objects within the fdDynObjMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="DynObj-MIB-6">
+          <td class="id-col">DynObj-MIB-6</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdAdminDynObjsMaxFields</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>1&nbsp;Maximum fields within a dynamic object</h1>
+            <div class="htmlContent"><p>The maximum number of objects that the implementation supports within each dynamic object.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-898">26048_1-898</a></span>  Determine administrative capabilities fo…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="DynObj-MIB-7">
+          <td class="id-col">DynObj-MIB-7</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerDynObjTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>2&nbsp;Owner table for dynamic objects</h1>
+            <div class="htmlContent"><p>A table containing configuration rights for the dynamic object tables for specific owners.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-8</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerDynObjEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A row in the fdOwnerDynObjTable.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-9</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdOwnerDynObjEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="DynObj-MIB-10">
+          <td class="id-col">DynObj-MIB-10</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerDynObjMaxDynObjs</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>3&nbsp;Maximum dynamic objects for an owner</h1>
+            <div class="htmlContent"><p>The maximum number of rows that this owner is allowed to manage within the fdDynObjTable at any point in time.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-899">26048_1-899</a></span>  Configure dynamic object owner</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-900">26048_1-900</a></span>  Confirm dynamic object owner configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DynObj-MIB-11">
+          <td class="id-col">DynObj-MIB-11</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerDynObjMaxFields</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>4&nbsp;Maximum fields within a dynamic object for an owner</h1>
+            <div class="htmlContent"><p>The maximum number of rows that this owner is allowed to manage for each dynamic object within the fdDynObjFieldTable at any point in time. This value shall have an upper limit of fdAdminDynObjsMaxObjects.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-899">26048_1-899</a></span>  Configure dynamic object owner</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-900">26048_1-900</a></span>  Confirm dynamic object owner configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DynObj-MIB-12">
+          <td class="id-col">DynObj-MIB-12</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerDynObjPersistence</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>5&nbsp;Persistence time for an owner&#x27;s dynamic objects</h1>
+            <div class="htmlContent"><p>The maximum power outage time in minutes that may occur before the dynamic object configurations for this owner transition to notInService. If this object is set to zero (0), dynamic object definitions for the owner shall transition to notInService at power initialization. The value of 65535 shall mean that the dynamic objects for this owner will not transition to notInService regardless of the length of power outage.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-899">26048_1-899</a></span>  Configure dynamic object owner</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-900">26048_1-900</a></span>  Confirm dynamic object owner configurati…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DynObj-MIB-13">
+          <td class="id-col">DynObj-MIB-13</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdOwnerDynObjConfigID</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>6&nbsp;Configuration identifier for an owner&#x27;s dynamic objects</h1>
+            <div class="htmlContent"><p>Specifies a relatively unique identifier for the current configuration paramters contained within the fdDynObjTable and FdDynObjFieldTable for this owner. The configuration parameters include all writable objects contained in these tables except for fdDynObjRefresh and fdDynObjNewValue.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-901">26048_1-901</a></span>  Retrieve statistics for dynamic object o…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-14</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Objects for manging dynamic objects </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="DynObj-MIB-15">
+          <td class="id-col">DynObj-MIB-15</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjsSupportedEncodings</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>7&nbsp;Supported dynamic object encoding methods</h1>
+            <div class="htmlContent"><p>The formats in which the field device is able to encode the dynamic object values. Defined bits are:&nbsp;</p><pre>Value | Name | Description 
+0     | ber  | Supports Basic Encoding Rules (ISO 8825-1) 
+1     | oer  | Supports Octet Encoding Rules (ISO 8825-7)</pre><p><br></p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-887">26048_1-887</a></span>  Determine dynamic object capabilities</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="DynObj-MIB-16">
+          <td class="id-col">DynObj-MIB-16</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjsNewValueSupport</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>8&nbsp;Dynamic object support for new values</h1>
+            <div class="htmlContent"><p>Indicates the level of support for the fdDynObjNewValue column of the table. Values are defined as follows:&nbsp;</p><pre>Value   | Description 
+none    | The fdDynObjNewValue column is not supported 
+partial | The fdDynObjNew column is supported for some possible
+        | configurations of a dynamic object, but implementation-specific 
+        | limitations apply 
+full    | fdDynObjNewValue is supported for any allowed configuration
+        | of a writable dynamic object</pre><p><br></p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-887">26048_1-887</a></span>  Determine dynamic object capabilities</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="DynObj-MIB-17">
+          <td class="id-col">DynObj-MIB-17</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjsProcessSupport</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>9&nbsp;Dynamic object process support</h1>
+            <div class="htmlContent"><p>The processes supported by the dynamic object. Defined values are:&nbsp;</p><pre>Value   | Description 
+oneStep | The one step process 
+twoStep | The two step process</pre><p><br></p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-887">26048_1-887</a></span>  Determine dynamic object capabilities</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="DynObj-MIB-18">
+          <td class="id-col">DynObj-MIB-18</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>10&nbsp;Dynamic object table</h1>
+            <div class="htmlContent"><p>A table that manages the dynamic objects within the field device.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-19</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>An dynamic object is a user-defined sequence of object instances that can be exchanged as a single entity without having to pass the OID of each object instance in the exchange. The fdDynObjEntry contains information that applies to the entire dynamic object.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-20</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdDynObjEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="DynObj-MIB-21">
+          <td class="id-col">DynObj-MIB-21</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>11&nbsp;Dynamic object index</h1>
+            <div class="htmlContent"><p>The index of this entry within the scope of the fdOwnerIndex.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="DynObj-MIB-22">
+          <td class="id-col">DynObj-MIB-22</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjDescription</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>12&nbsp;Dynamic object description</h1>
+            <div class="htmlContent"><p>A textual description of the dynamic object's function and use.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-888">26048_1-888</a></span>  Configure dynamic object</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-889">26048_1-889</a></span>  Confirm dynamic object configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DynObj-MIB-23">
+          <td class="id-col">DynObj-MIB-23</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjEncoding</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>13&nbsp;Dynamic object encoding</h1>
+            <div class="htmlContent"><p>The format in which the field device shall encode this dynamic object. Defined values are:&nbsp;</p><pre>Value | Description 
+other | Encoding format is not defined by this standard. Implementations
+      | using 'other' encodings should define a separate object allowing
+      | the specification of the desired encoding format and the deter-
+      | mination of the specific custom format when selected. A SET to
+      | fdDynObjEncoding (this object) to 'other' shall return a
+      | 'wrongValue' error. 
+ber   | The value shall be encoded using BER (ISO/IEC 8825-1 / ITU-T
+      | X.690). 
+oer   | The value shall be encoded using OER (ISO/IEC 8825-7 / ITU-T 
+      | X.696).</pre><p><br></p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-888">26048_1-888</a></span>  Configure dynamic object</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-889">26048_1-889</a></span>  Confirm dynamic object configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DynObj-MIB-24">
+          <td class="id-col">DynObj-MIB-24</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjProcess</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>14&nbsp;Dynamic object process</h1>
+            <div class="htmlContent"><p>The process to be followed when making requests related to the dynamic object. Valid values are:&nbsp;</p><pre>Value    | Description 
+one-step | The field device shall process requests for
+         | fdDynObjCurrentValue and fdDynObjNewValue when the request
+         | is received and return the resultant SNMP response when done. 
+         | When in this mode, the value of fdDynObjRefresh shall be
+         | 'notReady', the value of fdDynObjLastRefreshDate shall
+         | indicate 01 Jan 2000 and value of fdDynObjLastRefreshTime
+         | shall indicate 00:00:00.000.
+         |
+         | An attempt to set the value of fdDynObjRefresh shall 
+         | result in an 'inconsistentValue' result. User's should note 
+         | that the time for such an operation may take considerably 
+         | longer than a normal SNMP request since the size of 
+         | the message may be much greater than normal. 
+         | 
+two-step | To retrieve the current value of the dynamic object, a manager 
+         | shall first set the value of fdDynObjRefresh to 'refresh'.
+         | This will cause the field device to calculate the value for
+         | fdDynObjCurrentValue whereupon it will become available for
+         | retrieval operations. The values of fdDynObjLastRefreshDate,
+         | fdDynObjLastRefreshTime, fdDynObjLastError,
+         | fdDynObjLastErrorIndex, and fdDynObjLastRequestID shall be
+         | updated once the updated value of fdDynObjCurrentValue is
+         | ready. An attempt to retrieve fdDynObjCurrentValue while it is
+         | being calculated shall result in a zero-length string.         
+         |
+         | To set the current value of the dynamic object, a command 
+         | generator shall shall set fdDynObjNewValue to the desired
+         | value and the command responder shall perform the first three
+         | checks defined in RFC 3416 Clause 4.2.5. In other words, it
+         | will verify that:
+         | 1) the object is within the command generator's MIB view,
+         | 2) the object can be modified, and 
+         | 3) the type of the value field is OCTET SRTING
+         | The command responder shall then return an immediate SNMP
+         | response based on these three simple checks and will continue
+         | the remainder of the verification steps defined in RFC 3416
+         | Clause 4.2.5. The final result of the entire RFC 3416
+         | verification process shall be stored in fdDynObjLastError and
+         | fdDynObjLastErrorIndex, at which point the command responder
+         | shall also update the value of fdDynObjLastErrorRequestID.</pre><p><br></p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-888">26048_1-888</a></span>  Configure dynamic object</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-889">26048_1-889</a></span>  Confirm dynamic object configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DynObj-MIB-25">
+          <td class="id-col">DynObj-MIB-25</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjRefresh</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>15&nbsp;Dynamic object refresh</h1>
+            <div class="htmlContent"><p>The state of the refresh operation for fdDynObjCurrentValue. Valid values are:&nbsp;</p><pre>Value    | Description 
+other    | A state not defined by this standard 
+ready    | The object set is ready for a command to calculate 
+         | fdDynObjCurrentValue 
+refresh  | A command to begin calculating fdDynObjCurrentValue 
+pending  | The value of fdDynObjCurrentValue is currently being
+         | calculated
+oneStep  | The value of fdDynObjProcess is one-step and use of this
+         | is not valid 
+disabled | The value of fdDynObjEnabled is disabled 
+notReady | The value of fdDynObjRowStatus for this row is not 'active'. 
+
+A request to SET this object to any value other than 'refresh' shall
+result in an 'wrongValue' error. Setting this value to 'refresh' when it 
+is in the 'ready' mode shall: 
+1. Cause the object to immediately transition to the 'pending' state, 
+2. Force the value of fdDynObjCurrentValue to a zero-length string, 
+3. Begin the calculation of a new value for fdDynObjCurrentValue. 
+
+Once the calculation of fdDynObjCurrentValue is complete, the value
+will be stored in that object (replacing the zero-length string) and
+the value of this object shall transition to 'ready'. 
+
+Setting this value to 'refresh' when its value is anything other than 
+'ready' shall result in a 'inconsistentValue' error.</pre><p><br></p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-891">26048_1-891</a></span>  Retrieve dynamic object data in two step…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DynObj-MIB-26">
+          <td class="id-col">DynObj-MIB-26</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjLastRefreshDate</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>16&nbsp;Dynamic object last refresh date</h1>
+            <div class="htmlContent"><p>The UTC date on which the dynamic object was last refreshed when in twoStep mode. If the object set is in oneStep mode or if the dynamic object has not been refreshed since this dynamic object was placed into twoStep mode, the value of this object shall be 01 Jan 2000.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-895">26048_1-895</a></span>  Retrieve statistics for dynamic object</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-893">26048_1-893</a></span>  Set new value for dynamic object in two …</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="DynObj-MIB-27">
+          <td class="id-col">DynObj-MIB-27</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjLastRefreshTime</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>17&nbsp;Dynamic object last refresh time</h1>
+            <div class="htmlContent"><p>The UTC time at which the dynamic object was last refreshed when in twoStep mode. If the object set is in oneStep mode or if the dynamic object has not been refreshed since this dynamic object was placed into twoStep mode, the value of this object shall be 00:00:00.000.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-895">26048_1-895</a></span>  Retrieve statistics for dynamic object</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-893">26048_1-893</a></span>  Set new value for dynamic object in two …</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="DynObj-MIB-28">
+          <td class="id-col">DynObj-MIB-28</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjRefreshDuration</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>18&nbsp;Dynamic object refresh duration</h1>
+            <div class="htmlContent"><p>The estimated duration to perform a request (get or set) on the object group. On initial use, this may be based on a simple calculation of the number of objects contained within the dynamic object. After initial use, it should be based on the actual time required for one or more recent requests.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-895">26048_1-895</a></span>  Retrieve statistics for dynamic object</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-893">26048_1-893</a></span>  Set new value for dynamic object in two …</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="DynObj-MIB-29">
+          <td class="id-col">DynObj-MIB-29</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjCurrentValue</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>19&nbsp;Dynamic object current value</h1>
+            <div class="htmlContent"><p>The current value of the SEQUENCE of object instance values referenced by this dynamic object. The value is encoded using the rules specified in fdDynObjEncoding.&nbsp;</p><p>When in oneStep mode, the device shall calculate a new response and return resultant value. Given the potential complexity of dynamic objects, an implementation may require more time than normal to process this type of request. When in twoStep mode, the device shall return the last response calculated by the fdDynObjRefresh process.&nbsp;</p><p>When calculating the value of this object (in either oneStep or twoStep mode), the field device shall act as if it had received a single retrieval request containing each referenced object using the same security parameters associated with the request (i.e., the parameters in the request for this object when in oneStep mode and the parameters in the request for fdDynObjRefresh when in twoStep mode). If an error occurs during the mimicked retrieval request (e.g., a referenced object does not currently exist), fdDynObjLastError shall be updated to reflect the reported error and the value of this object (fdDynObjCurrentValue) shall be a zero-length string. Otherwise, if there is no error in the retrieval request, the value of this object shall be the response encoded according to the chosen encoding rules. If an error occurs during the encoding process (e.g., too large for the buffer), the error shall be reflected in fdDynObjLastError and the value of this object shall be a zero-length string. Otherwise, upon successful encoding, the encoding shall be returned (oneStep) or stored (twoStep) and the value of fdDynObjLastError shall be set to 'noError'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-890">26048_1-890</a></span>  Retrieve dynamic object data in one step</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-891">26048_1-891</a></span>  Retrieve dynamic object data in two step…</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="DynObj-MIB-30">
+          <td class="id-col">DynObj-MIB-30</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjNewValue</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>20&nbsp;Dynamic object new value</h1>
+            <div class="htmlContent"><p>This object allows a manager to set new values for the SEQUENCE of object instances referenced by this dynamic object. The value is encoded using the rules specified in fdDynObjEncoding.&nbsp;</p><p>An attempt to set an instance of this object type using a request that contains any other object instance shall result in an 'inconsistentValue' error. An attempt to set an instance of this object while the fdDynObjLastError object instance of the same entry has a value of 'pending' shall result in an 'inconsistentValue' error. An attempt to set an instance of this object while the fdDynObjRowStatus object instance of the same entry has a value of anything other than 'active' shall result in an 'inconsistentValue' error.&nbsp;</p><p>Upon receipt of a SET request for this object (and the value of fdDynObjLastError for the dynamic object is not already 'pending'), the field device shall transition the value of fdDynObjLastError for the row to 'pending'. The field device shall then attempt to decode the value contained within the SetRequest-PDU according to the configuration of the dynamic object. If the field device encounters an error in decoding the provided values, it shall stop processing, set fdDynObjLastError for the row to 'newValueEncodingError', set fdDynObjLastErrorIndex for the row to zero (0), and return a 'wrongValue' error to the manager.&nbsp;</p><p>If the field device successfully decodes the value and it is in oneStep mode, the field device shall mimic as if it had received a single SET request containing each object referenced within the dynamic object with the the values provided in the request using the same security parameters associated with the request used to SET this object. Upon completing the processing of the mimicked request, the field device shall set fdDynObjLastError to reflect the error status of the mimicked request, set fdDynObjLastErrorIndex to the error index of the mimicked request and then respond to the original request indicating the error status of the mimicked request and the index of one (i.e., by definition a set on an dynamic object only contains a single object).&nbsp;</p><p>If the field device successfully decodes the value and it is in twoStep mode, the field device shall respond to the request with a 'noError' response and then mimic as if it had received a single SET request containing each object referenced within the dynamic object with the values provided in the request using the same security parameters associated with the request used to SET this object. Upon completing the processing of the mimicked request, the field device shall set fdDynObjLastError to reflect the error status of the mimicked request and set fdDynObjLastErrorIndex to the error index of the mimicked request.&nbsp;</p><p>Retrieving this object shall return the last value SET (with a 'noError' response), which may be different than fdDynObjCurrentValue. Upon the activation of this row of the table, the value of this object is ignored. In other words, a set operation is only mimicked when this object is set while the row is 'active'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-894">26048_1-894</a></span>  Retrieve the last dynamic object value s…</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-892">26048_1-892</a></span>  Set new value for dynamic object in one …</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-893">26048_1-893</a></span>  Set new value for dynamic object in two …</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DynObj-MIB-31">
+          <td class="id-col">DynObj-MIB-31</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjLastError</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>21&nbsp;Dynamic object last error</h1>
+            <div class="htmlContent"><p>An indication of any error associated with the last operation on fdDynObjCurrentValue or fdDynObjNewValue.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-890">26048_1-890</a></span>  Retrieve dynamic object data in one step</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-891">26048_1-891</a></span>  Retrieve dynamic object data in two step…</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-892">26048_1-892</a></span>  Set new value for dynamic object in one …</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-893">26048_1-893</a></span>  Set new value for dynamic object in two …</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="DynObj-MIB-32">
+          <td class="id-col">DynObj-MIB-32</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjLastErrorIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>22&nbsp;Dynamic object last error index</h1>
+            <div class="htmlContent"><p>An indication of the field within the dynamic object that caused the error.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-890">26048_1-890</a></span>  Retrieve dynamic object data in one step</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-891">26048_1-891</a></span>  Retrieve dynamic object data in two step…</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-892">26048_1-892</a></span>  Set new value for dynamic object in one …</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-893">26048_1-893</a></span>  Set new value for dynamic object in two …</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="DynObj-MIB-33">
+          <td class="id-col">DynObj-MIB-33</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjLastErrorRequestID</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>23&nbsp;Dynamic object last error request id</h1>
+            <div class="htmlContent"><p>An indication of the request-id field contained in the request for which the values of fdDynObjLastError and fdDynObjLastErrorIndex apply.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-890">26048_1-890</a></span>  Retrieve dynamic object data in one step</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-891">26048_1-891</a></span>  Retrieve dynamic object data in two step…</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-892">26048_1-892</a></span>  Set new value for dynamic object in one …</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-893">26048_1-893</a></span>  Set new value for dynamic object in two …</div>
+          </td>
+          <td class="custom-col htmlContent">read-only</td>
+                    </tr>
+        <tr id="DynObj-MIB-34">
+          <td class="id-col">DynObj-MIB-34</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjStorageType</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>24&nbsp;Dynamic object storage type</h1>
+            <div class="htmlContent"><p>The storageType for this conceptual row and the associated rows within the fdDynObjFieldTable. Conceptual rows having the value 'permanent' and supporting SET operations shall allow write access to the fdDynObjNewValue column; all other columns in the row do not need to allow write-access.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-888">26048_1-888</a></span>  Configure dynamic object</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-889">26048_1-889</a></span>  Confirm dynamic object configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DynObj-MIB-35">
+          <td class="id-col">DynObj-MIB-35</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>25&nbsp;Dynamic object row status</h1>
+            <div class="htmlContent"><p>The status of this conceptual row. This object may be used to create or remove rows from this table.&nbsp;</p><p>With the exception of fdDynObjNewValue, all columns of this table and associated rows of the fdDynObjFieldTable shall be appropriately configured before the value of this object can transition to active. In addition, there shall be at least two rows in the fdDynObjFieldTable associated with this entry before the value of this object can transition to active.&nbsp;</p><p>With the exception of fdDynObjNewValue, objects within this row of the table associated rows of the fdDynObjFieldTable can not be modified while the value of this object is active. The value of fdDynObjNewValue, can only be modified when this object has the value of 'active'. An attempt to modify fdDynObjNewValue when this object is in any other state shall result in an 'inconsistentValue' error.&nbsp;</p><p>The create-and-go command can be used to configure the dynamic object but such a command cannot be combined with setting the value of fdDynObjNewValue.&nbsp;</p><p>Creation and modification of any object within this conceptual row and corresponding rows of the fdDynObjFieldTable are allowed when the value of this object is notInService or notReady, within the capabilities of the implementation. For example, the implementation might not support newValues for all combinations of data.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-896">26048_1-896</a></span>  Change status of dynamic object</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-888">26048_1-888</a></span>  Configure dynamic object</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-889">26048_1-889</a></span>  Confirm dynamic object configuration</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DynObj-MIB-36">
+          <td class="id-col">DynObj-MIB-36</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjFieldTable</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>26&nbsp;Dynamic object field table</h1>
+            <div class="htmlContent"><p>This table defines the sequential list of object instances that are contained within the dynamic object.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-37</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjFieldEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>An entry specifying one object instance to be contained within the object group.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-38</td>
+          <td class="custom-col htmlContent">row</td>
+                      <td class="custom-col htmlContent">FdDynObjFieldEntry</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr id="DynObj-MIB-39">
+          <td class="id-col">DynObj-MIB-39</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjFieldIndex</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>27&nbsp;Dynamic object field index</h1>
+            <div class="htmlContent"><p>The logical order of the fdDynObjFieldObject within the dynamic object SEQUENCE structure where the object with the lowest index occurs first within the SEQUENCE followed by each next larger index.&nbsp;</p><p>fdDynObjFieldIndex values for an dynamic object do not have to begin with one nor are they required to increment by one. For example, a dynamic object could be defined with two active entries within the fdDynObjFieldTable with values for fdDynObjFieldIndex of 3 and 5. Such an entry would result in a sequence as follows:&nbsp;</p><pre>SEQUENCE { 
+     &lt;object referred to by fdDynObjFieldObject.3&gt;, 
+     &lt;object referred to by fdDynObjFieldObject.5&gt; }</pre><p>Entries that are not not 'active' or non-existant are omitted from the encoding.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">not-accessible</td>
+                    </tr>
+        <tr id="DynObj-MIB-40">
+          <td class="id-col">DynObj-MIB-40</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjFieldObject</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>28&nbsp;Dynamic object field object</h1>
+            <div class="htmlContent"><p>The OBJECT IDENTIFIER of the object instance to be contained within the dynamic object in the position indicated by fdDynObjFieldIndex.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1088">26048_1-1088</a></span>  Configure dynamic object field</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1089">26048_1-1089</a></span>  Confirm dynamic objet field configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr id="DynObj-MIB-41">
+          <td class="id-col">DynObj-MIB-41</td>
+          <td class="custom-col htmlContent">object-type</td>
+                      <td class="custom-col htmlContent">fdDynObjFieldRowStatus</td>
+                      <td class="description-col" style="padding-left:10px">
+            <h1>29&nbsp;Dynamic object field row status</h1>
+            <div class="htmlContent"><p>The status of this conceptual row. This object may be used to create or remove rows from this table. Commands and changes in status of this object are prohibited while the associated fdDynObjRowStatus is 'active'.&nbsp;</p><p>In order for this object to transition to 'active', the value of fdDynObjFieldObject for this row must be:&nbsp;</p><p>1) of an object type that the device supports and&nbsp;</p><p>2) an object instance that is accessible for read operations within the view associated with the security credentials used to activate this object.&nbsp;</p><p>The value of fdDynObjFieldObject for this row cannot be modified while the value of this object is 'active'.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1088">26048_1-1088</a></span>  Configure dynamic object field</div>
+                <div class="link"> <span><a href="26048_1.html#26048_1-1089">26048_1-1089</a></span>  Confirm dynamic objet field configuratio…</div>
+          </td>
+          <td class="custom-col htmlContent">read-create</td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-42</td>
+          <td class="custom-col htmlContent">comment</td>
+                      <td class="custom-col htmlContent">comment</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent">Conformance Information </div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-43</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdDynObjConformance</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node containing conformance statements related to the fdDynObjMIB, as defined in ISO/TS 20684-7.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-44</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdDynObjCompliances</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for compliance statements for the fdDynObjMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-45</td>
+          <td class="custom-col htmlContent">object-identity</td>
+                      <td class="custom-col htmlContent">fdDynObjMIBGroups</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A node for group definitions related to fdDynObjMIB.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-46</td>
+          <td class="custom-col htmlContent">module-compliance</td>
+                      <td class="custom-col htmlContent">fdDynObjComplianceV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information that is required if the field device supports the capability to accept SET requests for a dynamic object.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-47</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdDynObjAdminGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Administrative information for the dynamic object feature.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-48</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdDynObjBasicGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information that identifies the capabilities of the object group.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-49</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdDynObjRefreshGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information used for refreshing the value for an dynamic object entry according to the two-step process.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-50</td>
+          <td class="custom-col htmlContent">object-group</td>
+                      <td class="custom-col htmlContent">fdDynObjNewValueGroupV1</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Management information used for SETting the values of the objects contained within an dynamic object entry.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col">DynObj-MIB-51</td>
+          <td class="custom-col htmlContent">end</td>
+                      <td class="custom-col htmlContent">end</td>
+                      <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+      </tbody>
+    </table>
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
